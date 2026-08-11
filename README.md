@@ -1,131 +1,353 @@
-# 🧠 Olympiad Intelligence
+# Olympiad Intelligence
 
-### An AI/ML Framework for Understanding Mathematical Olympiad Problems
+**Olympiad Intelligence** is a research project focused on understanding, modeling, and analyzing the difficulty of mathematical olympiad problems using data science and machine learning.
 
-**Olympiad Intelligence** is a research-oriented machine learning project designed to analyze mathematical olympiad problems, extract structural and linguistic features from their statements and solutions, estimate problem difficulty, and eventually develop intelligent systems for mathematical problem classification, difficulty prediction, and adaptive problem recommendation.
+The project combines mathematical problem metadata, solution structure, reasoning patterns, and mathematical domains to build a data-driven framework for olympiad problem analysis.
 
-The long-term goal is to build an intelligent mathematical problem analysis system that can understand not only *what topic a problem belongs to*, but also *why it is difficult* and *what type of reasoning is required to solve it*.
+## Research Goals
 
----
+The main goals of Olympiad Intelligence are:
 
-## 🚀 Project Status
+- Analyze structural characteristics of olympiad problems
+- Extract meaningful features from mathematical solutions
+- Develop a data-driven difficulty scoring system
+- Study relationships between problem domains and difficulty
+- Investigate reasoning, proof, calculation, and case-analysis patterns
+- Build a foundation for future machine-learning models for olympiad mathematics
 
-| Stage | Status |
-|---|---|
-| Project architecture | ✅ Complete |
-| Initial dataset pipeline | ✅ Complete |
-| Mathematical taxonomy | ✅ Complete |
-| Feature engineering | ✅ Complete |
-| Baseline difficulty model | ✅ Complete |
-| MathNet integration | ✅ Complete |
-| Solution feature extraction | ✅ Complete |
-| Difficulty engine | ✅ Complete |
-| ML difficulty prediction | 🔄 In Progress |
-| Automated problem analysis | ⏳ Planned |
-| Adaptive recommendation system | ⏳ Planned |
-| Student skill profiling | ⏳ Planned |
+## Dataset
 
-**Current milestone: Day 4 — MathNet Integration & Difficulty Engine**
+The current research pipeline uses the **MathNet** dataset.
 
----
+MathNet contains **27,817 mathematical olympiad problems** from competitions and countries around the world.
 
-# 🎯 Motivation
+For the current development stage, the project uses a **1,000-problem working sample**.
 
-Mathematical olympiad problems are fundamentally different from conventional educational exercises.
+The dataset contains information such as:
 
-Two problems may belong to the same mathematical domain while requiring completely different levels of reasoning.
+- Problem statements
+- Solutions
+- Country
+- Competition
+- Mathematical topics
+- Mathematical domains
+- Problem type
+- Language
+- Final answers when available
 
-For example, difficulty can depend on:
+## Data Processing Pipeline
 
-- conceptual depth
-- number of reasoning steps
-- proof requirements
-- case analysis
-- algebraic manipulation
-- solution length
-- number of equations
-- problem type
-- mathematical domain
-- interaction between multiple concepts
-
-Traditional difficulty labels often fail to capture these differences.
-
-This project explores whether these characteristics can be quantified and combined to create a computational model of olympiad problem difficulty.
-
----
-
-# 🔬 Research Questions
-
-The project investigates several questions:
-
-1. Can mathematical olympiad problem difficulty be estimated from structural features?
-
-2. Which characteristics of a problem are most strongly associated with difficulty?
-
-3. How does solution structure correlate with problem complexity?
-
-4. Can mathematical domains and problem types be used as predictive signals?
-
-5. Can machine learning predict the difficulty of an unseen olympiad problem?
-
-6. Can mathematical problems be automatically classified by domain and subtopic?
-
-7. Can solution structure provide useful information about the reasoning required by a problem?
-
-8. Can these models eventually support personalized olympiad training?
-
----
-
-# 🏗️ Current Architecture
+The current pipeline consists of several stages:
 
 ```text
-                    ┌─────────────────────┐
-                    │ Mathematical        │
-                    │ Olympiad Problems    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Data Collection &    │
-                    │ Standardization      │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Mathematical        │
-                    │ Taxonomy             │
-                    │                      │
-                    │ Algebra              │
-                    │ Geometry             │
-                    │ Number Theory       │
-                    │ Combinatorics       │
-                    │ etc.                │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Feature Engineering  │
-                    └──────────┬──────────┘
-                               │
-                ┌──────────────┴──────────────┐
-                ▼                             ▼
-       ┌─────────────────┐          ┌─────────────────┐
-       │ Problem Features │          │ Solution Features│
-       └────────┬────────┘          └────────┬────────┘
-                │                            │
-                └──────────────┬─────────────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │ Difficulty Engine   │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-              ┌────────────────────────────────┐
-              │ Easy │ Medium │ Hard │ Very Hard│
-              └────────────────────────────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ ML Prediction Model │
-                    │       (Next)         │
-                    └─────────────────────┘
+MathNet Dataset
+      ↓
+Dataset Conversion
+      ↓
+Problem Feature Engineering
+      ↓
+Solution Feature Extraction
+      ↓
+Solution Feature Analysis
+      ↓
+Difficulty Signal Engineering
+      ↓
+Difficulty Engine
+      ↓
+Machine Learning Research
+
+Solution Analysis
+
+The project extracts structural features from mathematical solutions, including:
+
+Solution length
+Number of words
+Number of paragraphs
+Equation count
+Reasoning indicators
+Proof indicators
+Case analysis
+Calculation indicators
+Major solution steps
+Equation density
+Reasoning density
+Proof density
+
+In the current 1,000-problem sample:
+
+884 problems have available solutions
+116 problems do not have available solutions
+Solution availability: 88.4%
+Difficulty Engine
+
+The current difficulty engine combines multiple signals instead of relying on a single measurement.
+
+The model currently considers:
+
+Solution complexity
+Equation usage
+Reasoning patterns
+Proof structure
+Case analysis
+Major solution steps
+Problem type
+Mathematical domain
+
+The engine produces:
+
+A continuous difficulty_score
+A numerical difficulty level
+A difficulty label
+
+Current labels:
+
+Easy
+Medium
+Hard
+Very Hard
+
+These labels represent the project's current research methodology and are not official olympiad difficulty ratings.
+
+Current Dataset Distribution
+
+The current 1,000-problem working dataset contains problems from several major mathematical domains, including:
+
+Geometry
+Algebra
+Discrete Mathematics
+Number Theory
+Statistics
+Precalculus
+Calculus
+Mathematical Word Problems
+
+Problem types include:
+
+Proof and answer
+Proof only
+Final answer only
+Multiple choice
+
+Repository Structure
+Olympiad-Intelligence/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── README.md
+│
+├── src/
+│   ├── feature_engineering.py
+│   ├── inspect_mathnet.py
+│   ├── convert_mathnet.py
+│   ├── extract_solution_features.py
+│   ├── analyze_solution_features.py
+│   └── ...
+│
+├── README.md
+└── requirements.txt
+
+Current Research Stage
+
+The project has currently completed:
+
+Initial project structure
+Mathematical taxonomy
+Initial dataset pipeline
+Problem feature engineering
+Baseline difficulty modeling
+MathNet dataset integration
+MathNet dataset conversion
+Solution feature extraction
+Solution feature analysis
+Difficulty signal engineering
+Initial multi-signal difficulty engine
+Future Development
+
+Planned research directions include:
+
+Expanding the dataset beyond the current 1,000-problem sample
+Improving difficulty estimation
+Training machine-learning models
+Comparing different model architectures
+Evaluating predictions against human difficulty assessments
+Developing mathematical-topic embeddings
+Building problem similarity and recommendation systems
+Creating an interactive olympiad problem analysis system
+Studying which reasoning patterns are associated with higher difficulty
+Research Philosophy
+
+Olympiad Intelligence is intended as a research project rather than simply a collection of solved problems.
+
+The long-term objective is to investigate whether mathematical problem difficulty can be modeled through measurable structural and reasoning characteristics while preserving the complexity of olympiad mathematics.
+
+Status
+
+Active Research Project
+
+The methodology, features, datasets, and models are continuously being developed and evaluated.
+
+
+# data/README.md
+
+```markdown
+# Data
+
+This directory contains the datasets and processed data used by **Olympiad Intelligence**.
+
+## Dataset Source
+
+The main external dataset used by the project is **MathNet**.
+
+MathNet contains approximately **27,817 mathematical olympiad problems**.
+
+The current development pipeline uses a **1,000-problem working sample**.
+
+## Dataset Information
+
+The converted MathNet dataset contains information including:
+
+- Problem ID
+- Problem statement
+- Solution information
+- Country
+- Competition
+- Year when available
+- Mathematical domain
+- Subtopic
+- Mathematical concepts
+- Prerequisites when available
+- Problem type
+- Language
+- Final answer when available
+- Proof requirement
+
+## Processed Files
+
+### `features.csv`
+
+Initial problem-level feature dataset used during the early feature-engineering stage.
+
+### `mathnet_problems.csv`
+
+Standardized 1,000-problem working dataset converted from MathNet.
+
+### `mathnet_features.csv`
+
+Dataset containing extracted structural features from MathNet problems and their solutions.
+
+### `mathnet_model_features.csv`
+
+Model-oriented feature dataset prepared for machine-learning experiments.
+
+### `mathnet_difficulty.csv`
+
+Output generated by the current difficulty engine.
+
+It contains:
+
+- Component difficulty signals
+- `difficulty_score`
+- Numerical difficulty
+- `difficulty_label`
+
+Current difficulty labels:
+
+- Easy
+- Medium
+- Hard
+- Very Hard
+
+These labels are generated by the project's methodology and are not official olympiad difficulty ratings.
+
+### `solution_feature_report.txt`
+
+Statistical report describing the extracted solution features.
+
+It includes:
+
+- Missing-value analysis
+- Zero-value analysis
+- Variance
+- Unique values
+- Correlations
+- Distribution statistics
+- Feature relationships
+
+## Solution Coverage
+
+For the current 1,000-problem sample:
+
+- Problems with solutions: **884**
+- Problems without solutions: **116**
+- Solution availability: **88.4%**
+
+## Extracted Solution Features
+
+The solution-analysis pipeline currently extracts:
+
+- `solution_length`
+- `solution_words`
+- `solution_paragraphs`
+- `equation_count`
+- `reasoning_indicators`
+- `proof_indicators`
+- `case_analysis`
+- `calculation_indicators`
+- `solution_major_steps`
+- `equation_density`
+- `reasoning_density`
+- `proof_density`
+- `log_solution_length`
+- `log_equation_count`
+
+## Difficulty Features
+
+The difficulty engine uses multiple signals, including:
+
+- `length_score`
+- `equation_score`
+- `reasoning_score`
+- `proof_score`
+- `case_score`
+- `steps_score`
+- `problem_type_score`
+- `domain_score`
+- `difficulty_score`
+- `difficulty`
+- `difficulty_label`
+
+## Data Quality
+
+Some fields in MathNet are naturally missing.
+
+Examples include:
+
+- Year
+- Final answer
+- Language
+- Solution information
+- Certain problem metadata
+
+Missing values are retained and handled by the processing pipeline.
+
+Processed datasets are research artifacts and may change as the project's methodology and models improve.
+
+## Reproducibility
+
+The processed datasets in this directory are generated through scripts in the `src/` directory.
+
+The intended workflow is:
+
+```text
+Raw Dataset
+    ↓
+Conversion
+    ↓
+Feature Extraction
+    ↓
+Feature Analysis
+    ↓
+Difficulty Engineering
+    ↓
+Machine Learning
