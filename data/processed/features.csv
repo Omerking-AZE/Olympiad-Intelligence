@@ -1,0 +1,21 @@
+problem_id,source,competition,year,country,domain,subtopic,difficulty,concepts,prerequisites,solution_depth,estimated_time_minutes,proof_required,reasoning_intensity,calculation_intensity,major_steps,data_type,reasoning_score,complexity_score
+SYN-001,synthetic,synthetic,2026,synthetic,Algebra,Equations,4,equations;factoring,algebraic manipulation,2,15,1,3,4,2,synthetic,2.5,9
+SYN-002,synthetic,synthetic,2026,synthetic,Algebra,Polynomials,6,polynomials;roots,algebraic manipulation,3,25,1,4,4,3,synthetic,3.5,11
+SYN-003,synthetic,synthetic,2026,synthetic,Algebra,Sequences,7,sequences;recurrence,algebra;patterns,4,30,1,5,3,4,synthetic,4.5,12
+SYN-004,synthetic,synthetic,2026,synthetic,Number Theory,Divisibility,3,divisibility;factors,integer arithmetic,2,12,1,2,3,2,synthetic,2.0,7
+SYN-005,synthetic,synthetic,2026,synthetic,Number Theory,Modular Arithmetic,6,congruence;modular arithmetic,divisibility,3,25,1,5,3,3,synthetic,4.0,11
+SYN-006,synthetic,synthetic,2026,synthetic,Number Theory,Diophantine Equations,8,diophantine equations;number theory,divisibility;gcd,5,40,1,7,3,5,synthetic,6.0,15
+SYN-007,synthetic,synthetic,2026,synthetic,Geometry,Triangles,4,triangles;angles,euclidean geometry,2,15,1,3,2,2,synthetic,2.5,7
+SYN-008,synthetic,synthetic,2026,synthetic,Geometry,Similarity,6,similarity;ratios,triangles,3,25,1,5,2,3,synthetic,4.0,10
+SYN-009,synthetic,synthetic,2026,synthetic,Geometry,Circles,7,circles;concyclicity,euclidean geometry,4,35,1,7,2,4,synthetic,5.5,13
+SYN-010,synthetic,synthetic,2026,synthetic,Combinatorics,Counting,4,counting;cases,basic combinatorics,2,15,1,3,3,2,synthetic,2.5,8
+SYN-011,synthetic,synthetic,2026,synthetic,Combinatorics,Pigeonhole Principle,6,pigeonhole;extremal reasoning,counting,3,25,1,6,2,3,synthetic,4.5,11
+SYN-012,synthetic,synthetic,2026,synthetic,Combinatorics,Invariants,9,invariants;strategy,combinatorial reasoning,5,45,1,9,1,5,synthetic,7.0,15
+SYN-013,synthetic,synthetic,2026,synthetic,Probability,Basic Probability,3,probability;counting,fractions;counting,2,12,0,2,4,2,synthetic,2.0,8
+SYN-014,synthetic,synthetic,2026,synthetic,Probability,Conditional Probability,6,conditional probability;independence,basic probability,3,25,1,5,3,3,synthetic,4.0,11
+SYN-015,synthetic,synthetic,2026,synthetic,Inequalities,AM-GM,5,AM-GM;inequalities,algebra,3,20,1,4,3,3,synthetic,3.5,10
+SYN-016,synthetic,synthetic,2026,synthetic,Inequalities,Cauchy-Schwarz,7,Cauchy-Schwarz;inequalities,algebra;inequalities,4,30,1,7,3,4,synthetic,5.5,14
+SYN-017,synthetic,synthetic,2026,synthetic,Functional Equations,Substitution,6,functional equations;substitution,algebra,3,25,1,6,2,3,synthetic,4.5,11
+SYN-018,synthetic,synthetic,2026,synthetic,Functional Equations,Injectivity and Surjectivity,8,injectivity;surjectivity,functional equations,4,35,1,8,2,4,synthetic,6.0,14
+SYN-019,synthetic,synthetic,2026,synthetic,Discrete Mathematics,Graph Theory,7,graphs;connectivity,discrete mathematics,4,30,1,7,2,4,synthetic,5.5,13
+SYN-020,synthetic,synthetic,2026,synthetic,Discrete Mathematics,Game Theory,9,game theory;strategy;invariants,combinatorics;logic,5,45,1,9,1,5,synthetic,7.0,15
