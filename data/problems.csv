@@ -1,0 +1,21 @@
+problem_id,domain,subtopic,difficulty,concepts,prerequisites,solution_depth,estimated_time_minutes,proof_required,reasoning_intensity,calculation_intensity,major_steps,data_type
+SYN-001,Algebra,Equations,4,"equations;factoring","algebraic manipulation",2,15,true,3,4,2,synthetic
+SYN-002,Algebra,Polynomials,6,"polynomials;roots","algebraic manipulation",3,25,true,4,4,3,synthetic
+SYN-003,Algebra,Sequences,7,"sequences;recurrence","algebra;patterns",4,30,true,5,3,4,synthetic
+SYN-004,Number Theory,Divisibility,3,"divisibility;factors","integer arithmetic",2,12,true,2,3,2,synthetic
+SYN-005,Number Theory,Modular Arithmetic,6,"congruence;modular arithmetic","divisibility",3,25,true,5,3,3,synthetic
+SYN-006,Number Theory,Diophantine Equations,8,"diophantine equations;number theory","divisibility;gcd",5,40,true,7,3,5,synthetic
+SYN-007,Geometry,Triangles,4,"triangles;angles","euclidean geometry",2,15,true,3,2,2,synthetic
+SYN-008,Geometry,Similarity,6,"similarity;ratios","triangles",3,25,true,5,2,3,synthetic
+SYN-009,Geometry,Circles,7,"circles;concyclicity","euclidean geometry",4,35,true,7,2,4,synthetic
+SYN-010,Combinatorics,Counting,4,"counting;cases","basic combinatorics",2,15,true,3,3,2,synthetic
+SYN-011,Combinatorics,Pigeonhole Principle,6,"pigeonhole;extremal reasoning","counting",3,25,true,6,2,3,synthetic
+SYN-012,Combinatorics,Invariants,9,"invariants;strategy","combinatorial reasoning",5,45,true,9,1,5,synthetic
+SYN-013,Probability,Basic Probability,3,"probability;counting","fractions;counting",2,12,false,2,4,2,synthetic
+SYN-014,Probability,Conditional Probability,6,"conditional probability;independence","basic probability",3,25,true,5,3,3,synthetic
+SYN-015,Inequalities,AM-GM,5,"AM-GM;inequalities","algebra",3,20,true,4,3,3,synthetic
+SYN-016,Inequalities,Cauchy-Schwarz,7,"Cauchy-Schwarz;inequalities","algebra;inequalities",4,30,true,7,3,4,synthetic
+SYN-017,Functional Equations,Substitution,6,"functional equations;substitution","algebra",3,25,true,6,2,3,synthetic
+SYN-018,Functional Equations,Injectivity and Surjectivity,8,"injectivity;surjectivity","functional equations",4,35,true,8,2,4,synthetic
+SYN-019,Discrete Mathematics,Graph Theory,7,"graphs;connectivity","discrete mathematics",4,30,true,7,2,4,synthetic
+SYN-020,Discrete Mathematics,Game Theory,9,"game theory;strategy;invariants","combinatorics;logic",5,45,true,9,1,5,synthetic
