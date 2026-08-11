@@ -39,7 +39,6 @@ The dataset includes information such as:
 
 ## Data Processing Pipeline
 
-```text
 MathNet Dataset
       ↓
 Dataset Conversion
