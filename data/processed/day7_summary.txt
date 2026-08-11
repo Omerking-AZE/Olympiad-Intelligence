@@ -1,0 +1,27 @@
+OLYMPIAD INTELLIGENCE
+DAY 7 — DIFFICULTY MODEL ANALYSIS
+
+Dataset:
+200 test problems
+
+Prediction metrics:
+MAE: 1.726
+Mean error: 0.0783
+Maximum absolute error: 10.4265
+
+The analysis examines:
+- Actual difficulty scores
+- Predicted difficulty scores
+- Prediction errors
+- Difficulty score distributions
+- Feature distributions
+- Feature correlations with difficulty
+
+The visualization stage includes:
+- Actual difficulty distribution
+- Actual vs predicted difficulty
+- Prediction error distribution
+- Individual feature distributions
+
+These analyses are exploratory and are intended to support
+future model improvement and interpretation.
