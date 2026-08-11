@@ -1,57 +1,131 @@
-# Olympiad Intelligence
+# 🧠 Olympiad Intelligence
 
-## Overview
+### An AI/ML Framework for Understanding Mathematical Olympiad Problems
 
-Olympiad Intelligence is an adaptive computational system designed to study mathematical olympiad problem difficulty and personalize problem-solving practice for individual students.
+**Olympiad Intelligence** is a research-oriented machine learning project designed to analyze mathematical olympiad problems, extract structural and linguistic features from their statements and solutions, estimate problem difficulty, and eventually develop intelligent systems for mathematical problem classification, difficulty prediction, and adaptive problem recommendation.
 
-The project combines mathematical problem classification, machine learning, student performance analysis, and adaptive recommendation.
+The long-term goal is to build an intelligent mathematical problem analysis system that can understand not only *what topic a problem belongs to*, but also *why it is difficult* and *what type of reasoning is required to solve it*.
 
-## Motivation
+---
 
-After years of participating in mathematics competitions, I became interested in a question beyond simply solving problems:
+## 🚀 Project Status
 
-Why are some mathematical problems significantly harder for different students, and can computational models help identify these differences?
+| Stage | Status |
+|---|---|
+| Project architecture | ✅ Complete |
+| Initial dataset pipeline | ✅ Complete |
+| Mathematical taxonomy | ✅ Complete |
+| Feature engineering | ✅ Complete |
+| Baseline difficulty model | ✅ Complete |
+| MathNet integration | ✅ Complete |
+| Solution feature extraction | ✅ Complete |
+| Difficulty engine | ✅ Complete |
+| ML difficulty prediction | 🔄 In Progress |
+| Automated problem analysis | ⏳ Planned |
+| Adaptive recommendation system | ⏳ Planned |
+| Student skill profiling | ⏳ Planned |
 
-This project aims to explore that question.
+**Current milestone: Day 4 — MathNet Integration & Difficulty Engine**
 
-## Main Goals
+---
 
-- Build a structured dataset of mathematical olympiad problem metadata
-- Classify problems by mathematical topic and required concepts
-- Investigate whether machine learning can predict problem difficulty
-- Model individual student strengths and weaknesses
-- Develop an adaptive problem recommendation system
-- Analyze common reasoning errors
-- Evaluate whether personalized practice improves performance
+# 🎯 Motivation
 
-## Research Questions
+Mathematical olympiad problems are fundamentally different from conventional educational exercises.
 
-1. Can machine learning predict mathematical olympiad problem difficulty?
+Two problems may belong to the same mathematical domain while requiring completely different levels of reasoning.
+
+For example, difficulty can depend on:
+
+- conceptual depth
+- number of reasoning steps
+- proof requirements
+- case analysis
+- algebraic manipulation
+- solution length
+- number of equations
+- problem type
+- mathematical domain
+- interaction between multiple concepts
+
+Traditional difficulty labels often fail to capture these differences.
+
+This project explores whether these characteristics can be quantified and combined to create a computational model of olympiad problem difficulty.
+
+---
+
+# 🔬 Research Questions
+
+The project investigates several questions:
+
+1. Can mathematical olympiad problem difficulty be estimated from structural features?
+
 2. Which characteristics of a problem are most strongly associated with difficulty?
-3. Can student performance be represented as a mathematical skill profile?
-4. Can adaptive problem recommendation improve training efficiency?
 
-## Planned Components
+3. How does solution structure correlate with problem complexity?
 
-- Problem Dataset
-- Difficulty Prediction
-- Mathematical Skill Graph
-- Student Performance Model
-- Adaptive Recommendation Engine
-- Reasoning Analysis
-- Progress Tracking
+4. Can mathematical domains and problem types be used as predictive signals?
 
-## Technology
+5. Can machine learning predict the difficulty of an unseen olympiad problem?
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter
-- FastAPI
-- Streamlit
-- Git/GitHub
+6. Can mathematical problems be automatically classified by domain and subtopic?
 
-## Status
+7. Can solution structure provide useful information about the reasoning required by a problem?
 
-🚧 Project initiated — Day 1
+8. Can these models eventually support personalized olympiad training?
+
+---
+
+# 🏗️ Current Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │ Mathematical        │
+                    │ Olympiad Problems    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Data Collection &    │
+                    │ Standardization      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Mathematical        │
+                    │ Taxonomy             │
+                    │                      │
+                    │ Algebra              │
+                    │ Geometry             │
+                    │ Number Theory       │
+                    │ Combinatorics       │
+                    │ etc.                │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Feature Engineering  │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                ▼                             ▼
+       ┌─────────────────┐          ┌─────────────────┐
+       │ Problem Features │          │ Solution Features│
+       └────────┬────────┘          └────────┬────────┘
+                │                            │
+                └──────────────┬─────────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │ Difficulty Engine   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+              ┌────────────────────────────────┐
+              │ Easy │ Medium │ Hard │ Very Hard│
+              └────────────────────────────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ ML Prediction Model │
+                    │       (Next)         │
+                    └─────────────────────┘
