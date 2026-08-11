@@ -1,0 +1,16 @@
+{
+    "student_id": "TEST-001",
+    "student_name": "Test Student",
+    "problems_attempted": 10,
+    "problems_solved": 8,
+    "algebra": 91,
+    "geometry": 84,
+    "number_theory": 88,
+    "discrete_mathematics": 79,
+    "proof": 92,
+    "reasoning": 89,
+    "calculation": 76,
+    "case_analysis": 81,
+    "overall_rating": 85,
+    "tier": "Advanced"
+}
