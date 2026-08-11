@@ -1,0 +1,162 @@
+======================================================================
+OLYMPIAD INTELLIGENCE - MATHNET DATA QUALITY REPORT
+======================================================================
+
+Total problems: 1000
+Total columns: 22
+
+======================================================================
+1. DUPLICATE PROBLEM IDS
+======================================================================
+Duplicate IDs: 0
+
+======================================================================
+2. DUPLICATE PROBLEM TEXT
+======================================================================
+Duplicate problem texts: 0
+
+======================================================================
+3. MISSING VALUES
+======================================================================
+year: 1000 (100.0%)
+calculation_intensity: 1000 (100.0%)
+prerequisites: 1000 (100.0%)
+solution_depth: 1000 (100.0%)
+estimated_time_minutes: 1000 (100.0%)
+difficulty: 1000 (100.0%)
+reasoning_intensity: 1000 (100.0%)
+major_steps: 1000 (100.0%)
+language: 638 (63.8%)
+final_answer: 374 (37.4%)
+concepts: 18 (1.8%)
+competition: 14 (1.4%)
+subtopic: 1 (0.1%)
+source: 0 (0.0%)
+domain: 0 (0.0%)
+country: 0 (0.0%)
+problem_id: 0 (0.0%)
+difficulty_source: 0 (0.0%)
+proof_required: 0 (0.0%)
+problem_type: 0 (0.0%)
+data_type: 0 (0.0%)
+problem_text: 0 (0.0%)
+
+======================================================================
+4. DOMAIN DISTRIBUTION
+======================================================================
+Geometry: 286 (28.6%)
+Algebra: 209 (20.9%)
+Discrete Mathematics: 144 (14.4%)
+Number Theory: 89 (8.9%)
+Algebra | Number Theory: 78 (7.8%)
+Algebra | Discrete Mathematics: 43 (4.3%)
+Discrete Mathematics | Geometry: 36 (3.6%)
+Discrete Mathematics | Number Theory: 35 (3.5%)
+Algebra | Geometry: 34 (3.4%)
+Algebra | Discrete Mathematics | Number Theory: 13 (1.3%)
+Statistics: 9 (0.9%)
+Algebra | Discrete Mathematics | Geometry: 6 (0.6%)
+Precalculus: 5 (0.5%)
+Geometry | Number Theory: 5 (0.5%)
+Calculus: 3 (0.3%)
+Discrete Mathematics | Geometry | Number Theory: 2 (0.2%)
+Calculus | Precalculus: 2 (0.2%)
+Math Word Problems: 1 (0.1%)
+
+======================================================================
+5. PROBLEM TYPE DISTRIBUTION
+======================================================================
+proof and answer: 530 (53.0%)
+proof only: 377 (37.7%)
+final answer only: 56 (5.6%)
+MCQ: 37 (3.7%)
+
+======================================================================
+6. PROOF REQUIREMENT
+======================================================================
+True: 907 (90.7%)
+False: 93 (9.3%)
+
+======================================================================
+7. COUNTRY DISTRIBUTION
+======================================================================
+United States: 152
+Romania: 68
+Brazil: 43
+Slovenia: 36
+France: 34
+Philippines: 34
+Saudi Arabia: 31
+China: 26
+Ukraine: 26
+Belarus: 24
+Baltic Way: 23
+Argentina: 22
+Soviet Union: 22
+Mongolia: 21
+Switzerland: 21
+Bulgaria: 19
+Croatia: 19
+Ireland: 19
+Italy: 19
+Netherlands: 19
+
+======================================================================
+8. TOP COMPETITIONS
+======================================================================
+Harvard-MIT Mathematics Tournament: 28
+Brazilian Mathematical Olympiad: 16
+PRÉPARATION OLYMPIQUE FRANÇAISE DE MATHÉMATIQUES: 11
+HMMT February: 10
+Iranian Mathematical Olympiad: 9
+Baltic Way: 9
+ASU: 8
+CHKMO: 8
+SAUDI ARABIAN MATHEMATICAL COMPETITIONS: 8
+INMO: 7
+Mongolian Mathematical Olympiad: 7
+Canadian Mathematical Olympiad: 6
+CroatianCompetitions2011: 6
+SMO Finalrunde: 6
+66th ROMANIAN MATHEMATICAL OLYMPIAD: 6
+Austrian Mathematical Olympiad: 6
+Belarusian Mathematical Olympiad: 6
+APMO: 5
+Préparation Olympique Française de Mathématiques: 5
+Ireland: 5
+
+======================================================================
+9. LANGUAGE DISTRIBUTION
+======================================================================
+nan: 638
+English: 309
+English; Russian: 12
+Chinese; English: 9
+Spanish: 8
+Español: 5
+Mongolian: 4
+español: 4
+English, Arabic: 3
+Russian: 3
+Vietnamese: 2
+Macedonian, English: 2
+German: 1
+
+======================================================================
+10. MULTI-TOPIC ANALYSIS
+======================================================================
+Problems with multiple subtopics: 412 (41.2%)
+
+======================================================================
+11. PROBLEM TEXT LENGTH
+======================================================================
+Minimum characters: 36
+Maximum characters: 1401
+Mean characters: 311.8
+Median characters: 277.0
+
+======================================================================
+12. FINAL ANSWER COVERAGE
+======================================================================
+Problems with final answer: 626 (62.6%)
+Missing final answers: 374
