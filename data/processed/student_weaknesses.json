@@ -1,0 +1,66 @@
+{
+    "algebra": {
+        "rating": 94,
+        "confidence": 0.1,
+        "recent_score": 93.5,
+        "failure_rate": 0.0,
+        "priority": 0.0,
+        "classification": "NONE"
+    },
+    "geometry": {
+        "rating": 72,
+        "confidence": 0.1,
+        "recent_score": 72.0,
+        "failure_rate": 50.0,
+        "priority": 8.52,
+        "classification": "LOW"
+    },
+    "number_theory": {
+        "rating": 42,
+        "confidence": 0.05,
+        "recent_score": 42.0,
+        "failure_rate": 100.0,
+        "priority": 27.04,
+        "classification": "MEDIUM"
+    },
+    "discrete_mathematics": {
+        "rating": 0,
+        "confidence": 0.0,
+        "recent_score": null,
+        "failure_rate": null,
+        "priority": 0,
+        "classification": "NOT_ENOUGH_DATA"
+    },
+    "proof": {
+        "rating": 83,
+        "confidence": 0.25,
+        "recent_score": null,
+        "failure_rate": null,
+        "priority": 0.0,
+        "classification": "NONE"
+    },
+    "reasoning": {
+        "rating": 81,
+        "confidence": 0.25,
+        "recent_score": null,
+        "failure_rate": null,
+        "priority": 0.0,
+        "classification": "NONE"
+    },
+    "calculation": {
+        "rating": 74,
+        "confidence": 0.25,
+        "recent_score": null,
+        "failure_rate": null,
+        "priority": 2.29,
+        "classification": "LOW"
+    },
+    "case_analysis": {
+        "rating": 78,
+        "confidence": 0.25,
+        "recent_score": null,
+        "failure_rate": null,
+        "priority": 0.77,
+        "classification": "LOW"
+    }
+}

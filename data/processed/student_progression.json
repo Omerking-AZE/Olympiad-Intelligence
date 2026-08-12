@@ -1,0 +1,82 @@
+[
+    {
+        "attempts": 3,
+        "solved": 2,
+        "success_rate": 66.67,
+        "measured_skill_average": 59.76,
+        "hard_problem_success": 0,
+        "experience_score": 2.55,
+        "overall_rating": 54,
+        "tier": "BEGINNER",
+        "skills": {
+            "algebra": 68.0,
+            "geometry": 70.0,
+            "number_theory": 45.0,
+            "discrete_mathematics": 0,
+            "proof": 56.0,
+            "reasoning": 60.0,
+            "calculation": 63.67,
+            "case_analysis": 55.67
+        }
+    },
+    {
+        "attempts": 6,
+        "solved": 5,
+        "success_rate": 83.33,
+        "measured_skill_average": 65.26,
+        "hard_problem_success": 0,
+        "experience_score": 5.1,
+        "overall_rating": 56,
+        "tier": "BEGINNER",
+        "skills": {
+            "algebra": 71.0,
+            "geometry": 73.0,
+            "number_theory": 56.5,
+            "discrete_mathematics": 0,
+            "proof": 62.83,
+            "reasoning": 66.17,
+            "calculation": 67.17,
+            "case_analysis": 60.17
+        }
+    },
+    {
+        "attempts": 9,
+        "solved": 8,
+        "success_rate": 88.89,
+        "measured_skill_average": 68.69,
+        "hard_problem_success": 100.0,
+        "experience_score": 7.65,
+        "overall_rating": 67,
+        "tier": "DEVELOPING",
+        "skills": {
+            "algebra": 74.0,
+            "geometry": 76.0,
+            "number_theory": 56.5,
+            "discrete_mathematics": 72.0,
+            "proof": 67.0,
+            "reasoning": 70.44,
+            "calculation": 69.33,
+            "case_analysis": 64.22
+        }
+    },
+    {
+        "attempts": 12,
+        "solved": 10,
+        "success_rate": 83.33,
+        "measured_skill_average": 69.94,
+        "hard_problem_success": 75.0,
+        "experience_score": 10.2,
+        "overall_rating": 65,
+        "tier": "DEVELOPING",
+        "skills": {
+            "algebra": 76.5,
+            "geometry": 76.0,
+            "number_theory": 57.0,
+            "discrete_mathematics": 75.0,
+            "proof": 68.0,
+            "reasoning": 71.83,
+            "calculation": 70.0,
+            "case_analysis": 65.17
+        }
+    }
+]

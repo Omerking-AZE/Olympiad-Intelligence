@@ -1,0 +1,13 @@
+problem_id,target_domain,difficulty_score,student_skill,recommendation_skill,difficulty_gap,recommendation_score,training_zone,skill_unknown,problem_type
+MATHNET-0457,Discrete Mathematics,61.182500000000005,0,55,6.1825000000000045,47.09,True,True,proof only
+MATHNET-02vo,Discrete Mathematics,60.82750000000001,0,55,5.827500000000008,47.09,True,True,proof and answer
+MATHNET-05zy,Discrete Mathematics,60.7975,0,55,5.797499999999999,47.07,True,True,proof and answer
+MATHNET-0l5r,Number Theory,48.1025,42,42,6.102499999999999,54.31,True,False,proof and answer
+MATHNET-023c,Number Theory,48.1275,42,42,6.127499999999998,54.29,True,False,proof and answer
+MATHNET-09qh,Number Theory,48.14,42,42,6.140000000000001,54.27,True,False,proof and answer
+MATHNET-0cwp,Geometry,77.915,72,72,5.915000000000006,37.82,True,False,proof and answer
+MATHNET-06xr,Geometry,78.41000000000001,72,72,6.410000000000011,37.53,True,False,proof only
+MATHNET-0b7n,Geometry,78.67999999999999,72,72,6.679999999999993,37.29,True,False,proof and answer
+MATHNET-06op,Algebra,97.90166666666669,94,94,3.901666666666685,23.91,True,False,proof and answer
+MATHNET-05e9,Algebra,97.205,94,94,3.2049999999999983,23.28,True,False,proof and answer
+MATHNET-06y2,Algebra,96.895,94,94,2.894999999999996,23.01,False,False,proof and answer
