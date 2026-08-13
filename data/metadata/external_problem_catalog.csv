@@ -1,0 +1,1631 @@
+competition,year,problem_number,title,problem_id_external,problem_text,source,source_url
+IMO,1959,1,IMO 1959 P1,IMO-1959-1,Prove that the fraction \(\frac{21n+4}{14n+3}\) is irreducible for every natural number \(n\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_1
+IMO,1959,2,IMO 1959 P2,IMO-1959-2,"For what real values of \(x\) is
+
+\[
+\sqrt{x+\sqrt{2x-1}} + \sqrt{x-\sqrt{2x-1}} = A,
+\]
+
+given (a) \(A=\sqrt{2}\), (b) \(A=1\), (c) \(A=2\), where only non-negative real numbers are admitted for square roots?",AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_2
+IMO,1959,3,IMO 1959 P3,IMO-1959-3,"Let \(a,b,c\) be real numbers. Consider the quadratic equation in \(\cos{x}\) :
+
+\[
+a\cos ^{2}x + b\cos{x} + c = 0.
+\]
+
+Using the numbers \(a,b,c\), form a quadratic equation in \(\cos{2x}\), whose roots are the same as those of the original equation. Compare the equations in \(\cos{x}\) and \(\cos{2x}\) for \(a=4, b=2, c=-1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_3
+IMO,1959,4,IMO 1959 P4,IMO-1959-4,Construct a right triangle with a given hypotenuse \(c\) such that the median drawn to the hypotenuse is the geometric mean of the two legs of the triangle.,AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_4
+IMO,1959,5,IMO 1959 P5,IMO-1959-5,"An arbitrary point \(M\) is selected in the interior of the segment \(AB\). The squares \(AMCD\) and \(MBEF\) are constructed on the same side of \(AB\), with the segments \(AM\) and \(MB\) as their respective bases. The circles about these squares, with respective centers \(P\) and \(Q\), intersect at \(M\) and also at another point \(N\). Let \(N'\) denote the point of intersection of the straight lines \(AF\) and \(BC\).
+
+(a) Prove that the points \(N\) and \(N'\) coincide.
+
+(b) Prove that the straight lines \(MN\) pass through a fixed point \(S\) independent of the choice of \(M\).
+
+(c) Find the locus of the midpoints of the segments \(PQ\) as \(M\) varies between \(A\) and \(B\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_5
+IMO,1959,6,IMO 1959 P6,IMO-1959-6,"Two planes, \(P\) and \(Q\), intersect along the line \(p\). The point \(A\) is in the plane \(P\), and the point \({C}\) is in the plane \(Q\); neither of these points lies on the straight line \(p\). Construct an isosceles trapezoid \(ABCD\) (with \(AB\) parallel to \(DC\)) in which a circle can be inscribed, and with vertices \(B\) and \(D\) lying in the planes \(P\) and \(Q\), respectively.",AoPS,https://artofproblemsolving.com/wiki/index.php/1959_IMO_Problems/Problem_6
+IMO,1960,1,IMO 1960 P1,IMO-1960-1,"Determine all three-digit numbers \(N\) having the property that \(N\) is divisible by 11, and \(\dfrac{N}{11}\) is equal to the sum of the squares of the digits of \(N\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_1
+IMO,1960,2,IMO 1960 P2,IMO-1960-2,"For what values of the variable \(x\) does the following inequality hold:
+
+\[
+\dfrac{4x^2}{(1 - \sqrt {2x + 1})^2} < 2x + 9 \ ?
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_2
+IMO,1960,3,IMO 1960 P3,IMO-1960-3,"In a given right triangle \(ABC\), the hypotenuse \(BC\), of length \(a\), is divided into \(n\) equal parts (\(n\) an odd integer). Let \(\alpha\) be the acute angle subtending, from \(A\), that segment which contains the midpoint of the hypotenuse. Let \(h\) be the length of the altitude to the hypotenuse of the triangle. Prove that:
+
+\[
+\tan{\alpha}=\frac{4nh}{(n^2-1)a}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_3
+IMO,1960,4,IMO 1960 P4,IMO-1960-4,"Construct triangle \(ABC\), given \(h_a\), \(h_b\) (the altitudes from \(A\) and \(B\)), and \(m_a\), the median from vertex \(A\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_4
+IMO,1960,5,IMO 1960 P5,IMO-1960-5,"Consider the cube \(ABCDA'B'C'D'\) (with face \(ABCD\) directly above face \(A'B'C'D'\)).
+
+a) Find the locus of the midpoints of the segments \(XY\), where \(X\) is any point of \(AC\) and \(Y\) is any point of \(B'D'\);
+
+b) Find the locus of points \(Z\) which lie on the segment \(XY\) of part a) with \(ZY = 2XZ\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_5
+IMO,1960,6,IMO 1960 P6,IMO-1960-6,"Consider a cone of revolution with an inscribed sphere tangent to the base of the cone. A cylinder is circumscribed about this sphere so that one of its bases lies in the base of the cone. Let \(V_1\) be the volume of the cone and \(V_2\) be the volume of the cylinder.
+
+a) Prove that \(V_1 \neq V_2\);
+
+b) Find the smallest number \(k\) for which \(V_1 = kV_2\); for this case, construct the angle subtended by a diamter of the base of the cone at the vertex of the cone.",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_6
+IMO,1960,7,IMO 1960 P7,IMO-1960-7,"An isosceles trapezoid with bases \(a\) and \(c\) and altitude \(h\) is given.
+
+a) On the axis of symmetry of this trapezoid, find all points \(P\) such that both legs of the trapezoid subtend right angles at \(P\);
+
+b) Calculate the distance of \(P\) from either base;
+
+c) Determine under what conditions such points \(P\) actually exist. Discuss various cases that might arise.",AoPS,https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_7
+IMO,1961,1,IMO 1961 P1,IMO-1961-1,"Solve the system of equations:
+
+\[
+\begin{matrix} \quad x + y + z \!\!\! &= a \; \, \\ x^2 +y^2+z^2 \!\!\! &=b^2 \\ \qquad \qquad xy \!\!\!  &= z^2 \end{matrix}
+\]
+
+where \(a\) and \(b\) are constants. Give the conditions that \(a\) and \(b\) must satisfy so that \(x, y, z\) (the solutions of the system) are distinct positive numbers.",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_1
+IMO,1961,2,IMO 1961 P2,IMO-1961-2,"Let \(a\), \(b\), and \(c\) be the lengths of a triangle whose area is S. Prove that
+
+\[
+a^2 + b^2 + c^2 \ge 4S\sqrt{3}
+\]
+
+In what case does equality hold?",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_2
+IMO,1961,3,IMO 1961 P3,IMO-1961-3,"Solve the equation
+
+\[
+\cos^n{x} - \sin^n{x} = 1
+\]
+
+where \(n\) is a given positive integer.",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_3
+IMO,1961,4,IMO 1961 P4,IMO-1961-4,"In the interior of triangle \(P_1P_2P_3\) a point \(P\) is given. Let \(Q_1,Q_2,Q_3\) be the intersections of \(PP_1, PP_2,PP_3\) with the opposing edges of triangle \(P_1P_2P_3\). Prove that among the ratios \(\frac{PP_1}{PQ_1},\frac{PP_2}{PQ_2},\frac{PP_3}{PQ_3}\) there exists one not larger than \(2\) and one not smaller than \(2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_4
+IMO,1961,5,IMO 1961 P5,IMO-1961-5,"Construct a triangle ABC if the following elements are given: \(AC = b, AB = c\), and \(\angle AMB = \omega \left(\omega < 90^{\circ}\right)\) where M is the midpoint of BC. Prove that the construction has a solution if and only if
+
+\[
+b \tan{\frac{\omega}{2}} \le c < b
+\]
+
+In what case does equality hold?",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_5
+IMO,1961,6,IMO 1961 P6,IMO-1961-6,"Consider a plane \(\epsilon\) and three non-collinear points \(A,B,C\) on the same side of \(\epsilon\); suppose the plane determined by these three points is not parallel to \(\epsilon\). In plane \(\epsilon\) take three arbitrary points \(A',B',C'\). Let \(L,M,N\) be the midpoints of segments \(AA', BB', CC'\); Let \(G\) be the centroid of the triangle \(LMN\). (We will not consider positions of the points \(A', B', C'\) such that the points \(L,M,N\) do not form a triangle.) What is the locus of point \(G\) as \(A', B', C'\) range independently over the plane \(\epsilon\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1961_IMO_Problems/Problem_6
+IMO,1962,1,IMO 1962 P1,IMO-1962-1,"Find the smallest natural number \(n\) which has the following properties:
+
+(a) Its decimal representation has 6 as the last digit.
+
+(b) If the last digit 6 is erased and placed in front of the remaining digits, the resulting number is four times as large as the original number \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_1
+IMO,1962,2,IMO 1962 P2,IMO-1962-2,"Determine all real numbers \(x\) which satisfy the inequality:
+
+\[
+\sqrt{\sqrt{3-x}-\sqrt{x+1}}>\dfrac{1}{2}
+\]
+
+(Note that the problem as written in the official PDF https://www.imo-official.org/year_info.aspx?year=1962 does not have the outer \(\sqrt{\ }\))",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_2
+IMO,1962,3,IMO 1962 P3,IMO-1962-3,"Consider the cube \(ABCDA'B'C'D'\)(\(ABCD\) and \(A'B'C'D'\) are the upper and lower bases, respectively, and edges \(AA'\), \(BB'\), \(CC'\), \(DD'\) are parallel). The point \(X\) moves at constant speed along the perimeter of the square \(ABCD\) in the direction \(ABCDA\), and the point \(Y\) moves at the same rate along the perimeter of the square \(B'C'CB\) in the direction \(B'C'CBB'\). Points \(X\) and \(Y\) begin their motion at the same instant from the starting positions \(A\) and \(B'\), respectively. Determine and draw the locus of the midpoints of the segments \(XY\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_3
+IMO,1962,4,IMO 1962 P4,IMO-1962-4,Solve the equation \(\cos^2{x}+\cos^2{2x}+\cos^2{3x}=1\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_4
+IMO,1962,5,IMO 1962 P5,IMO-1962-5,"On the circle \(K\) there are given three distinct points \(A,B,C\). Construct (using only straightedge and compass) a fourth point \(D\) on \(K\) such that a circle can be inscribed in the quadrilateral thus obtained.",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_5
+IMO,1962,6,IMO 1962 P6,IMO-1962-6,"Consider an isosceles triangle. Let \(r\) be the radius of its circumscribed circle and \(\rho\) the radius of its inscribed circle. Prove that the distance \(d\) between the centers of these two circles is
+
+\[
+d=\sqrt{r(r-2\rho)}
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_6
+IMO,1962,7,IMO 1962 P7,IMO-1962-7,"The tetrahedron \(SABC\) has the following property: there exist five spheres, each tangent to the edges \(SA, SB, SC, BC, CA, AB\), or to their extensions.
+
+(a) Prove that the tetrahedron \(SABC\) is regular.
+
+(b) Prove conversely that for every regular tetrahedron five such spheres exist.",AoPS,https://artofproblemsolving.com/wiki/index.php/1962_IMO_Problems/Problem_7
+IMO,1963,1,IMO 1963 P1,IMO-1963-1,"Find all real roots of the equation
+
+\[
+\sqrt{x^2-p}+2\sqrt{x^2-1}=x
+\]
+
+,
+
+where \(p\) is a real parameter.",AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_1
+IMO,1963,2,IMO 1963 P2,IMO-1963-2,"Point \(A\) and segment \(BC\) are given. Determine the locus of points in space which are the vertices of right angles with one side passing through \(A\), and the other side intersecting the segment \(BC\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_2
+IMO,1963,3,IMO 1963 P3,IMO-1963-3,"In an \(n\)-gon all of whose interior angles are equal, the lengths of consecutive sides satisfy the relation
+
+\[
+a_1\ge a_2\ge \cdots \ge a_n.
+\]
+
+Prove that \(a_1=a_2=\cdots = a_n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_3
+IMO,1963,4,IMO 1963 P4,IMO-1963-4,"Find all solutions \(x_1,x_2,x_3,x_4,x_5\) of the system
+
+\[
+\begin{eqnarray*} x_5+x_2&=&yx_1\\ x_1+x_3&=&yx_2\\ x_2+x_4&=&yx_3\\ x_3+x_5&=&yx_4\\ x_4+x_1&=&yx_5,\end{eqnarray*}
+\]
+
+where \(y\) is a parameter.",AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_4
+IMO,1963,5,IMO 1963 P5,IMO-1963-5,Prove that \(\cos{\frac{\pi}{7}}-\cos{\frac{2\pi}{7}}+\cos{\frac{3\pi}{7}}=\frac{1}{2}\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_5
+IMO,1963,6,IMO 1963 P6,IMO-1963-6,"Five students, \(A,B,C,D,E\), took part in a contest. One prediction was that the contestants would finish in the order \(ABCDE\). This prediction was very poor. In fact no contestant finished in the position predicted, and no two contestants predicted to finish consecutively actually did so. A second prediction had the contestants finishing in the order \(DAECB\). This prediction was better. Exactly two of the contestants finished in the places predicted, and two disjoint pairs of students predicted to finish consecutively actually did so. Determine the order in which the contestants finished.",AoPS,https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_6
+IMO,1964,1,IMO 1964 P1,IMO-1964-1,"(a) Find all positive integers \(n\) for which \(2^n-1\) is divisible by \(7\).
+
+(b) Prove that there is no positive integer \(n\) for which \(2^n+1\) is divisible by \(7\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_1
+IMO,1964,2,IMO 1964 P2,IMO-1964-2,"Suppose \(a, b, c\) are the sides of a triangle. Prove that
+
+\[
+a^2(b+c-a)+b^2(c+a-b)+c^2(a+b-c)\le{3abc}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_2
+IMO,1964,3,IMO 1964 P3,IMO-1964-3,"A circle is inscribed in a triangle \(ABC\) with sides \(a,b,c\). Tangents to the circle parallel to the sides of the triangle are contructed. Each of these tangents cuts off a triangle from \(\triangle ABC\). In each of these triangles, a circle is inscribed. Find the sum of the areas of all four inscribed circles (in terms of \(a,b,c\)).",AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_3
+IMO,1964,4,IMO 1964 P4,IMO-1964-4,Seventeen people correspond by mail with one another - each one with all the rest. In their letters only three different topics are discussed. Each pair of correspondents deals with only one of these topics. Prove that there are at least three people who write to each other about the same topic.,AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_4
+IMO,1964,5,IMO 1964 P5,IMO-1964-5,"Suppose five points in a plane are situated so that no two of the straight lines joining them are parallel, perpendicular, or coincident. From each point perpendiculars are drawn to all the lines joining the other four points. Determine the maximum number of intersections that these perpendiculars can have.",AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_5
+IMO,1964,6,IMO 1964 P6,IMO-1964-6,"In tetrahedron \(ABCD\), vertex \(D\) is connected with \(D_0\), the centroid of \(\triangle ABC\). Lines parallel to \(DD_0\) are drawn through \(A,B\) and \(C\). These lines intersect the planes \(BCD, CAD\) and \(ABD\) in points \(A_1, B_1,\) and \(C_1\), respectively. Prove that the volume of \(ABCD\) is one third the volume of \(A_1B_1C_1D_0\). Is the result true if point \(D_o\) is selected anywhere within \(\triangle ABC\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_6
+IMO,1965,1,IMO 1965 P1,IMO-1965-1,"Determine all values \(x\) in the interval \(0\leq x\leq 2\pi\) which satisfy the inequality
+
+\[
+2\cos x \leq \left| \sqrt{1+\sin 2x} - \sqrt{1-\sin 2x } \right| \leq \sqrt{2}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_1
+IMO,1965,2,IMO 1965 P2,IMO-1965-2,"Consider the system of equations
+
+\[
+a_{11}x_1 + a_{12}x_2 + a_{13}x_3 = 0
+\]
+
+\[
+a_{21}x_1 + a_{22}x_2 + a_{23}x_3 = 0
+\]
+
+\[
+a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = 0
+\]
+
+with unknowns \(x_1\), \(x_2\), \(x_3\). The coefficients satisfy the conditions:
+
+(a) \(a_{11}\), \(a_{22}\), \(a_{33}\) are positive numbers;
+
+(b) the remaining coefficients are negative numbers;
+
+(c) in each equation, the sum of the coefficients is positive.
+
+Prove that the given system has only the solution \(x_1 = x_2 = x_3 = 0\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_2
+IMO,1965,3,IMO 1965 P3,IMO-1965-3,"Given the tetrahedron \(ABCD\) whose edges \(AB\) and \(CD\) have lengths \(a\) and \(b\) respectively. The distance between the skew lines \(AB\) and \(CD\) is \(d\), and the angle between them is \(\omega\). Tetrahedron \(ABCD\) is divided into two solids by plane \(\varepsilon\), parallel to lines \(AB\) and \(CD\). The ratio of the distances of \(\varepsilon\) from \(AB\) and \(CD\) is equal to \(k\). Compute the ratio of the volumes of the two solids obtained.",AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_3
+IMO,1965,4,IMO 1965 P4,IMO-1965-4,"Find all sets of four real numbers \(x_1\), \(x_2\), \(x_3\), \(x_4\) such that the sum of any one and the product of the other three is equal to \(2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_4
+IMO,1965,5,IMO 1965 P5,IMO-1965-5,"Consider \(\triangle OAB\) with acute angle \(AOB\). Through a point \(M \neq O\) perpendiculars are drawn to \(OA\) and \(OB\), the feet of which are \(P\) and \(Q\) respectively. The point of intersection of the altitudes of \(\triangle OPQ\) is \(H\). What is the locus of \(H\) if \(M\) is permitted to range over (a) the side \(AB\), (b) the interior of \(\triangle OAB\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_5
+IMO,1965,6,IMO 1965 P6,IMO-1965-6,In a plane a set of \(n\) points (\(n\geq 3\)) is given. Each pair of points is connected by a segment. Let \(d\) be the length of the longest of these segments. We define a diameter of the set to be any connecting segment of length \(d\). Prove that the number of diameters of the given set is at most \(n\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1965_IMO_Problems/Problem_6
+IMO,1966,1,IMO 1966 P1,IMO-1966-1,"In a mathematical contest, three problems, \(A\), \(B\), and \(C\) were posed. Among the participants there were \(25\) students who solved at least one problem each. Of all the contestants who did not solve problem \(A\), the number who solved \(B\) was twice the number who solved \(C\). The number of students who solved only problem \(A\) was one more than the number of students who solved \(A\) and at least one other problem. Of all students who solved just one problem, half did not solve problem \(A\). How many students solved only problem \(B\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_1
+IMO,1966,2,IMO 1966 P2,IMO-1966-2,"Let \(a\), \(b\), and \(c\) be the lengths of the sides of a triangle, and \(\alpha,\beta,\gamma\) respectively, the angles opposite these sides. Prove that if
+
+\[
+a+b=\tan{\frac{\gamma}{2}}(a\tan{\alpha}+b\tan{\beta}),
+\]
+
+the triangle is isosceles.",AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_2
+IMO,1966,3,IMO 1966 P3,IMO-1966-3,Prove that the sum of the distances of the vertices of a regular tetrahedron from the center of its circumscribed sphere is less than the sum of the distances of these vertices from any other point in space.,AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_3
+IMO,1966,4,IMO 1966 P4,IMO-1966-4,"Prove that for every natural number \(n\), and for every real number \(x \neq \frac{k\pi}{2^t}\) (\(t=0,1, \dots, n\); \(k\) any integer)
+
+\[
+\frac{1}{\sin{2x}}+\frac{1}{\sin{4x}}+\dots+\frac{1}{\sin{2^nx}}=\cot{x}-\cot{2^nx}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_4
+IMO,1966,5,IMO 1966 P5,IMO-1966-5,"Solve the system of equations
+
+\[
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |a_1 - a_2| x_2 + |a_1 - a_3| x_3 + |a_1 - a_4| x_4 = 1 \\ |a_2 - a_1| x_1 + \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |a_2 - a_3| x_3 + |a_2 - a_4| x_4 = 1 \\ |a_3 - a_1| x_1 + |a_3 - a_2| x_2 + \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |a_3 - a_4| x_4 = 1 \\ |a_4 - a_1| x_1 + |a_4 - a_2| x_2 + |a_4 - a_3| x_3 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = 1
+\]
+
+where \(a_1, a_2, a_3, a_4\) are four different real numbers.",AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_5
+IMO,1966,6,IMO 1966 P6,IMO-1966-6,"In the interior of sides \(BC, CA, AB\) of triangle \(ABC\), any points \(K, L,M\), respectively, are selected. Prove that the area of at least one of the triangles \(AML, BKM, CLK\) is less than or equal to one quarter of the area of triangle \(ABC\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1966_IMO_Problems/Problem_6
+IMO,1967,1,IMO 1967 P1,IMO-1967-1,"Let \(ABCD\) be a parallelogram with side lengths \(AB = a\), \(AD = 1\), and with \(\angle BAD = \alpha\). If \(\Delta ABD\) is acute, prove that the four circles of radius \(1\) with centers \(A\), \(B\), \(C\), \(D\) cover the parallelogram if and only if
+
+\(a\leq \cos \alpha+\sqrt{3}\sin \alpha\) \(\ \ \ \ \ \ \ \ \ \ (1)\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_1
+IMO,1967,2,IMO 1967 P2,IMO-1967-2,"Prove that if one and only one edge of a tetrahedron is greater than \(1\), then its volume is \(\le \frac{1}{8}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_2
+IMO,1967,3,IMO 1967 P3,IMO-1967-3,"Let \(k, m, n\) be natural numbers such that \(m+k+1\) is a prime greater than \(n+1.\) Let \(c_s=s(s+1).\) Prove that the product
+
+\[
+(c_{m+1}-c_k)(c_{m+2}-c_k)\cdots (c_{m+n}-c_k)
+\]
+
+is divisible by the product \(c_1c_2\cdots c_n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_3
+IMO,1967,4,IMO 1967 P4,IMO-1967-4,"Let \(A_0B_0C_0\) and \(A_1B_1C_1\) be any two acute-angled triangles. Consider all triangles \(ABC\) that are similar to \(\triangle A_1B_1C_1\) (so that vertices \(A_1\), \(B_1\), \(C_1\) correspond to vertices \(A\), \(B\), \(C\), respectively) and circumscribed about triangle \(A_0B_0C_0\) (where \(A_0\) lies on \(BC\), \(B_0\) on \(CA\), and \(AC_0\) on \(AB\)). Of all such possible triangles, determine the one with maximum area, and construct it.",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_4
+IMO,1967,5,IMO 1967 P5,IMO-1967-5,"Let \(a_1,\ldots,a_8\) be reals, not all equal to zero. Let
+
+\[
+c_n = \sum^8_{k=1} a^n_k
+\]
+
+for \(n=1,2,3,\ldots\). Given that among the numbers of the sequence \((c_n)\), there are infinitely many equal to zero, determine all the values of \(n\) for which \(c_n = 0.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_5
+IMO,1967,6,IMO 1967 P6,IMO-1967-6,"In a sports contest, there were \(m\) medals awarded on \(n\) successive days \((n > 1)\). On the first day, one medal and \(\frac{1}{7}\) of the remaining \(m - 1\) medals were awarded. On the second day, two medals and \(\frac{1}{7}\) of the now remaining medals were awarded; and so on. On the n-th and last day, the remaining \(n\) medals were awarded. How many days did the contest last, and how many medals were awarded altogether?",AoPS,https://artofproblemsolving.com/wiki/index.php/1967_IMO_Problems/Problem_6
+IMO,1968,1,IMO 1968 P1,IMO-1968-1,"Prove that there is one and only one triangle whose side lengths are consecutive integers, and one of whose angles is twice as large as another.",AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_1
+IMO,1968,2,IMO 1968 P2,IMO-1968-2,Find all natural numbers \(x\) such that the product of their digits (in decimal notation) is equal to \(x^2 - 10x - 22\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_2
+IMO,1968,3,IMO 1968 P3,IMO-1968-3,"Consider the system of equations
+
+\[
+ax_1^2 + bx_1 + c = x_2
+\]
+
+\[
+ax_2^2 + bx_2 + c = x_3
+\]
+
+\[
+\cdots
+\]
+
+\[
+ax_{n-1}^2 + bx_{n-1} + c = x_n
+\]
+
+\[
+ax_n^2 + bx_n + c = x_1
+\]
+
+with unknowns \(x_1, x_2, \cdots, x_n\) where \(a, b, c\) are real and \(a \neq 0\). Let \(\Delta = (b - 1)^2 - 4ac\). Prove that for this system
+
+(a) if \(\Delta < 0\), there is no solution,
+
+(b) if \(\Delta = 0\), there is exactly one solution,
+
+(c) if \(\Delta > 0\), there is more than one solution.",AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_3
+IMO,1968,4,IMO 1968 P4,IMO-1968-4,Prove that in every tetrahedron there is a vertex such that the three edges meeting there have lengths which are the sides of a triangle.,AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_4
+IMO,1968,5,IMO 1968 P5,IMO-1968-5,"Let \(f\) be a real-valued function defined for all real numbers \(x\) such that, for some positive constant \(a\), the equation
+
+\[
+f(x + a) = \frac{1}{2} + \sqrt{f(x) - (f(x))^2}
+\]
+
+holds for all \(x\).
+
+(a) Prove that the function \(f\) is periodic (i.e., there exists a positive number \(b\) such that \(f(x + b) = f(x)\) for all \(x\)).
+
+(b) For \(a = 1\), give an example of a non-constant function with the required properties.",AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_5
+IMO,1968,6,IMO 1968 P6,IMO-1968-6,"For every natural number \(n\), evaluate the sum
+
+\[
+\sum_{k = 0}^\infty\bigg[\frac{n + 2^k}{2^{k + 1}}\bigg] = \Big[\frac{n + 1}{2}\Big] + \Big[\frac{n + 2}{4}\Big] + \cdots + \bigg[\frac{n + 2^k}{2^{k + 1}}\bigg] + \cdots
+\]
+
+(The symbol \([x]\) denotes the greatest integer not exceeding \(x\).)",AoPS,https://artofproblemsolving.com/wiki/index.php/1968_IMO_Problems/Problem_6
+IMO,1969,1,IMO 1969 P1,IMO-1969-1,Prove that there are infinitely many natural numbers \(a\) with the following property: the number \(z = n^4 + a\) is not prime for any natural number \(n\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_1
+IMO,1969,2,IMO 1969 P2,IMO-1969-2,"Let \(a_1, a_2,\cdots, a_n\) be real constants, \(x\) a real variable, and
+
+\[
+f(x)=\cos(a_1+x)+\frac{1}{2}\cos(a_2+x)+\frac{1}{4}\cos(a_3+x)+\cdots+\frac{1}{2^{n-1}}\cos(a_n+x).
+\]
+
+Given that \(f(x_1)=f(x_2)=0,\) prove that \(x_2-x_1=m\pi\) for some integer \(m.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_2
+IMO,1969,3,IMO 1969 P3,IMO-1969-3,"For each of \(k = 1\), \(2\), \(3\), \(4\), \(5\) find necessary and sufficient conditions on \(a > 0\) such that there exists a tetrahedron with \(k\) edges length \(a\) and the remainder length \(1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_3
+IMO,1969,4,IMO 1969 P4,IMO-1969-4,"A semicircular arc \(\gamma\) is drawn with \(AB\) as diameter. \(C\) is a point on \(\gamma\) other than \(A\) and \(B\), and \(D\) is the foot of the perpendicular from \(C\) to \(AB\). We consider three circles, \(\gamma_1, \gamma_2, \gamma_3\), all tangent to the line \(AB\). Of these, \(\gamma_1\) is inscribed in \(\triangle ABC\), while \(\gamma_2\) and \(\gamma_3\) are both tangent to \(CD\) and \(\gamma\), one on each side of \(CD\). Prove that \(\gamma_1, \gamma_2\), and \(\gamma_3\) have a second tangent in common.",AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_4
+IMO,1969,5,IMO 1969 P5,IMO-1969-5,"Given \(n > 4\) points in the plane such that no three are collinear, prove that there are at least \(C(n-3, 2) = {n-3 \choose 2} = \frac{(n-3)(n-4)}{2}\) convex quadrilaterals whose vertices are four of the given points.",AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_5
+IMO,1969,6,IMO 1969 P6,IMO-1969-6,"Prove that for all real numbers \(x_1, x_2, y_1, y_2, z_1, z_2\), with \(x_1 > 0, x_2 > 0, x_1y_1 - z_1^2 > 0, x_2y_2 - z_2^2 > 0\), the inequality
+
+\[
+\frac{8}{(x_1 + x_2)(y_1 + y_2) - (z_1 + z_2)^2} \leq \frac{1}{x_1y_1 - z_1^2} + \frac{1}{x_2y_2 - z_2^2}
+\]
+
+is satisfied. Give necessary and sufficient conditions for equality.",AoPS,https://artofproblemsolving.com/wiki/index.php/1969_IMO_Problems/Problem_6
+IMO,1970,1,IMO 1970 P1,IMO-1970-1,"Let \(M\) be a point on the side \(AB\) of \(\triangle ABC\). Let \(r_1, r_2\), and \(r\) be the inscribed circles of triangles \(AMC, BMC\), and \(ABC\). Let \(q_1, q_2\), and \(q\) be the radii of the escribed circles of the same triangles that lie in the angle \(ACB\). Prove that
+
+\[
+\frac{r_1}{q_1} \cdot \frac{r_2}{q_2} = \frac{r}{q}
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_1
+IMO,1970,2,IMO 1970 P2,IMO-1970-2,"Let \(a, b\), and \(n\) be integers greater than 1, and let \(a\) and \(b\) be the bases of two number systems. \(A_{n-1}\) and \(A_{n}\) are numbers in the system with base \(a\) and \(B_{n-1}\) and \(B_{n}\) are numbers in the system with base \(b\); these are related as follows:
+
+\[
+A_{n} = x_{n}x_{n-1}\cdots x_{0}, A_{n-1} = x_{n-1}x_{n-2}\cdots x_{0}
+\]
+
+,
+
+\[
+B_{n} = x_{n}x_{n-1}\cdots x_{0}, B_{n-1} = x_{n-1}x_{n-2}\cdots x_{0}
+\]
+
+,
+
+\[
+x_{n} \neq 0, x_{n-1} \neq 0.
+\]
+
+Prove:
+
+\[
+\frac{A_{n-1}}{A_{n}} < \frac{B_{n-1}}{B_{n}}
+\]
+
+if and only if
+
+\[
+a > b
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_2
+IMO,1970,3,IMO 1970 P3,IMO-1970-3,"The real numbers \(a_0, a_1, \ldots, a_n, \ldots\) satisfy the condition:
+
+\[
+1 = a_{0} \leq a_{1} \leq \cdots \leq a_{n} \leq \cdots.
+\]
+
+The numbers \(b_{1}, b_{2}, \ldots, b_n, \ldots\) are defined by
+
+\[
+b_n = \sum_{k=1}^{n} \left( 1 - \frac{a_{k-1}}{a_{k}} \right) \frac{1}{\sqrt{a_k}}
+\]
+
+(a) Prove that \(0 \leq b_n < 2\) for all \(n\).
+
+(b) given \(c\) with \(0 \leq c < 2\), prove that there exist numbers \(a_0, a_1, \ldots\) with the above properties such that \(b_n > c\) for large enough \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_3
+IMO,1970,4,IMO 1970 P4,IMO-1970-4,"Find the set of all positive integers \(n\) with the property that the set \(\{ n, n+1, n+2, n+3, n+4, n+5 \}\) can be partitioned into two sets such that the product of the numbers in one set equals the product of the numbers in the other set.",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_4
+IMO,1970,5,IMO 1970 P5,IMO-1970-5,"In the tetrahedron \(ABCD\), angle \(BDC\) is a right angle. Suppose that the foot \(H\) of the perpendicular from \(D\) to the plane \(ABC\) in the tetrahedron is the intersection of the altitudes of \(\triangle ABC\). Prove that
+
+\[
+( AB+BC+CA )^2 \leq 6( AD^2 + BD^2 + CD^2 ).
+\]
+
+For what tetrahedra does equality hold?",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_5
+IMO,1970,6,IMO 1970 P6,IMO-1970-6,"In a plane there are \(100\) points, no three of which are collinear. Consider all possible triangles having these point as vertices. Prove that no more than \(70 \%\) of these triangles are acute-angled.",AoPS,https://artofproblemsolving.com/wiki/index.php/1970_IMO_Problems/Problem_6
+IMO,1971,1,IMO 1971 P1,IMO-1971-1,"Prove that the following assertion is true for \(n=3\) and \(n=5\), and that it is false for every other natural number \(n>2:\)
+
+If \(a_1, a_2,\cdots, a_n\) are arbitrary real numbers, then \((a_1-a_2)(a_1-a_3)\cdots (a_1-a_n)+(a_2-a_1)(a_2-a_3)\cdots (a_2-a_n)+\cdots+(a_n-a_1)(a_n-a_2)\cdots (a_n-a_{n-1})\ge 0.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_1
+IMO,1971,2,IMO 1971 P2,IMO-1971-2,"Consider a convex polyhedron \(P_1\) with nine vertices \(A_1, A_2, \cdots, A_9;\) let \(P_i\) be the polyhedron obtained from \(P_1\) by a translation that moves vertex \(A_1\) to \(A_i(i=2,3,\cdots, 9).\) Prove that at least two of the polyhedra \(P_1, P_2,\cdots, P_9\) have an interior point in common.",AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_2
+IMO,1971,3,IMO 1971 P3,IMO-1971-3,Prove that the set of integers of the form \(2^k - 3(k = 2; 3; \cdots)\) contains an infinite subset in which every two members are relatively prime.,AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_3
+IMO,1971,4,IMO 1971 P4,IMO-1971-4,"All the faces of tetrahedron \(ABCD\) are acute-angled triangles. We consider all closed polygonal paths of the form \(XYZTX\) defined as follows: \(X\) is a point on edge \(AB\) distinct from \(A\) and \(B\); similarly, \(Y, Z, T\) are interior points of edges \(BC, CD, DA\), respectively. Prove:
+
+(a) If \(\angle DAB + \angle BCD \neq \angle CDA + \angle ABC\), then among the polygonal paths, there is none of minimal length.
+
+(b) If \(\angle DAB + \angle BCD = \angle CDA + \angle ABC\), then there are infinitely many shortest polygonal paths, their common length being \(2AC \sin(\alpha / 2)\), where \(\alpha = \angle BAC + \angle CAD + \angle DAB\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_4
+IMO,1971,5,IMO 1971 P5,IMO-1971-5,"Prove that for every natural number \(m\), there exists a finite set \(S\) of points in a plane with the following property: For every point \(A\) in \(S\), there are exactly \(m\) points in \(S\) which are at unit distance from \(A\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_5
+IMO,1971,6,IMO 1971 P6,IMO-1971-6,"Let \(A = (a_{ij})(i, j = 1, 2, \cdots, n)\) be a square matrix whose elements are non-negative integers. Suppose that whenever an element \(a_{ij} = 0\), the sum of the elements in the \(i\)th row and the \(j\)th column is \(\geq n\). Prove that the sum of all the elements of the matrix is \(\geq n^2 / 2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1971_IMO_Problems/Problem_6
+IMO,1972,1,IMO 1972 P1,IMO-1972-1,"Prove that from a set of ten distinct two-digit numbers (in the decimal system), it is possible to select two disjoint subsets whose members have the same sum.",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_1
+IMO,1972,2,IMO 1972 P2,IMO-1972-2,"Prove that if \(n \geq 4\), every quadrilateral that can be inscribed in a circle can be dissected into \(n\) quadrilaterals each of which is inscribable in a circle.",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_2
+IMO,1972,3,IMO 1972 P3,IMO-1972-3,"Let \(m\) and \(n\) be arbitrary non-negative integers. Prove that
+
+\[
+\frac{(2m)!(2n)!}{m!n!(m+n)!}
+\]
+
+is an integer. (\(0! = 1\).)",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_3
+IMO,1972,4,IMO 1972 P4,IMO-1972-4,"Find all solutions \((x_1, x_2, x_3, x_4, x_5)\) of the system of inequalities
+
+\[
+\begin{align*} (x_1^2 - x_3x_5)(x_2^2 - x_3x_5) \leq 0 \\ (x_2^2 - x_4x_1)(x_3^2 - x_4x_1) \leq 0 \\ (x_3^2 - x_5x_2)(x_4^2 - x_5x_2) \leq 0 \\ (x_4^2 - x_1x_3)(x_5^2 - x_1x_3) \leq 0 \\ (x_5^2 - x_2x_4)(x_1^2 - x_2x_4) \leq 0 \end{align*}
+\]
+
+where \(x_1, x_2, x_3, x_4, x_5\) are positive real numbers.",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_4
+IMO,1972,5,IMO 1972 P5,IMO-1972-5,"Let \(f\) and \(g\) be real-valued functions defined for all real values of \(x\) and \(y\), and satisfying the equation
+
+\[
+f(x + y) + f(x - y) = 2f(x)g(y)
+\]
+
+for all \(x, y\). Prove that if \(f(x)\) is not identically zero, and if \(|f(x)| \leq 1\) for all \(x\), then \(|g(y)| \leq 1\) for all \(y\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_5
+IMO,1972,6,IMO 1972 P6,IMO-1972-6,"Given four distinct parallel planes, prove that there exists a regular tetrahedron with a vertex on each plane.",AoPS,https://artofproblemsolving.com/wiki/index.php/1972_IMO_Problems/Problem_6
+IMO,1973,1,IMO 1973 P1,IMO-1973-1,"Point \(O\) lies on line \(g;\) \(\overrightarrow{OP_1}, \overrightarrow{OP_2},\cdots, \overrightarrow{OP_n}\) are unit vectors such that points \(P_1, P_2, \cdots, P_n\) all lie in a plane containing \(g\) and on one side of \(g.\) Prove that if \(n\) is odd,
+
+\[
+\left|\overrightarrow{OP_1}+\overrightarrow{OP_2}+\cdots+ \overrightarrow{OP_n}\right|\ge1.
+\]
+
+Here \(\left|\overrightarrow{OM}\right|\) denotes the length of vector \(\overrightarrow{OM}.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_1
+IMO,1973,2,IMO 1973 P2,IMO-1973-2,"Determine whether or not there exists a finite set \(M\) of points in space not lying in the same plane such that, for any two points \(A\) and \(B\) of \(M\); one can select two other points \(C\) and \(D\) of \(M\) so that lines \(AB\) and \(CD\) are parallel and not coincident.",AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_2
+IMO,1973,3,IMO 1973 P3,IMO-1973-3,"Let \(a\) and \(b\) be real numbers for which the equation \(x^4 + ax^3 + bx^2 + ax + 1 = 0\) has at least one real solution. For all such pairs \((a, b)\), find the minimum value of \(a^2 + b^2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_3
+IMO,1973,4,IMO 1973 P4,IMO-1973-4,A soldier needs to check on the presence of mines in a region having the shape of an equilateral triangle. The radius of action of his detector is equal to half the altitude of the triangle. The soldier leaves from one vertex of the triangle. What path shouid he follow in order to travel the least possible distance and still accomplish his mission?,AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_4
+IMO,1973,5,IMO 1973 P5,IMO-1973-5,"\(G\) is a set of non-constant functions of the real variable \(x\) of the form
+
+\[
+f(x) = ax + b, a \text{ and } b \text{ are real numbers,}
+\]
+
+and \(G\) has the following properties:
+
+(a) If \(f\) and \(g\) are in \(G\), then \(g \circ f\) is in \(G\); here \((g \circ f)(x) = g[f(x)]\).
+
+(b) If \(f\) is in \(G\), then its inverse \(f^{-1}\) is in \(G\); here the inverse of \(f(x) = ax + b\) is \(f^{-1}(x) = (x - b) / a\).
+
+(c) For every \(f\) in \(G\), there exists a real number \(x_f\) such that \(f(x_f) = x_f\).
+
+Prove that there exists a real number \(k\) such that \(f(k) = k\) for all \(f\) in \(G\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_5
+IMO,1973,6,IMO 1973 P6,IMO-1973-6,"Let \(a_1, a_2,\cdots, a_n\) be \(n\) positive numbers, and let \(q\) be a given real number such that \(0<q<1.\) Find \(n\) numbers \(b_1, b_2, \cdots, b_n\) for which
+
+(a) \(a_k<b_k\) for \(k=1,2,\cdots, n,\)
+
+(b) \(q<\dfrac{b_{k+1}}{b_k}<\dfrac{1}{q}\) for \(k=1,2,\cdots,n-1,\)
+
+(c) \(b_1+b_2+\cdots+b_n<\dfrac{1+q}{1-q}(a_1+a_2+\cdots+a_n).\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1973_IMO_Problems/Problem_6
+IMO,1974,1,IMO 1974 P1,IMO-1974-1,"Three players \(A, B\) and \(C\) play the following game: On each of three cards an integer is written. These three numbers \(p, q, r\) satisfy \(0 < p < q < r\). The three cards are shuffled and one is dealt to each player. Each then receives the number of counters indicated by the card he holds. Then the cards are shuffled again; the counters remain with the players.
+
+This process (shuffling, dealing, giving out counters) takes place for at least two rounds. After the last round, \(A\) has 20 counters in all, \(B\) has 10 and \(C\) has 9. At the last round \(B\) received \(r\) counters. Who received \(q\) counters on the first round?",AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_1
+IMO,1974,2,IMO 1974 P2,IMO-1974-2,"In the triangle \(ABC\), prove that there is a point \(D\) on side \(AB\) such that \(CD\) is the geometric mean of \(AD\) and \(DB\) if and only if \(\sin{A}\sin{B} \leq \sin^2 (\frac{C}{2})\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_2
+IMO,1974,3,IMO 1974 P3,IMO-1974-3,Prove that the number \(\sum^n_{k=0}\binom{2n+1}{2k+1}2^{3k}\) is not divisible by \(5\) for any integer \(n\ge0.\),AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_3
+IMO,1974,4,IMO 1974 P4,IMO-1974-4,"Consider decompositions of an \(8\times8\) chessboard into \(p\) non-overlapping rectangles subject to the following conditions:
+
+(i) Each rectangle has as many white squares as black squares.
+
+(ii) If \(a_i\) is the number of white squares in the \(i\)-th rectangle, then \(a_1<a_2<\cdots<a_p.\)
+
+Find the maximum value of \(p\) for which such a decomposition is possible. For this value of \(p,\) determine all possible sequences \(a_1, a_2, \cdots, a_p.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_4
+IMO,1974,5,IMO 1974 P5,IMO-1974-5,"Determine all possible values of
+
+\[
+S = \frac{a}{a+b+d}+\frac{b}{a+b+c}+\frac{c}{b+c+d}+\frac{d}{a+c+d}
+\]
+
+where \(a, b, c, d,\) are arbitrary positive numbers.",AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_5
+IMO,1974,6,IMO 1974 P6,IMO-1974-6,"Let \(P\) be a non-constant polynomial with integer coefficients. If \(n(P)\) is the number of distinct integers \(k\) such that \((P(k))^2=1,\) prove that \(n(P)-\deg(P)\le2,\) where \(\deg(P)\) denotes the degree of the polynomial \(P.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1974_IMO_Problems/Problem_6
+IMO,1975,1,IMO 1975 P1,IMO-1975-1,"Let \(x_i, y_i\) \((i=1,2,\cdots,n)\) be real numbers such that
+
+\[
+x_1\ge x_2\ge\cdots\ge x_n \text{ and } y_1\ge y_2\ge\cdots\ge y_n.
+\]
+
+Prove that, if \(z_1, z_2,\cdots, z_n\) is any permutation of \(y_1, y_2, \cdots, y_n,\) then
+
+\[
+\sum^n_{i=1}(x_i-y_i)^2\le\sum^n_{i=1}(x_i-z_i)^2.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_1
+IMO,1975,2,IMO 1975 P2,IMO-1975-2,"Let \(a_1, a_2, a_3, \cdots\) be an infinite increasing sequence of positive integers. Prove that for every \(p \geq 1\) there are infinitely many \(a_m\) which can be written in the form
+
+\[
+a_m = xa_p + ya_q
+\]
+
+with \(x, y\) positive integers and \(q > p\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_2
+IMO,1975,3,IMO 1975 P3,IMO-1975-3,"On the sides of an arbitrary triangle \(ABC\), triangles \(ABR, BCP, CAQ\) are constructed externally with \(\angle CBP = \angle CAQ = 45^\circ, \angle BCP = \angle ACQ = 30^\circ, \angle ABR = \angle BAR = 15^\circ\). Prove that \(\angle QRP = 90^\circ\) and \(QR = RP\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_3
+IMO,1975,4,IMO 1975 P4,IMO-1975-4,"When \(4444^{4444}\) is written in decimal notation, the sum of its digits is \(A\). Let \(B\) be the sum of the digits of \(A\). Find the sum of the digits of \(B\). (\(A\) and \(B\) are written in decimal notation.)",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_4
+IMO,1975,5,IMO 1975 P5,IMO-1975-5,"Determine, with proof, whether or not one can find \(1975\) points on the circumference of a circle with unit radius such that the distance between any two of them is a rational number.",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_5
+IMO,1975,6,IMO 1975 P6,IMO-1975-6,"Find all polynomials \(P\), in two variables, with the following properties:
+
+(i) for a positive integer \(n\) and all real \(t, x, y\)
+
+\[
+P(tx, ty) = t^nP(x, y)
+\]
+
+(that is, \(P\) is homogeneous of degree \(n\)),
+
+(ii) for all real \(a, b, c\),
+
+\[
+P(b + c, a) + P(c + a, b) + P(a + b, c) = 0,
+\]
+
+(iii)
+
+\[
+P(1, 0) = 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1975_IMO_Problems/Problem_6
+IMO,1976,1,IMO 1976 P1,IMO-1976-1,In a convex quadrilateral (in the plane) with the area of \(32 \text{ cm}^{2}\) the sum of two opposite sides and a diagonal is \(16 \text{ cm}\). Determine all the possible values that the other diagonal can have.,AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_1
+IMO,1976,2,IMO 1976 P2,IMO-1976-2,"Let \(P_{1}(x) = x^{2} - 2\) and \(P_{j}(x) = P_{1}(P_{j - 1}(x))\) for \(j= 2,\ldots\) Prove that for any positive integer n the roots of the equation \(P_{n}(x) = x\) are all real and distinct.",AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_2
+IMO,1976,3,IMO 1976 P3,IMO-1976-3,"A box whose shape is a parallelepiped can be completely filled with cubes of side \(1.\) If we put in it the maximum possible number of cubes, each of volume \(2\), with the sides parallel to those of the box, then exactly \(40\) percent from the volume of the box is occupied. Determine the possible dimensions of the box.",AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_3
+IMO,1976,4,IMO 1976 P4,IMO-1976-4,"Determine the greatest number, who is the product of some positive integers, and the sum of these numbers is \(1976.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_4
+IMO,1976,5,IMO 1976 P5,IMO-1976-5,"We consider the following system with \(q = 2p\):
+
+\[
+\begin{matrix} a_{11}x_{1} + \ldots + a_{1q}x_{q} = 0, \\ a_{21}x_{1} + \ldots + a_{2q}x_{q} = 0, \\ \ldots , \\ a_{p1}x_{1} + \ldots + a_{pq}x_{q} = 0, \\ \end{matrix}
+\]
+
+in which every coefficient is an element from the set \(\{ - 1,0,1\}\)\(.\) Prove that there exists a solution \(x_{1}, \ldots,x_{q}\) for the system with the properties:
+
+a.) all \(x_{j}, j = 1,\ldots,q\) are integers\(;\)
+
+b.) there exists at least one j for which \(x_{j} \neq 0;\)
+
+c.) \(|x_{j}| \leq q\) for any \(j = 1, \ldots ,q.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_5
+IMO,1976,6,IMO 1976 P6,IMO-1976-6,"A sequence \((u_{n})\) is defined by
+
+\[
+u_{0} = 2 \quad u_{1} = \frac {5}{2}, u_{n + 1} = u_{n}(u_{n - 1}^{2} - 2) - u_{1} \ \text{ for } n = 1,\cdots
+\]
+
+Prove that for any positive integer \(n\) we have
+
+\[
+\lfloor u_{n} \rfloor = 2^{\frac {(2^{n} - ( - 1)^{n})}{3}}
+\]
+
+(where \(\lfloor x\rfloor\) denotes the smallest integer \(\leq\) \(x\))\(.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1976_IMO_Problems/Problem_6
+IMO,1977,1,IMO 1977 P1,IMO-1977-1,"In the interior of a square \(ABCD\) we construct the equilateral triangles \(ABK, BCL, CDM, DAN.\) Prove that the midpoints of the four segments \(KL, LM, MN, NK\) and the midpoints of the eight segments \(AK, BK, BL, CL, CM, DM, DN, AN\) are the 12 vertices of a regular dodecagon.",AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_1
+IMO,1977,2,IMO 1977 P2,IMO-1977-2,In a finite sequence of real numbers the sum of any seven successive terms is negative and the sum of any eleven successive terms is positive. Determine the maximum number of terms in the sequence.,AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_2
+IMO,1977,3,IMO 1977 P3,IMO-1977-3,"Let \(n\) be a given number greater than 2. We consider the set \(V_n\) of all the integers of the form \(1 + kn\) with \(k = 1, 2, \ldots\) A number \(m\) from \(V_n\) is called indecomposable in \(V_n\) if there are not two numbers \(p\) and \(q\) from \(V_n\) so that \(m = pq.\) Prove that there exist a number \(r \in V_n\) that can be expressed as the product of elements indecomposable in \(V_n\) in more than one way. (Expressions which differ only in order of the elements of \(V_n\) will be considered the same.)",AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_3
+IMO,1977,4,IMO 1977 P4,IMO-1977-4,"Let \(a,b,A,B\) be given reals. We consider the function defined by
+
+\[
+f(x) = 1 - a \cdot \cos(x) - b \cdot \sin(x) - A \cdot \cos(2x) - B \cdot \sin(2x).
+\]
+
+Prove that if for any real number \(x\) we have \(f(x) \geq 0\) then \(a^2 + b^2 \leq 2\) and \(A^2 + B^2 \leq 1.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_4
+IMO,1977,5,IMO 1977 P5,IMO-1977-5,"Let \(a,b\) be two natural numbers. When we divide \(a^2+b^2\) by \(a+b\), we the the remainder \(r\) and the quotient \(q.\) Determine all pairs \((a, b)\) for which \(q^2 + r = 1977.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_5
+IMO,1977,6,IMO 1977 P6,IMO-1977-6,"Let \(f(n)\) be a function \(f: \mathbb{N}^{+}\to\mathbb{N}^{+}\). Prove that if
+
+\[
+f(n+1) > f(f(n))
+\]
+
+for each positive integer \(n\), then \(f(n)=n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1977_IMO_Problems/Problem_6
+IMO,1978,1,IMO 1978 P1,IMO-1978-1,"Let \(m\) and \(n\) be positive integers such that \(1 \le m < n\). In their decimal representations, the last three digits of \(1978^m\) are equal, respectively, to the last three digits of \(1978^n\). Find \(m\) and \(n\) such that \(m + n\) has its least value.",AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_1
+IMO,1978,2,IMO 1978 P2,IMO-1978-2,"We consider a fixed point \(P\) in the interior of a fixed sphere\(.\) We construct three segments \(PA, PB,PC\), perpendicular two by two\(,\) with the vertexes \(A, B, C\) on the sphere\(.\) We consider the vertex \(Q\) which is opposite to \(P\) in the parallelepiped (with right angles) with \(PA, PB, PC\) as edges\(.\) Find the locus of the point \(Q\) when \(A, B, C\) take all the positions compatible with our problem.",AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_2
+IMO,1978,3,IMO 1978 P3,IMO-1978-3,Let \(0<f(1)<f(2)<f(3)<\ldots\) a sequence with all its terms positive\(.\) The \(n-th\) positive integer which doesn't belong to the sequence is \(f(f(n))+1.\) Find \(f(240).\),AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_3
+IMO,1978,4,IMO 1978 P4,IMO-1978-4,"In a triangle \(ABC\) we have \(AB = AC.\) A circle which is internally tangent with the circumscribed circle of the triangle is also tangent to the sides \(AB, AC\) in the points \(P,\) respectively \(Q.\) Prove that the midpoint of \(PQ\) is the center of the inscribed circle of the triangle \(ABC.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_4
+IMO,1978,5,IMO 1978 P5,IMO-1978-5,"Let \(f\) be an injective function from \({1,2,3,\ldots}\) in itself. Prove that for any \(n\) we have: \(\sum_{k=1}^{n} f(k)k^{-2} \geq \sum_{k=1}^{n} k^{-1}.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_5
+IMO,1978,6,IMO 1978 P6,IMO-1978-6,"An international society has its members from six different countries. The list of members has 1978 names, numbered \(1, 2, \ldots, 1978\). Prove that there is at least one member whose number is the sum of the numbers of two (not necessarily distinct) members from his own country.",AoPS,https://artofproblemsolving.com/wiki/index.php/1978_IMO_Problems/Problem_6
+IMO,1979,1,IMO 1979 P1,IMO-1979-1,"If \(p\) and \(q\) are natural numbers so that
+
+\[
+\frac{p}{q}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+ \ldots -\frac{1}{1318}+\frac{1}{1319},
+\]
+
+prove that \(p\) is divisible with \(1979\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_1
+IMO,1979,2,IMO 1979 P2,IMO-1979-2,"We consider a prism which has the upper and inferior basis the pentagons: \(A_{1}A_{2}A_{3}A_{4}A_{5}\) and \(B_{1}B_{2}B_{3}B_{4}B_{5}\). Each of the sides of the two pentagons and the segments \(A_{i}B_{j}\) with \(i,j=1,\ldots\),5 is colored in red or blue. In every triangle which has all sides colored there exists one red side and one blue side. Prove that all the 10 sides of the two basis are colored in the same color.",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_2
+IMO,1979,3,IMO 1979 P3,IMO-1979-3,"Two circles in a plane intersect. \(A\) is one of the points of intersection. Starting simultaneously from \(A\) two points move with constant speed, each travelling along its own circle in the same sense. The two points return to \(A\) simultaneously after one revolution. Prove that there is a fixed point \(P\) in the plane such that the two points are always equidistant from \(P.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_3
+IMO,1979,4,IMO 1979 P4,IMO-1979-4,"We consider a point \(P\) in a plane \(p\) and a point \(Q \not\in p\). Determine all the points \(R\) from \(p\) for which
+
+\[
+\frac{QP+PR}{QR}
+\]
+
+is maximum.",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_4
+IMO,1979,5,IMO 1979 P5,IMO-1979-5,"Determine all real numbers a for which there exists non-negative reals \(x_{1}, \ldots, x_{5}\) which satisfy the relations \(\sum_{k=1}^{5} kx_{k}=a,\) \(\sum_{k=1}^{5} k^{3}x_{k}=a^{2},\) \(\sum_{k=1}^{5} k^{5}x_{k}=a^{3}.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_5
+IMO,1979,6,IMO 1979 P6,IMO-1979-6,"Let \(A\) and \(E\) be opposite vertices of an octagon. A frog starts at vertex \(A.\) From any vertex except \(E\) it jumps to one of the two adjacent vertices. When it reaches \(E\) it stops. Let \(a_n\) be the number of distinct paths of exactly \(n\) jumps ending at \(E\). Prove that:
+
+\[
+a_{2n-1}=0, \quad a_{2n}={(2+\sqrt2)^{n-1} - (2-\sqrt2)^{n-1} \over\sqrt2}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1979_IMO_Problems/Problem_6
+IMO,1981,1,IMO 1981 P1,IMO-1981-1,"\(P\) is a point inside a given triangle \(ABC\). \(D, E, F\) are the feet of the perpendiculars from \(P\) to the lines \(BC, CA, AB\), respectively. Find all \(P\) for which
+
+\[
+\frac{BC}{PD} + \frac{CA}{PE} + \frac{AB}{PF}
+\]
+
+is least.",AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_1
+IMO,1981,2,IMO 1981 P2,IMO-1981-2,"Let \(1 \le r \le n\) and consider all subsets of \(r\) elements of the set \(\{ 1, 2, \ldots , n \}\). Each of these subsets has a smallest member. Let \(F(n,r)\) denote the arithmetic mean of these smallest numbers; prove that
+
+\[
+F(n,r) = \frac{n+1}{r+1}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_2
+IMO,1981,3,IMO 1981 P3,IMO-1981-3,"Determine the maximum value of \(m^2 + n^2\), where \(m\) and \(n\) are integers satisfying \(m, n \in \{ 1,2, \ldots , 1981 \}\) and \(( n^2 - mn - m^2 )^2 = 1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_3
+IMO,1981,4,IMO 1981 P4,IMO-1981-4,"(a) For which values of \(n>2\) is there a set of \(n\) consecutive positive integers such that the largest number in the set is a divisor of the least common multiple of the remaining \(n-1\) numbers?
+
+(b) For which values of \(n>2\) is there exactly one set having the stated property?",AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_4
+IMO,1981,5,IMO 1981 P5,IMO-1981-5,Three congruent circles have a common point \(O\) and lie inside a given triangle. Each circle touches a pair of sides of the triangle. Prove that the incenter and the circumcenter of the triangle and the point \(O\) are collinear.,AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_5
+IMO,1981,6,IMO 1981 P6,IMO-1981-6,"The function \(f(x,y)\) satisfies
+
+(1) \(f(0,y)=y+1,\)
+
+(2) \(f(x+1,0)=f(x,1),\)
+
+(3) \(f(x+1,y+1)=f(x,f(x+1,y)),\)
+
+for all non-negative integers \(x,y\). Determine \(f(4,1981)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1981_IMO_Problems/Problem_6
+IMO,1982,1,IMO 1982 P1,IMO-1982-1,"The function \(f(n)\) is defined on the positive integers and takes non-negative integer values. \(f(2)=0,f(3)>0,f(9999)=3333\) and for all \(m,n:\)
+
+\[
+f(m+n)-f(m)-f(n)=0 \text{ or } 1.
+\]
+
+Determine \(f(1982)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_1
+IMO,1982,2,IMO 1982 P2,IMO-1982-2,"A non-isosceles triangle \(A_{1}A_{2}A_{3}\) has sides \(a_{1}\), \(a_{2}\), \(a_{3}\) with the side \(a_{i}\) lying opposite to the vertex \(A_{i}\). Let \(M_{i}\) be the midpoint of the side \(a_{i}\), and let \(T_{i}\) be the point where the inscribed circle of triangle \(A_{1}A_{2}A_{3}\) touches the side \(a_{i}\). Denote by \(S_{i}\) the reflection of the point \(T_{i}\) in the interior angle bisector of the angle \(A_{i}\). Prove that the lines \(M_{1}S_{1}\), \(M_{2}S_{2}\) and \(M_{3}S_{3}\) are concurrent.",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_2
+IMO,1982,3,IMO 1982 P3,IMO-1982-3,"Consider infinite sequences \(\{x_n\}\) of positive reals such that \(x_0=1\) and \(x_0\ge x_1\ge x_2\ge\ldots\).
+
+a) Prove that for every such sequence there is an \(n\ge1\) such that:
+
+\[
+{x_0^2\over x_1}+{x_1^2\over x_2}+\ldots+{x_{n-1}^2\over x_n}\ge3.999.
+\]
+
+b) Find such a sequence such that for all \(n\):
+
+\[
+{x_0^2\over x_1}+{x_1^2\over x_2}+\ldots+{x_{n-1}^2\over x_n}<4.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_3
+IMO,1982,4,IMO 1982 P4,IMO-1982-4,"Prove that if \(n\) is a positive integer such that the equation \(x^3-3xy^2+y^3=n\) has a solution in integers \(x,y\), then it has at least three such solutions. Show that the equation has no solutions in integers for \(n=2891\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_4
+IMO,1982,5,IMO 1982 P5,IMO-1982-5,"The diagonals \(AC\) and \(CE\) of the regular hexagon \(ABCDEF\) are divided by inner points \(M\) and \(N\) respectively, so that
+
+\[
+{AM\over AC}={CN\over CE}=r.
+\]
+
+Determine \(r\) if \(B,M\) and \(N\) are collinear.",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_5
+IMO,1982,6,IMO 1982 P6,IMO-1982-6,"Let \(S\) be a square with sides length \(100\). Let \(L\) be a path within \(S\) which does not meet itself and which is composed of line segments \(A_0A_1,A_1A_2,A_2A_3,\ldots,A_{n-1}A_n\) with \(A_0=A_n\). Suppose that for every point \(P\) on the boundary of \(S\) there is a point of \(L\) at a distance from \(P\) no greater than \(\frac {1} {2}\). Prove that there are two points \(X\) and \(Y\) of \(L\) such that the distance between \(X\) and \(Y\) is not greater than \(1\) and the length of the part of \(L\) which lies between \(X\) and \(Y\) is not smaller than \(198\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_6
+IMO,1983,1,IMO 1983 P1,IMO-1983-1,"Find all functions \(f\) defined on the set of positive reals which take positive real values and satisfy the conditions: (i) \(f(xf(y))=yf(x)\) for all \(x,y\); (ii) \(f(x)\to0\) as \(x\to \infty\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_1
+IMO,1983,2,IMO 1983 P2,IMO-1983-2,"Let \(A\) be one of the two distinct points of intersection of two unequal coplanar circles \(C_1\) and \(C_2\) with centers \(O_1\) and \(O_2\) respectively. One of the common tangents to the circles touches \(C_1\) at \(P_1\) and \(C_2\) at \(P_2\), while the other touches \(C_1\) at \(Q_1\) and \(C_2\) at \(Q_2\). Let \(M_1\) be the midpoint of \(P_1Q_1\) and \(M_2\) the midpoint of \(P_2Q_2\). Prove that \(\angle O_1AO_2=\angle M_1AM_2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_2
+IMO,1983,3,IMO 1983 P3,IMO-1983-3,"Let \(a\), \(b\) and \(c\) be positive integers, no two of which have a common divisor greater than \(1\). Show that \(2abc - ab - bc- ca\) is the largest integer which cannot be expressed in the form \(xbc + yca + zab\), where \(x\), \(y\) and \(z\) are non-negative integers.",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_3
+IMO,1983,4,IMO 1983 P4,IMO-1983-4,"Let \(ABC\) be an equilateral triangle and \(\mathcal{E}\) the set of all points contained in the three segments \(AB\), \(BC\) and \(CA\) (including \(A\), \(B\) and \(C\)). Determine whether, for every partition of \(\mathcal{E}\) into two disjoint subsets, at least one of the two subsets contains the vertices of a right-angled triangle. Justify your answer.",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_4
+IMO,1983,5,IMO 1983 P5,IMO-1983-5,"Is it possible to choose \(1983\) distinct positive integers, all less than or equal to \(10^5\), no three of which are consecutive terms of an arithmetic progression? Justify your answer.",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_5
+IMO,1983,6,IMO 1983 P6,IMO-1983-6,"Let \(a\), \(b\) and \(c\) be the lengths of the sides of a triangle. Prove that
+
+\[
+a^{2}b(a - b) + b^{2}c(b - c) + c^{2}a(c - a)\ge 0.
+\]
+
+Determine when equality occurs.",AoPS,https://artofproblemsolving.com/wiki/index.php/1983_IMO_Problems/Problem_6
+IMO,1984,1,IMO 1984 P1,IMO-1984-1,"Let \(x\), \(y\), \(z\) be nonnegative real numbers with \(x + y + z = 1\). Show that \(0 \leq xy+yz+zx-2xyz \leq \frac{7}{27}\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_1
+IMO,1984,2,IMO 1984 P2,IMO-1984-2,"Find one pair of positive integers \(a,b\) such that \(ab(a+b)\) is not divisible by \(7\), but \((a+b)^7-a^7-b^7\) is divisible by \(7^7\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_2
+IMO,1984,3,IMO 1984 P3,IMO-1984-3,"Given points \(O\) and \(A\) in the plane. Every point in the plane is colored with one of a finite number of colors. Given a point \(X\) in the plane, the circle \(C(X)\) has center \(O\) and radius \(OX+{\angle AOX\over OX}\), where \(\angle AOX\) is measured in radians in the range \([0,2\pi)\). Prove that we can find a point \(X\), not on \(OA\), such that its color appears on the circumference of the circle \(C(X)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_3
+IMO,1984,4,IMO 1984 P4,IMO-1984-4,Let \(ABCD\) be a convex quadrilateral with the line \(CD\) being tangent to the circle on diameter \(AB\). Prove that the line \(AB\) is tangent to the circle on diameter \(CD\) if and only if the lines \(BC\) and \(AD\) are parallel.,AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_4
+IMO,1984,5,IMO 1984 P5,IMO-1984-5,"Let \(d\) be the sum of the lengths of all the diagonals of a plane convex polygon with \(n\) vertices (where \(n>3\)). Let \(p\) be its perimeter. Prove that:
+
+\[
+n-3<{2d\over p}<\Bigl[{n\over2}\Bigr]\cdot\Bigl[{n+1\over 2}\Bigr]-2,
+\]
+
+where \([x]\) denotes the greatest integer not exceeding \(x\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_5
+IMO,1984,6,IMO 1984 P6,IMO-1984-6,"Let \(a,b,c,d\) be odd integers such that \(0<a<b<c<d\) and \(ad=bc\). Prove that if \(a+d=2^k\) and \(b+c=2^m\) for some integers \(k\) and \(m\), then \(a=1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_6
+IMO,1985,1,IMO 1985 P1,IMO-1985-1,A circle has center on the side \(AB\) of the cyclic quadrilateral \(ABCD\). The other three sides are tangent to the circle. Prove that \(AD + BC = AB\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_1
+IMO,1985,2,IMO 1985 P2,IMO-1985-2,"Let \(n\) and \(k\) be given relatively prime natural numbers, \(k < n\). Each number in the set \(M = \{ 1,2, \ldots , n-1 \}\) is colored either blue or white. It is given that
+
+(i) for each \(i \in M\), both \(i\) and \(n-i\) have the same color;
+
+(ii) for each \(i \in M, i \neq k\), both \(i\) and \(|i-k|\) have the same color.
+
+Prove that all the numbers in \(M\) have the same color.",AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_2
+IMO,1985,3,IMO 1985 P3,IMO-1985-3,"For any polynomial \(P(x) = a_0 + a_1 x + \cdots + a_k x^k\) with integer coefficients, the number of coefficients which are odd is denoted by \(w(P)\). For \(i = 0, 1, \ldots\), let \(Q_i (x) = (1+x)^i\). Prove that if \(i_1, i_2, \ldots , i_n\) are integers such that \(0 \leq i_1 < i_2 < \cdots < i_n\), then
+
+\[
+w(Q_{i_1} + Q_{i_2} + \cdots + Q_{i_n}) \ge w(Q_{i_1})
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_3
+IMO,1985,4,IMO 1985 P4,IMO-1985-4,"Given a set \(M\) of \(1985\) distinct positive integers, none of which has a prime divisor greater than \(23\), prove that \(M\) contains a subset of \(4\) elements whose product is the \(4\)th power of an integer.",AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_4
+IMO,1985,5,IMO 1985 P5,IMO-1985-5,A circle with center \(O\) passes through the vertices \(A\) and \(C\) of the triangle \(ABC\) and intersects the segments \(AB\) and \(BC\) again at distinct points \(K\) and \(N\) respectively. Let \(M\) be the point of intersection of the circumcircles of triangles \(ABC\) and \(KBN\) (apart from \(B\)). Prove that \(\angle OMB = 90^{\circ}\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_5
+IMO,1985,6,IMO 1985 P6,IMO-1985-6,"For every real number \(x_1\), construct the sequence \(x_1,x_2,\ldots\) by setting \(x_{n+1}=x_n \left(x_n + \frac{1}{n}\right)\) for each \(n \geq 1\). Prove that there exists exactly one value of \(x_<x_n<x_{n+1}<1\) for every \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1985_IMO_Problems/Problem_6
+IMO,1986,1,IMO 1986 P1,IMO-1986-1,"Let \(d\) be any positive integer not equal to \(2, 5\) or \(13\). Show that one can find distinct \(a,b\) in the set \(\{2,5,13,d\}\) such that \(ab-1\) is not a perfect square.",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_1
+IMO,1986,2,IMO 1986 P2,IMO-1986-2,"Given a point \(P_0\) in the plane of the triangle \(A_1A_2A_3\). Define \(A_s=A_{s-3}\) for all \(s\ge4\). Construct a set of points \(P_1,P_2,P_3,...\) such that \(P_{k+1}\) is the image of \(P_k\) under a rotation center \(A_{k+1}\) through an angle \(120^\circ\) clockwise for \(k=0,1,2,...\). Prove that if \(P_{1986}=P_0\), then the triangle \(A_1A_2A_3\) is equilateral.",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_2
+IMO,1986,3,IMO 1986 P3,IMO-1986-3,"To each vertex of a regular pentagon an integer is assigned, so that the sum of all five numbers is positive. If three consecutive vertices are assigned the numbers \(x,y,z\) respectively, and \(y<0\), then the following operation is allowed: \(x,y,z\) are replaced by \(x+y,-y,z+y\) respectively. Such an operation is performed repeatedly as long as at least one of the five numbers is negative. Determine whether this procedure necessarily comes to an end after a finite number of steps.",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_3
+IMO,1986,4,IMO 1986 P4,IMO-1986-4,"Let \(A,B\) be adjacent vertices of a regular \(n\)-gon (\(n\ge5\)) with center \(O\). A triangle \(XYZ\), which is congruent to and initially coincides with \(OAB\), moves in the plane in such a way that \(Y\) and \(Z\) each trace out the whole boundary of the polygon, with \(X\) remaining inside the polygon. Find the locus of \(X\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_4
+IMO,1986,5,IMO 1986 P5,IMO-1986-5,"Find all (if any) functions \(f\) taking the non-negative reals onto the non-negative reals, such that
+
+(a) \(f(xf(y))f(y) = f(x+y)\) for all non-negative \(x\), \(y\);
+
+(b) \(f(2) = 0\);
+
+(c) \(f(x) \neq 0\) for every \(0 \leq x < 2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_5
+IMO,1986,6,IMO 1986 P6,IMO-1986-6,"Given a finite set of points in the plane, each with integer coordinates, is it always possible to color the points red or white so that for any straight line \(L\) parallel to one of the coordinate axes the difference (in absolute value) between the numbers of white and red points on \(L\) is not greater than \(1\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1986_IMO_Problems/Problem_6
+IMO,1987,1,IMO 1987 P1,IMO-1987-1,"Let \(p_n (k)\) be the number of permutations of the set \(\{ 1, \ldots , n \} , \; n \ge 1\), which have exactly \(k\) fixed points. Prove that
+
+\[
+\sum_{k=0}^{n} k \cdot p_n (k) = n!.
+\]
+
+(Remark: A permutation \(f\) of a set \(S\) is a one-to-one mapping of \(S\) onto itself. An element \(i\) in \(S\) is called a fixed point of the permutation \(f\) if \(f(i) = i\).)",AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_1
+IMO,1987,2,IMO 1987 P2,IMO-1987-2,"In an acute-angled triangle \(ABC\) the interior bisector of the angle \(A\) intersects \(BC\) at \(L\) and intersects the circumcircle of \(ABC\) again at \(N\). From point \(L\) perpendiculars are drawn to \(AB\) and \(AC\), the feet of these perpendiculars being \(K\) and \(M\) respectively. Prove that the quadrilateral \(AKNM\) and the triangle \(ABC\) have equal areas.",AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_2
+IMO,1987,3,IMO 1987 P3,IMO-1987-3,"Let \(x_1 , x_2 , \ldots , x_n\) be real numbers satisfying \(x_1^2 + x_2^2 + \cdots + x_n^2 = 1\). Prove that for every integer \(k \ge 2\) there are integers \(a_1, a_2, \ldots a_n\), not all 0, such that \(| a_i | \le k-1\) for all \(i\) and
+
+\[
+|a_1x_1 + a_2x_2 + \cdots + a_nx_n| \le \frac{ (k-1) \sqrt{n} }{ k^n - 1 }
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_3
+IMO,1987,4,IMO 1987 P4,IMO-1987-4,Prove that there is no function \(f\) from the set of non-negative integers into itself such that \(f(f(n)) = n + 1987\) for every \(n\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_4
+IMO,1987,5,IMO 1987 P5,IMO-1987-5,Let \(n\) be an integer greater than or equal to 3. Prove that there is a set of \(n\) points in the plane such that the distance between any two points is irrational and each set of three points determines a non-degenerate triangle with rational area.,AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_5
+IMO,1987,6,IMO 1987 P6,IMO-1987-6,"Let \(n\) be an integer greater than or equal to 2. Prove that if \(k^2 + k + n\) is prime for all integers \(k\) such that \(0 \leq k \leq \sqrt{n/3}\), then \(k^2 + k + n\) is prime for all integers \(k\) such that \(0 \leq k \leq n - 2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1987_IMO_Problems/Problem_6
+IMO,1988,1,IMO 1988 P1,IMO-1988-1,"Consider 2 concentric circles with radii \(R\) and \(r\) (\(R>r\)) with center \(O\). Fix \(P\) on the small circle and consider the variable chord \(AP\) of the small circle. Points \(B\) and \(C\) lie on the large circle; \(B,P,C\) are collinear and \(BC\) is perpendicular to \(AP\).
+
+1. For which values of \(\angle OPA\) is the sum \(BC^2+CA^2+AB^2\) extremal?
+2. What are the possible positions of the midpoints \(U\) of \(AB\) and \(V\) of \(AC\) as \(A\) varies?",AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_1
+IMO,1988,2,IMO 1988 P2,IMO-1988-2,"Let \(n\) be a positive integer and let \(A_1, A_2, \cdots, A_{2n+1}\) be subsets of a set \(B\).
+
+Suppose that
+
+(a) Each \(A_i\) has exactly \(2n\) elements,
+
+(b) Each \(A_i\cap A_j\) \((1\le i<j\le 2n+1)\) contains exactly one element, and
+
+(c) Every element of \(B\) belongs to at least two of the \(A_i\).
+
+For which values of \(n\) can one assign to every element of \(B\) one of the numbers \(0\) and \(1\) in such a way that \(A_i\) has \(0\) assigned to exactly \(n\) of its elements?",AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_2
+IMO,1988,3,IMO 1988 P3,IMO-1988-3,"A function \(f\) defined on the positive integers (and taking positive integers values) is given by:
+
+\[
+\begin{matrix} f(1) = 1, f(3) = 3 \\ f(2 \cdot n) = f(n) \\ f(4 \cdot n + 1) = 2 \cdot f(2 \cdot n + 1) - f(n) \\ f(4 \cdot n + 3) = 3 \cdot f(2 \cdot n + 1) - 2 \cdot f(n), \end{matrix}
+\]
+
+for all positive integers \(n.\) Determine with proof the number of positive integers \(\leq 1988\) for which \(f(n) = n.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_3
+IMO,1988,4,IMO 1988 P4,IMO-1988-4,"Show that the solution set of the inequality
+
+\[
+\sum_{k=1}^{70}\frac{k}{x-k}\ge\frac{5}{4}
+\]
+
+is a union of disjoint intervals, the sum of whose length is \(1988\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_4
+IMO,1988,5,IMO 1988 P5,IMO-1988-5,"In a right-angled triangle \(ABC\) let \(AD\) be the altitude drawn to the hypotenuse and let the straight line joining the incentres of the triangles \(ABD, ACD\) intersect the sides \(AB, AC\) at the points \(K,L\) respectively. If \(E\) and \(E_1\) dnote the areas of triangles \(ABC\) and \(AKL\) respectively, show that
+
+\[
+\frac {E}{E_1} \geq 2.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_5
+IMO,1988,6,IMO 1988 P6,IMO-1988-6,Let \(a\) and \(b\) be positive integers such that \(ab + 1\) divides \(a^{2} + b^{2}\). Show that \(\frac {a^{2} + b^{2}}{ab + 1}\) is the square of an integer.,AoPS,https://artofproblemsolving.com/wiki/index.php/1988_IMO_Problems/Problem_6
+IMO,1989,1,IMO 1989 P1,IMO-1989-1,"Prove that in the set \(\{1,2, \ldots, 1989\}\) can be expressed as the disjoint union of subsets \(A_i, \{i = 1,2, \ldots, 117\}\) such that
+
+i.) each \(A_i\) contains 17 elements
+
+ii.) the sum of all the elements in each \(A_i\) is the same.",AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_1
+IMO,1989,2,IMO 1989 P2,IMO-1989-2,"\(ABC\) is a triangle, the bisector of angle \(A\) meets the circumcircle of triangle \(ABC\) in \(A_1\), points \(B_1\) and \(C_1\) are defined similarly. Let \(AA_1\) meet the lines that bisect the two external angles at \(B\) and \(C\) in \(A_0\). Define \(B_0\) and \(C_0\) similarly. Prove that the area of triangle \(A_0B_0C_0 = 2 \cdot\) area of hexagon \(AC_1BA_1CB_1 \geq 4 \cdot\) area of triangle \(ABC\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_2
+IMO,1989,3,IMO 1989 P3,IMO-1989-3,"Let \(n\) and \(k\) be positive integers and let \(S\) be a set of \(n\) points in the plane such that
+
+i.) no three points of \(S\) are collinear, and
+
+ii.) for every point \(P\) of \(S\) there are at least \(k\) points of \(S\) equidistant from \(P.\)
+
+Prove that:
+
+\[
+k < \frac {1}{2} + \sqrt {2 \cdot n}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_3
+IMO,1989,4,IMO 1989 P4,IMO-1989-4,"Let \(ABCD\) be a convex quadrilateral such that the sides \(AB,AD,BC\) satisfy \(AB=AD+BC\). There exists a point \(P\) inside the quadrilateral at a distance \(h\) from the line \(CD\) such that \(AP=h+AD\) and \(BP=h+BC\). Show that:
+
+\[
+\frac{1}{\sqrt{h}}\ge\frac{1}{\sqrt{AD}}+\frac{1}{\sqrt{BC}}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_4
+IMO,1989,5,IMO 1989 P5,IMO-1989-5,Prove that for each positive integer \(n\) there exist \(n\) consecutive positive integers none of which is an integral power of a prime number.,AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_5
+IMO,1989,6,IMO 1989 P6,IMO-1989-6,"A permutation \(\{x_1, \ldots, x_{2n}\}\) of the set\(\{1,2, \ldots, 2n\}\) where \(\mbox{n}\) is a positive integer, is said to have property \(T\) if \(|x_i - x_{i + 1}| = n\) for at least one \(i \in \{1,2, \ldots, 2n - 1\}\). Show that, for each \(\mbox{n}\), there are more permutations with property \(T\) than without.",AoPS,https://artofproblemsolving.com/wiki/index.php/1989_IMO_Problems/Problem_6
+IMO,1990,1,IMO 1990 P1,IMO-1990-1,"Chords \(AB\) and \(CD\) of a circle intersect at a point \(E\) inside the circle. Let \(M\) be an interior point of the segment \(\overline{EB}\). The tangent line at \(E\) to the circle through \(D, E\), and \(M\) intersects the lines \(\overline{BC}\) and \({AC}\) at \(F\) and \(G\), respectively. If \(\frac{AM}{AB} = t\), find \(\frac{EG}{EF}\) in terms of \(t\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_1
+IMO,1990,2,IMO 1990 P2,IMO-1990-2,Let \(n\ge3\) and consider a set \(E\) of \(2n-1\) distinct points on a circle. Suppose that exactly \(k\) of these points are to be colored black. Such a coloring is “good” if there is at least one pair of black points such that the interior of one of the arcs between them contains exactly \(n\) points from \(E\). Find the smallest value of \(k\) so that every such coloring of \(k\) points of \(E\) is good.,AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_2
+IMO,1990,3,IMO 1990 P3,IMO-1990-3,Determine all integers \(n > 1\) such that \(\frac{2^n+1}{n^2}\) is an integer.,AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_3
+IMO,1990,4,IMO 1990 P4,IMO-1990-4,"Let \(\mathbb{Q^+}\) be the set of positive rational numbers. Construct a function \(f :\mathbb{Q^+}\rightarrow\mathbb{Q^+}\) such that \(f(xf(y)) = \frac{f(x)}{y}\) for all \(x, y\in{Q^+}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_4
+IMO,1990,5,IMO 1990 P5,IMO-1990-5,"Given an initial integer \(n_{0}\textgreater1\), two players, \(\mathbb{A}\) and \(\mathbb{B}\), choose integers \(n_{1}, n_{2},n_{3}\), . . . alternately according to the following rules: Knowing \(n_{2k}\), \(\mathbb{A}\) chooses any integer \(n_{2k+1}\) such that
+
+\[
+n_{2k}\leq n_{2k+1}\leq n_{2k}^2
+\]
+
+. Knowing \(n_{2k+1}\), \(\mathbb{B}\) chooses any integer \(n_{2k+2}\) such that
+
+\[
+\frac{n_{2k+1}}{n_{2k+2}}
+\]
+
+is a prime raised to a positive integer power. Player \(\mathbb{A}\) wins the game by choosing the number 1990; player \(\mathbb{B}\) wins by choosing the number 1. For which \(n_{0}\) does:
+
+(a) \(\mathbb{A}\) have a winning strategy?
+
+(b) \(\mathbb{B}\) have a winning strategy?
+
+(c) Neither player have a winning strategy?",AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_5
+IMO,1990,6,IMO 1990 P6,IMO-1990-6,"Prove that there exists a convex \(1990\text{-gon}\) with the following two properties: (a) All angles are equal. (b) The lengths of the \(1990\) sides are the numbers \(1^2, 2^2,3^2,\dots, 1990^2\) in some order.",AoPS,https://artofproblemsolving.com/wiki/index.php/1990_IMO_Problems/Problem_6
+IMO,1991,1,IMO 1991 P1,IMO-1991-1,"Given a triangle \(ABC\) let \(I\) be the center of its inscribed circle. The internal bisectors of the angles \(A,B,C\) meet the opposite sides in \(A^\prime,B^\prime,C^\prime\) respectively. Prove that
+
+\[
+\frac {1}{4} < \frac {AI\cdot BI\cdot CI}{AA^{\prime }\cdot BB^{\prime }\cdot CC^{\prime }} \leq \frac {8}{27}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_1
+IMO,1991,2,IMO 1991 P2,IMO-1991-2,"Let \(\,n > 6\,\) be an integer and \(\,a_{1},a_{2},\cdots ,a_{k}\,\) be all the natural numbers less than \(n\) and relatively prime to \(n\). If
+
+\[
+a_{2} - a_{1} = a_{3} - a_{2} = \cdots = a_{k} - a_{k - 1} > 0,
+\]
+
+prove that \(\,n\,\) must be either a prime number or a power of \(\,2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_2
+IMO,1991,3,IMO 1991 P3,IMO-1991-3,"Let \(S = \{1,2,3,\cdots ,280\}\). Find the smallest integer \(n\) such that each \(n\)-element subset of \(S\) contains five numbers which are pairwise relatively prime.",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_3
+IMO,1991,4,IMO 1991 P4,IMO-1991-4,"Suppose \(\,G\,\) is a connected graph with \(\,k\,\) edges. Prove that it is possible to label the edges \(1,2,\ldots ,k\,\) in such a way that at each vertex which belongs to two or more edges, the greatest common divisor of the integers labeling those edges is equal to 1.",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_4
+IMO,1991,5,IMO 1991 P5,IMO-1991-5,"Let \(\,ABC\,\) be a triangle and \(\,P\,\) an interior point of \(\,ABC\,\). Show that at least one of the angles \(\,\angle PAB,\;\angle PBC,\;\angle PCA\,\) is less than or equal to \(30^{\circ }\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_5
+IMO,1991,6,IMO 1991 P6,IMO-1991-6,"An infinite sequence \(x_0, x_1, x_2,\ldots\) of real numbers is said to be bounded if there is a constant \(C\) such that \(|x_i| \leq C\) for every \(i \geq 0\).
+
+Given any real number \(a > 1\), construct a bounded infinite sequence \(x_0,x_1,x_2,\ldots\) such that \(|x_i-x_j|\cdot |i-j|^a\geq 1\) for every pair of distinct nonnegative integers \(i,j\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1991_IMO_Problems/Problem_6
+IMO,1992,1,IMO 1992 P1,IMO-1992-1,"Find all integers \(a\), \(b\), \(c\) satisfying \(1 < a < b < c\) such that \((a - 1)(b -1)(c - 1)\) is a divisor of \(abc - 1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_1
+IMO,1992,2,IMO 1992 P2,IMO-1992-2,"Let \(\mathbb{R}\) denote the set of all real numbers. Find all functions \(f:\mathbb{R} \to \mathbb{R}\) such that
+
+\[
+f\left( x^{2}+f(y) \right)= y+(f(x))^{2} \hspace{0.5cm} \forall x,y \in \mathbb{R}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_2
+IMO,1992,3,IMO 1992 P3,IMO-1992-3,"Consider nine points in space, no four of which are coplanar. Each pair of points is joined by an edge (that is, a line segment) and each edge is either colored blue or red or left uncolored. Find the smallest value of \(n\) such that whenever exactly n edges are colored, the set of colored edges necessarily contains a triangle all of whose edges have the same color.",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_3
+IMO,1992,4,IMO 1992 P4,IMO-1992-4,"In the plane let \(C\) be a circle, \(l\) a line tangent to the circle \(C\), and \(M\) a point on \(l\). Find the locus of all points \(P\) with the following property: there exists two points \(Q\), \(R\) on \(l\) such that \(M\) is the midpoint of \(QR\) and \(C\) is the inscribed circle of triangle \(PQR\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_4
+IMO,1992,5,IMO 1992 P5,IMO-1992-5,"Let \(S\) be a finite set of points in three-dimensional space. Let \(S_{x}\),\(S_{y}\),\(S_{z}\), be the sets consisting of the orthogonal projections of the points of \(S\) onto the \(yz\)-plane, \(zx\)-plane, \(xy\)-plane, respectively. Prove that
+
+\[
+|S|^{2} \le |S_{x}| \cdot |S_{y}| \cdot |S_{z}|,
+\]
+
+where \(|A|\) denotes the number of elements in the finite set \(|A|\). (Note: The orthogonal projection of a point onto a plane is the foot of the perpendicular from that point to the plane)",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_5
+IMO,1992,6,IMO 1992 P6,IMO-1992-6,"For each positive integer \(n\), \(S(n)\) is defined to be the greatest integer such that, for every positive integer \(k \le S(n)\), \(n^{2}\) can be written as the sum of \(k\) positive squares.
+
+(a) Prove that \(S(n) \le n^{2}-14\) for each \(n \ge 4\).
+
+(b) Find an integer \(n\) such that \(S(n)=n^{2}-14\).
+
+(c) Prove that there are infinitely many integers \(n\) such that \(S(n)=n^{2}-14\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1992_IMO_Problems/Problem_6
+IMO,1993,1,IMO 1993 P1,IMO-1993-1,"Let \(f\left(x\right)=x^n+5x^{n-1}+3\), where \(n>1\) is an integer. Prove that \(f\left(x\right)\) cannot be expressed as the product of two non-constant polynomials with integer coefficients.",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_1
+IMO,1993,2,IMO 1993 P2,IMO-1993-2,"Let \(D\) be a point inside acute triangle \(ABC\) such that \(\angle ADB = \angle ACB+\frac{\pi}{2}\) and \(AC\cdot BD=AD\cdot BC\).
+
+(a) Calculate the ratio \(\frac{AB\cdot CD}{AC\cdot BD}\).
+
+(b) Prove that the tangents at \(C\) to the circumcircles of \(\Delta ACD\) and \(\Delta BCD\) are perpendicular.",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_2
+IMO,1993,3,IMO 1993 P3,IMO-1993-3,"On an infinite chessboard, a game is played as follows. At the start, \(n^2\) pieces are arranged on the chessboard in an \(n\) by \(n\) block of adjoining squares, one piece in each square. A move in the game is a jump in a horizontal or vertical direction over an adjacent occupied square to an unoccupied square immediately beyond. The piece which has been jumped over is removed. Find those values of \(n\) for which the game can end with only one piece remaining on the board.",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_3
+IMO,1993,4,IMO 1993 P4,IMO-1993-4,"For three points \(A,B,C\) in the plane, we define \(m(ABC)\) to be the smallest length of the three heights of the triangle \(ABC\), where in the case \(A\), \(B\), \(C\) are collinear, we set \(m(ABC) = 0\). Let \(A\), \(B\), \(C\) be given points in the plane. Prove that for any point \(X\) in the plane,
+
+\(m(ABC) \leq m(ABX) + m(AXC) + m(XBC)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_4
+IMO,1993,5,IMO 1993 P5,IMO-1993-5,"Let \(\mathbb{N} = \{1,2,3, \ldots\}\). Determine if there exists a strictly increasing function \(f: \mathbb{N} \mapsto \mathbb{N}\) with the following properties:
+
+(i) \(f(1) = 2\);
+
+(ii) \(f(f(n)) = f(n) + n, (n \in \mathbb{N})\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_5
+IMO,1993,6,IMO 1993 P6,IMO-1993-6,"There are \(n\) lamps \(L_0, \ldots , L_{n-1}\) in a circle (\(n > 1\)), where we denote \(L_{n+k} = L_k\). (A lamp at all times is either on or off.) Perform steps \(s_0, s_1, \ldots\) as follows: at step \(s_i\), if \(L_{i-1}\) is lit, switch \(L_i\) from on to off or vice versa, otherwise do nothing. Initially all lamps are on. Show that:
+
+(a) There is a positive integer \(M(n)\) such that after \(M(n)\) steps all the lamps are on again;
+
+(b) If \(n = 2^k\), we can take \(M(n) = n^2 - 1\);
+
+(c) If \(n = 2^k + 1\), we can take \(M(n) = n^2 - n + 1.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1993_IMO_Problems/Problem_6
+IMO,1994,1,IMO 1994 P1,IMO-1994-1,"Let \(m\) and \(n\) be two positive integers. Let \(a_1\), \(a_2\), \(\ldots\), \(a_m\) be \(m\) different numbers from the set \(\{1, 2,\ldots, n\}\) such that for any two indices \(i\) and \(j\) with \(1\leq i \leq j \leq m\) and \(a_i + a_j \leq n\), there exists an index \(k\) such that \(a_i + a_j = a_k\). Show that
+
+\[
+\frac{a_1+a_2+...+a_m}{m} \ge \frac{n+1}{2}
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_1
+IMO,1994,2,IMO 1994 P2,IMO-1994-2,"Let \(ABC\) be an isosceles triangle with \(AB = AC\). \(M\) is the midpoint of \(BC\) and \(O\) is the point on the line \(AM\) such that \(OB\) is perpendicular to \(AB\). \(Q\) is an arbitrary point on \(BC\) different from \(B\) and \(C\). \(E\) lies on the line \(AB\) and \(F\) lies on the line \(AC\) such that \(E, Q, F\) are distinct and collinear. Prove that \(OQ\) is perpendicular to \(EF\) if and only if \(QE = QF\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_2
+IMO,1994,3,IMO 1994 P3,IMO-1994-3,"For any positive integer \(k\), let \(f(k)\) be the number of elements in the set \(\{k + 1, k + 2,\dots, 2k\}\) whose base 2 representation has precisely three \(1\)s.
+
+- (a) Prove that, for each positive integer \(m\), there exists at least one positive integer \(k\) such that \(f(k) = m\).
+- (b) Determine all positive integers \(m\) for which there exists exactly one \(k\) with \(f(k) = m\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_3
+IMO,1994,4,IMO 1994 P4,IMO-1994-4,"Find all ordered pairs \((m,n)\) where \(m\) and \(n\) are positive integers such that \(\frac {n^3 + 1}{mn - 1}\) is an integer.",AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_4
+IMO,1994,5,IMO 1994 P5,IMO-1994-5,"Let \(S\) be the set of real numbers strictly greater than \(-1\). Find all functions \(f:S \to S\) satisfying the two conditions:
+
+1. \(f(x+f(y)+xf(y)) = y+f(x)+yf(x)\) for all \(x\) and \(y\) in \(S\);
+
+2. \(\frac{f(x)}{x}\) is strictly increasing on each of the intervals \(-1<x<0\) and \(0<x\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_5
+IMO,1994,6,IMO 1994 P6,IMO-1994-6,Show that there exists a set \(A\) of positive integers with the following property: For any infinite set \(S\) of primes there exist two positive integers \(m \in A\) and \(n \not\in A\) each of which is a product of \(k\) distinct elements of \(S\) for some \(k \ge 2\).,AoPS,https://artofproblemsolving.com/wiki/index.php/1994_IMO_Problems/Problem_6
+IMO,1995,1,IMO 1995 P1,IMO-1995-1,"Let \(A,B,C,D\) be four distinct points on a line, in that order. The circles with diameters \(AC\) and \(BD\) intersect at \(X\) and \(Y\). The line \(XY\) meets \(BC\) at \(Z\). Let \(P\) be a point on the line \(XY\) other than \(Z\). The line \(CP\) intersects the circle with diameter \(AC\) at \(C\) and \(M\), and the line \(BP\) intersects the circle with diameter \(BD\) at \(B\) and \(N\). Prove that the lines \(AM,DN,XY\) are concurrent.",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_1
+IMO,1995,2,IMO 1995 P2,IMO-1995-2,"Let \(a, b, c\) be positive real numbers such that \(abc = 1\). Prove that
+
+\[
+\frac{1}{a^3(b+c)} + \frac{1}{b^3(c+a)} + \frac{1}{c^3(a+b)} \geq \frac{3}{2}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_2
+IMO,1995,3,IMO 1995 P3,IMO-1995-3,"Determine all integers \(n>3\) for which there exist \(n\) points \(A_1,\ldots,A_n\) in the plane, no three collinear, and real numbers \(r_1,\ldots,r_n\) such that for \(1\le i<j<k\le n\), the area of \(\triangle A_iA_jA_k\) is \(r_i+r_j+r_k\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_3
+IMO,1995,4,IMO 1995 P4,IMO-1995-4,"The positive real numbers \(x_0, x_1, x_2,.....x_{1994}, x_{1995}\) satisfy the relations
+
+\(x_0=x_{1995}\) and \(x_{i-1}+\frac{2}{x_{i-1}}=2{x_i}+\frac{1}{x_i}\)
+
+for \(i=1,2,3,....1995\)
+
+Find the maximum value that \(x_0\) can have.",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_4
+IMO,1995,5,IMO 1995 P5,IMO-1995-5,"Let \(ABCDEF\) be a convex hexagon with \(AB=BC=CD\) and \(DE=EF=FA\), such that \(\angle BCD=\angle EFA=\frac{\pi}{3}\). Suppose \(G\) and \(H\) are points in the interior of the hexagon such that \(\angle AGB=\angle DHE=\frac{2\pi}{3}\). Prove that \(AG+GB+GH+DH+HE\ge CF\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_5
+IMO,1995,6,IMO 1995 P6,IMO-1995-6,"Let \(p\) be an odd prime number. How many \(p\)-element subsets \(A\) of \({1,2,\ldots,2p}\) are there, the sum of whose elements is divisible by \(p\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1995_IMO_Problems/Problem_6
+IMO,1996,1,IMO 1996 P1,IMO-1996-1,"We are given a positive integer \(r\) and a rectangular board \(ABCD\) with dimensions \(|AB|=20\), \(|BC|=12\). The rectangle is divided into a grid of \(20 \times 12\) unit squares. The following moves are permitted on the board: one can move from one square to another only if the distance between the centers of the two squares is \(\sqrt{r}\). The task is to find a sequence of moves leading from the square with \(A\) as a vertex to the square with \(B\) as a vertex.
+
+(a) Show that the task cannot be done if \(r\) is divisible by \(2\) or \(3\).
+
+(b) Prove that the task is possible when \(r=73\).
+
+(c) Can the task be done when \(r=97\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_1
+IMO,1996,2,IMO 1996 P2,IMO-1996-2,"Let \(P\) be a point inside triangle \(ABC\) such that
+
+\[
+\angle APB-\angle ACB = \angle APC-\angle ABC
+\]
+
+Let \(D\), \(E\) be the incenters of triangles \(APB\), \(APC\), respectively. Show that \(AP\), \(BD\), \(CE\) meet at a point.",AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_2
+IMO,1996,3,IMO 1996 P3,IMO-1996-3,"Let \(S\) denote the set of nonnegative integers. Find all functions \(f\) from \(S\) to itself such that
+
+\(f(m+f(n))=f(f(m))+f(n)\) \(\forall m,n \in S\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_3
+IMO,1996,4,IMO 1996 P4,IMO-1996-4,The positive integers \(a\) and \(b\) are such that the numbers \(15a+16b\) and \(16a-15b\) are both squares of positive integers. What is the least possible value that can be taken on by the smaller of these two squares?,AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_4
+IMO,1996,5,IMO 1996 P5,IMO-1996-5,"Let \(ABCDEF\) be a convex hexagon such that \(AB\) is parallel to \(DE\), \(BD\) is parallel to \(EF\), and \(CD\) is parallel to \(FA\). Let \(R_{A}\), \(R_{C}\), \(R_{E}\) denote the circumradii of triangles \(FAB\), \(BCD\), \(DEF\), respectively, and let \(P\) denote the perimeter of the hexagon. Prove that
+
+\[
+R_{A}+R_{C}+R_{E} \ge \frac{P}{2}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_5
+IMO,1996,6,IMO 1996 P6,IMO-1996-6,"Let \(p, q, n\) be three positive integers with \(p+q<n\). Let \((x_0,x_1,\cdots ,x_n)\) be an \((n+1)\)-tuple of integers satisfying the following conditions:
+
+(i) \(x_0=x_n=0\);
+
+(ii) For each \(i\) with \(1 \le i \le n\), either \(x_i-x_{i-1}=p\) or \(x_i-x_{i-1}=-q\).
+
+Show that there exists indices \(i<j\) with \((i,j) \ne (0,n)\), such that \(x_i=x_j\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1996_IMO_Problems/Problem_6
+IMO,1997,1,IMO 1997 P1,IMO-1997-1,"In the plane the points with integer coordinates are the vertices of unit squares. The squares are colored alternatively black and white (as on a chessboard).
+
+For any pair of positive integers \(m\) and \(n\), consider a right-angled triangle whose vertices have integer coordinates and whose legs, of lengths \(m\) and \(n\), lie along edges of the squares.
+
+Let \(S_{1}\) be the total area of the black part of the triangle and \(S_{2}\) be the total area of the white part.
+
+Let \(f(m,n)=|S_{1}-S_{2}|\)
+
+(a) Calculate \(f(m,n)\) for all positive integers \(m\) and \(n\) which are either both even or both odd.
+
+(b) Prove that \(f(m,n) \le \frac{1}{2} max\left\{ m,n \right\}\) for all \(m\) and \(n\).
+
+(c) Show that there is no constant \(C\) such that \(f(m,n)<C\) for all \(m\) and \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_1
+IMO,1997,2,IMO 1997 P2,IMO-1997-2,"The angle at \(A\) is the smallest angle of triangle \(ABC\). The points \(B\) and \(C\) divide the circumcircle of the triangle into two arcs. Let \(U\) be an interior point of the arc between \(B\) and \(C\) which does not contain \(A\). The perpendicular bisectors of \(AB\) and \(AC\) meet the line \(AU\) and \(V\) and \(W\), respectively. The lines \(BV\) and \(CW\) meet at \(T\). Show that.
+
+\[
+AU=TB+TC
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_2
+IMO,1997,3,IMO 1997 P3,IMO-1997-3,"Let \(x_{1}\), \(x_{2}\),...,\(x_{n}\) be real numbers satisfying the conditions
+
+\[
+|x_{1}+x_{2}+...+x_{n}|=1
+\]
+
+and
+
+\(|x_{i}| \le \frac{n+1}{2}\), for \(i=1,2,...,n\)
+
+Show that there exists a permutation \(y_{1}\), \(y_{2}\),...,\(y_{n}\) of \(x_{1}\), \(x_{2}\),...,\(x_{n}\) such that
+
+\[
+|y_{1}+2y_{2}+...+ny_{n}|\le \frac{n+1}{2}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_3
+IMO,1997,4,IMO 1997 P4,IMO-1997-4,"An \(n \times n\) matrix whose entries come from the set \(S={1,2,...,2n-1}\) is called a \(\textit{silver}\) matrix if, for each \(i=1,2,...,n\), the \(i\)th row and the \(i\)th column together contain all elements of \(S\). Show that
+
+(a) there is no \(\textit{silver}\) matrix for \(n=1997\);
+
+(b) \(\textit{silver}\) matrices exist for infinitely many values of \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_4
+IMO,1997,5,IMO 1997 P5,IMO-1997-5,"Find all pairs \((a,b)\) of integers \(a,b \ge 1\) that satisfy the equation
+
+\[
+a^{b^{2}}=b^{a}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_5
+IMO,1997,6,IMO 1997 P6,IMO-1997-6,"For each positive integer \(n\), let \(f(n)\) denote the number of ways of representing \(n\) as a sum of powers of \(2\) with nonnegative integer exponents. Representations which differ only in the ordering of their summands are considered to be the same. For instance, \(f(4)=4\), because the number 4 can be represented in the following four ways:
+
+\[
+4;2+2;2+1+1;1+1+1+1
+\]
+
+Prove that, for any integer \(n \ge 3\),
+
+\(2^{n^{2}/4}<f(2^{n})<2^{n^{2}/2}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1997_IMO_Problems/Problem_6
+IMO,1998,1,IMO 1998 P1,IMO-1998-1,"In the convex quadrilateral \(ABCD\), the diagonals \(AC\) and \(BD\) are perpendicular and the opposite sides \(AB\) and \(DC\) are not parallel. Suppose that the point \(P\), where the perpendicular bisectors of \(AB\) and \(DC\) meet, is inside \(ABCD\). Prove that \(ABCD\) is a cyclic quadrilateral if and only if the triangles \(ABP\) and \(CDP\) have equal areas.",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_1
+IMO,1998,2,IMO 1998 P2,IMO-1998-2,"In a competition, there are \(a\) contestants and \(b\) judges, where \(b\ge3\) is an odd integer. Each judge rates each contestant as either “pass” or “fail”. Suppose \(k\) is a number such that, for any two judges, their ratings coincide for at most \(k\) contestants. Prove that \(\frac{k}{a}\ge\frac{b-1}{2b}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_2
+IMO,1998,3,IMO 1998 P3,IMO-1998-3,"For any positive integer \(n\), let \(d(n)\) denote the number of positive divisors of \(n\) (including 1 and \(n\) itself). Determine all positive integers \(k\) such that \(d(n^2)/d(n) = k\) for some \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_3
+IMO,1998,4,IMO 1998 P4,IMO-1998-4,"Determine all pairs \((a, b)\) of positive integers such that \(ab^{2} + b + 7\) divides \(a^{2}b + a + b\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_4
+IMO,1998,5,IMO 1998 P5,IMO-1998-5,"Let \(I\) be the incenter of triangle \(ABC\). Let the incircle of \(ABC\) touch the sides \(BC\), \(CA\), and \(AB\) at \(K\), \(L\), and \(M\), respectively. The line through \(B\) parallel to \(MK\) meets the lines \(LM\) and \(LK\) at \(R\) and \(S\), respectively. Prove that angle \(RIS\) is acute.",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_5
+IMO,1998,6,IMO 1998 P6,IMO-1998-6,"Determine the least possible value of \(f(1998),\) where \(f:\Bbb{N}\to \Bbb{N}\) is a function such that for all \(m,n\in {\Bbb N}\),
+
+\[
+f\left( n^{2}f(m)\right) =m\left( f(n)\right) ^{2}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/1998_IMO_Problems/Problem_6
+IMO,1999,1,IMO 1999 P1,IMO-1999-1,"Determine all finite sets \(S\) of at least three points in the plane which satisfy the following condition:
+
+For any two distinct points \(A\) and \(B\) in \(S\), the perpendicular bisector of the line segment \(AB\) is an axis of symmetry of \(S\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_1
+IMO,1999,2,IMO 1999 P2,IMO-1999-2,"Let \(n \geq 2\) be a fixed integer.
+
+- (a) Find the least constant \(C\) such that for all nonnegative real numbers \(x_1, \dots, x_n\),
+
+\[
+\sum_{1\leq i<j \leq n} x_ix_j (x_i^2 + x_j^2) \leq C \left( \sum_{i=1}^n x_i \right)^4.
+\]
+
+- (b) Determine when equality occurs for this value of \(C\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_2
+IMO,1999,3,IMO 1999 P3,IMO-1999-3,"Consider an \(n \times n\) square board, where \(n\) is a fixed even positive integer. The board is divided into \(n^{2}\) units squares. We say that two different squares on the board are adjacent if they have a common side.
+
+\(N\) unit squares on the board are marked in such a way that every square (marked or unmarked) on the board is adjacent to at least one marked square.
+
+Determine the smallest possible value of \(N\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_3
+IMO,1999,4,IMO 1999 P4,IMO-1999-4,"Determine all pairs \((n,p)\) of positive integers such that
+
+\(p\) is a prime, \(n\) not exceeded \(2p\), and \((p-1)^{n}+1\) is divisible by \(n^{p-1}\)",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_4
+IMO,1999,5,IMO 1999 P5,IMO-1999-5,"Two circles \(G_{1}\) and \(G_{2}\) are contained inside the circle \(G\), and are tangent to \(G\) at the distinct points \(M\) and \(N\), respectively. \(G_{1}\) passes through the center of \(G_{2}\). The line passing through the two points of intersection of \(G_{1}\) and \(G_{2}\) meets \(G\) at \(A\) and \(B\). The lines \(MA\) and \(MB\) meet \(G_{1}\) at \(C\) and \(D\), respectively.
+
+Prove that \(CD\) is tangent to \(G_{2}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_5
+IMO,1999,6,IMO 1999 P6,IMO-1999-6,"Determine all functions \(f:\Bbb{R}\to \Bbb{R}\) such that
+
+\[
+f(x-f(y))=f(f(y))+xf(y)+f(x)-1
+\]
+
+for all real numbers \(x,y\).",AoPS,https://artofproblemsolving.com/wiki/index.php/1999_IMO_Problems/Problem_6
+IMO,2000,1,IMO 2000 P1,IMO-2000-1,"Two circles \(G_1\) and \(G_2\) intersect at two points \(M\) and \(N\). Let \(AB\) be the line tangent to these circles at \(A\) and \(B\), respectively, so that \(M\) lies closer to \(AB\) than \(N\). Let \(CD\) be the line parallel to \(AB\) and passing through the point \(M\), with \(C\) on \(G_1\) and \(D\) on \(G_2\). Lines \(AC\) and \(BD\) meet at \(E\); lines \(AN\) and \(CD\) meet at \(P\); lines \(BN\) and \(CD\) meet at \(Q\). Show that \(EP=EQ\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_1
+IMO,2000,2,IMO 2000 P2,IMO-2000-2,"Let \(a, b, c\) be positive real numbers with \(abc=1\). Show that
+
+\[
+\left( a-1+\frac{1}{b} \right)\left( b-1+\frac{1}{c} \right)\left( c-1+\frac{1}{a} \right) \le 1
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_2
+IMO,2000,3,IMO 2000 P3,IMO-2000-3,"Let \(n \ge 2\) be a positive integer and \(\lambda\) a positive real number. Initially there are \(n\) fleas on a horizontal line, not all at the same point. We define a move as choosing two fleas at some points \(A\) and \(B\) to the left of \(B\), and letting the flea from \(A\) jump over the flea from \(B\) to the point \(C\) so that \(\frac{BC}{AB}=\lambda\).
+
+Determine all values of \(\lambda\) such that, for any point \(M\) on the line and for any initial position of the \(n\) fleas, there exists a sequence of moves that will take them all to the position right of \(M\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_3
+IMO,2000,4,IMO 2000 P4,IMO-2000-4,"A magician has one hundred cards numbered \(1\) to \(100\). He puts them into three boxes, a red one, a white one and a blue one, so that each box contains at least one card.
+
+A member of the audience selects two of the three boxes, chooses one card from each and announces the sum of the numbers on the chosen cards. Given this sum, the magician identifies the box from which no card has been chosen.
+
+How many ways are there to put all the cards into the boxes so that this trick always works? (Two ways are considered different if at least one card is put into a different box.)",AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_4
+IMO,2000,5,IMO 2000 P5,IMO-2000-5,Does there exist a positive integer \(n\) such that \(n\) has exactly 2000 prime divisors and \(n\) divides \(2^n + 1\)?,AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_5
+IMO,2000,6,IMO 2000 P6,IMO-2000-6,"Let \(\overline{AH_1}\), \(\overline{BH_2}\), and \(\overline{CH_3}\) be the altitudes of an acute triangle \(ABC\). The incircle \(\omega\) of triangle \(ABC\) touches the sides \(BC\), \(CA\), and \(AB\) at \(T_1\), \(T_2\), and \(T_3\), respectively. Consider the reflections of the lines \(H_1H_2\), \(H_2H_3\), and \(H_3H_1\) with respect to the lines \(T_1T_2\), \(T_2T_3\), and \(T_3T_1\). Prove that these images form a triangle whose vertices line on \(\omega\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2000_IMO_Problems/Problem_6
+IMO,2001,1,IMO 2001 P1,IMO-2001-1,"Consider an acute triangle \(\triangle ABC\). Let \(P\) be the foot of the altitude of triangle \(\triangle ABC\) issuing from the vertex \(A\), and let \(O\) be the circumcenter of triangle \(\triangle ABC\). Assume that \(\angle C \geq \angle B+30^{\circ}\). Prove that \(\angle A+\angle COP < 90^{\circ}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_1
+IMO,2001,2,IMO 2001 P2,IMO-2001-2,"Let \(a,b,c\) be positive real numbers. Prove that \(\frac{a}{\sqrt{a^{2}+8bc}}+\frac{b}{\sqrt{b^{2}+8ca}}+\frac{c}{\sqrt{c^{2}+8ab}}\ge 1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_2
+IMO,2001,3,IMO 2001 P3,IMO-2001-3,"Twenty-one girls and twenty-one boys took part in a mathematical competition. It turned out that each contestant solved at most six problems, and for each pair of a girl and a boy, there was at least one problem that was solved by both the girl and the boy. Show that there is a problem that was solved by at least three girls and at least three boys.",AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_3
+IMO,2001,4,IMO 2001 P4,IMO-2001-4,"Let \(n_1, n_2, \dots , n_m\) be integers where \(m>1\) is odd. Let \(x = (x_1, \dots , x_m)\) denote a permutation of the integers \(1, 2, \cdots , m\). Let \(f(x) = x_1n_1 + x_2n_2 + ... + x_mn_m\). Show that for some distinct permutations \(a\), \(b\) the difference \(f(a) - f(b)\) is a multiple of \(m!\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_4
+IMO,2001,5,IMO 2001 P5,IMO-2001-5,\(ABC\) is a triangle. \(X\) lies on \(BC\) and \(AX\) bisects angle \(A\). \(Y\) lies on \(CA\) and \(BY\) bisects angle \(B\). Angle \(A\) is \(60^{\circ}\). \(AB + BX = AY + YB\). Find all possible values for angle \(B\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_5
+IMO,2001,6,IMO 2001 P6,IMO-2001-6,\(K > L > M > N\) are positive integers such that \(KM + LN = (K + L - M + N)(-K + L + M + N)\). Prove that \(KL + MN\) is not prime.,AoPS,https://artofproblemsolving.com/wiki/index.php/2001_IMO_Problems/Problem_6
+IMO,2002,1,IMO 2002 P1,IMO-2002-1,"\(S\) is the set of all \((h,k)\) with \(h,k\) non-negative integers such that \(h + k < n\). Each element of \(S\) is colored red or blue, so that if \((h,k)\) is red and \(h' \le h,k' \le k\), then \((h',k')\) is also red. A type \(1\) subset of \(S\) has \(n\) blue elements with different first member and a type \(2\) subset of \(S\) has \(n\) blue elements with different second member. Show that there are the same number of type \(1\) and type \(2\) subsets.",AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_1
+IMO,2002,2,IMO 2002 P2,IMO-2002-2,\(BC\) is a diameter of a circle center \(O\). \(A\) is any point on the circle with \(\angle AOC \not\le 60^\circ\). \(EF\) is the chord which is the perpendicular bisector of \(AO\). \(D\) is the midpoint of the minor arc \(AB\). The line through \(O\) parallel to \(AD\) meets \(AC\) at \(J\). Show that \(J\) is the incenter of triangle \(CEF\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_2
+IMO,2002,3,IMO 2002 P3,IMO-2002-3,"Find all pairs of positive integers \(m,n \ge 3\) for which here exist infinitely many positive integers \(a\) such that
+
+\[
+\frac{a^m+a-1}{a^n+a^2-1}
+\]
+
+is itself an integer",AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_3
+IMO,2002,4,IMO 2002 P4,IMO-2002-4,"Problem: Let \(n>1\) be an integer and let \(1=d_{1}<d_{2}<d_{3} \cdots <d_{r}=n\) be all of its positive divisors in increasing order. Show that
+
+\[
+d=d_1d_2+d_2d_3+ \cdots +d_{r-1}d_r <n^2
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_4
+IMO,2002,5,IMO 2002 P5,IMO-2002-5,"Find all functions \(f:\Bbb{R}\to \Bbb{R}\) such that
+
+\[
+(f(x)+f(z))(f(y)+f(t))=f(xy-zt)+f(xt+yz)
+\]
+
+for all real numbers \(x,y,z,t\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_5
+IMO,2002,6,IMO 2002 P6,IMO-2002-6,"Let \(n \ge 3\) be a positive integer. Let \(C_1,C_2,...,C_n\) be unit circles in the plane, with centers \(O_1,O_2,...,O_n\) respectively. If no line meets more than two of the circles, prove that
+
+\[
+\sum_{1\le i< j \le n}^{}\frac{1}{O_iO_j}\le\frac{(n-1)\pi}{4}
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_6
+IMO,2003,1,IMO 2003 P1,IMO-2003-1,"\(S\) is the set \(\{1, 2, 3, \dots ,1000000\}\). Show that for any subset \(A\) of \(S\) with \(101\) elements we can find \(100\) distinct elements \(x_i\) of \(S\), such that the sets \(\{a + x_i \mid a \in A\}\) are all pairwise disjoint.",AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_1
+IMO,2003,2,IMO 2003 P2,IMO-2003-2,"Determine all pairs of positive integers \((a,b)\) such that
+
+\[
+\frac{a^2}{2ab^2-b^3+1}
+\]
+
+is a positive integer.",AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_2
+IMO,2003,3,IMO 2003 P3,IMO-2003-3,Each pair of opposite sides of convex hexagon has the property that the distance between their midpoints is \(\frac{\sqrt{3}}{2}\) times the sum of their lengths. Prove that the hexagon is equiangular.,AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_3
+IMO,2003,4,IMO 2003 P4,IMO-2003-4,"Let \(ABCD\) be a cyclic quadrilateral. Let \(P\), \(Q\), and \(R\) be the feet of perpendiculars from \(D\) to lines \(\overline{BC}\), \(\overline{CA}\), and \(\overline{AB}\), respectively. Show that \(PQ=QR\) if and only if the bisectors of angles \(ABC\) and \(ADC\) meet on segment \(\overline{AC}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_4
+IMO,2003,5,IMO 2003 P5,IMO-2003-5,"Let \(n\) be a positive integer and let \(x_1 \le x_2 \le \cdots \le x_n\) be real numbers. Prove that
+
+\[
+\left( \sum_{i=1}^{n}\sum_{j=i}^{n} |x_i-x_j|\right)^2 \le \frac{2(n^2-1)}{3}\sum_{i=1}^{n}\sum_{j=i}^{n}(x_i-x_j)^2
+\]
+
+with equality if and only if \(x_1, x_2, ..., x_n\) form an arithmetic sequence.",AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_5
+IMO,2003,6,IMO 2003 P6,IMO-2003-6,"Let \(p\) be a prime number. Prove that there exists a prime number \(q\) such that for every integer \(n\), the number \(n^p-p\) is not divisible by \(q\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2003_IMO_Problems/Problem_6
+IMO,2004,1,IMO 2004 P1,IMO-2004-1,Let \(ABC\) be an acute-angled triangle with \(AB\neq AC\). The circle with diameter \(BC\) intersects the sides \(AB\) and \(AC\) at \(M\) and \(N\) respectively. Denote by \(O\) the midpoint of the side \(BC\). The bisectors of the angles \(\angle BAC\) and \(\angle MON\) intersect at \(R\). Prove that the circumcircles of the triangles \(BMR\) and \(CNR\) have a common point lying on the side \(BC\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_1
+IMO,2004,2,IMO 2004 P2,IMO-2004-2,"Find all polynomials \(f\) with real coefficients such that for all reals \(a,b,c\) such that \(ab + bc + ca = 0\) we have the following relations
+
+\[
+f(a - b) + f(b - c) + f(c - a) = 2f(a + b + c).
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_2
+IMO,2004,3,IMO 2004 P3,IMO-2004-3,"Define a ""hook"" to be a figure made up of six unit squares as shown below in the picture, or any of the figures obtained by applying rotations and reflections to this figure.
+
+\[
+[asy] unitsize(0.5 cm);  draw((0,0)--(1,0)); draw((0,1)--(1,1)); draw((2,1)--(3,1)); draw((0,2)--(3,2)); draw((0,3)--(3,3)); draw((0,0)--(0,3)); draw((1,0)--(1,3)); draw((2,1)--(2,3)); draw((3,1)--(3,3)); [/asy]
+\]
+
+Determine all \(m \times n\) rectangles that can be covered without gaps and without overlaps with hooks such that; (a) the rectangle is covered without gaps and without overlaps, (b) no part of a hook covers area outside the rectangle.",AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_3
+IMO,2004,4,IMO 2004 P4,IMO-2004-4,"Let \(n \geq 3\) be an integer. Let \(t_1, t_2, \dots , t_n\) be positive real numbers such that
+
+\[
+n^2 + 1 > \left( t_1 + t_2 + ... + t_n \right) \left( \frac {1}{t_1} + \frac {1}{t_2} + ... + \frac {1}{t_n} \right).
+\]
+
+Show that \(t_i\), \(t_j\), \(t_k\) are side lengths of a triangle for all \(i\), \(j\), \(k\) with \(1 \leq i < j < k \leq n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_4
+IMO,2004,5,IMO 2004 P5,IMO-2004-5,"In a convex quadrilateral \(ABCD\), the diagonal \(BD\) bisects neither the angle \(ABC\) nor the angle \(CDA\). The point \(P\) lies inside \(ABCD\) and satisfies
+
+\[
+\angle PBC = \angle DBA \text{ and } \angle PDC = \angle BDA.
+\]
+
+Prove that \(ABCD\) is a cyclic quadrilateral if and only if \(AP = CP.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_5
+IMO,2004,6,IMO 2004 P6,IMO-2004-6,We call a positive integer alternating if every two consecutive digits in its decimal representation are of different parity. Find all positive integers \(n\) which have an alternating multiple.,AoPS,https://artofproblemsolving.com/wiki/index.php/2004_IMO_Problems/Problem_6
+IMO,2005,1,IMO 2005 P1,IMO-2005-1,"Six points are chosen on the sides of an equilateral triangle \(ABC\): \(A_1, A_2\) on \(BC\), \(B_1\), \(B_2\) on \(CA\) and \(C_1\), \(C_2\) on \(AB\), such that they are the vertices of a convex hexagon \(A_1A_2B_1B_2C_1C_2\) with equal side lengths. Prove that the lines \(A_1B_2, B_1C_2\) and \(C_1A_2\) are concurrent.",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_1
+IMO,2005,2,IMO 2005 P2,IMO-2005-2,"Let \(a_1, a_2, \dots\) be a sequence of integers with infinitely many positive and negative terms. Suppose that for every positive integer \(n\) the numbers \(a_1, a_2, \dots, a_n\) leave \(n\) different remainders upon division by \(n\). Prove that every integer occurs exactly once in the sequence.",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_2
+IMO,2005,3,IMO 2005 P3,IMO-2005-3,"Let \(x, y, z > 0\) satisfy \(xyz\ge 1\). Prove that
+
+\[
+\frac{x^5-x^2}{x^5+y^2+z^2} + \frac{y^5-y^2}{x^2+y^5+z^2} + \frac{z^5-z^2}{x^2+y^2+z^5} \ge 0.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_3
+IMO,2005,4,IMO 2005 P4,IMO-2005-4,"Determine all positive integers relatively prime to all the terms of the infinite sequence
+
+\[
+a_n=2^n+3^n+6^n -1,\ n\geq 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_4
+IMO,2005,5,IMO 2005 P5,IMO-2005-5,"Let \(ABCD\) be a fixed convex quadrilateral with \(BC = DA\) and \(BC \nparallel DA\). Let two variable points \(E\) and \(F\) lie of the sides \(BC\) and \(DA\), respectively, and satisfy \(BE = DF\). The lines \(AC\) and \(BD\) meet at \(P\), the lines \(BD\) and \(EF\) meet at \(Q\), the lines \(EF\) and \(AC\) meet at \(R\). Prove that the circumcircles of the triangles \(PQR\), as \(E\) and \(F\) vary, have a common point other than \(P\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_5
+IMO,2005,6,IMO 2005 P6,IMO-2005-6,"In a mathematical competition, in which 6 problems were posed to the participants, every two of these problems were solved by more than 2/5 of the contestants. Moreover, no contestant solved all the 6 problems. Show that there are at least 2 contestants who solved exactly 5 problems each.",AoPS,https://artofproblemsolving.com/wiki/index.php/2005_IMO_Problems/Problem_6
+IMO,2006,1,IMO 2006 P1,IMO-2006-1,"Let \(ABC\) be triangle with incenter \(I\). A point \(P\) in the interior of the triangle satisfies \(\angle PBA+\angle PCA = \angle PBC+\angle PCB\). Show that \(AP \geq AI\), and that equality holds if and only if \(P=I.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_1
+IMO,2006,2,IMO 2006 P2,IMO-2006-2,"Let \(P\) be a regular 2006-gon. A diagonal of \(P\) is called good if its endpoints divide the boundary of \(P\) into two parts, each composed of an odd number of sides of \(P\). The sides of \(P\) are also called good. Suppose \(P\) has been dissected into triangles by 2003 diagonals, no two of which have a common point in the interior of \(P\). Find the maximum number of isosceles triangles having two good sides that could appear in such a configuration.",AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_2
+IMO,2006,3,IMO 2006 P3,IMO-2006-3,"Determine the least real number \(M\) such that the inequality
+
+\[
+\left| ab(a^{2}-b^{2})+bc(b^{2}-c^{2})+ca(c^{2}-a^{2})\right|\leq M(a^{2}+b^{2}+c^{2})^{2}
+\]
+
+holds for all real numbers \(a,b\) and \(c\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_3
+IMO,2006,4,IMO 2006 P4,IMO-2006-4,"Determine all pairs \((x, y)\) of integers such that
+
+\[
+1+2^{x}+2^{2x+1}= y^{2}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_4
+IMO,2006,5,IMO 2006 P5,IMO-2006-5,"Let \(P(x)\) be a polynomial of degree \(n>1\) with integer coefficients, and let \(k\) be a positive integer. Consider the polynomial \(Q(x) = P( P ( \ldots P(P(x)) \ldots ))\), where \(P\) occurs \(k\) times. Prove that there are at most \(n\) integers \(t\) such that \(Q(t)=t\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_5
+IMO,2006,6,IMO 2006 P6,IMO-2006-6,Assign to each side \(b\) of a convex polygon \(P\) the maximum area of a triangle that has \(b\) as a side and is contained in \(P\). Show that the sum of the areas assigned to the sides of \(P\) is at least twice the area of \(P\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2006_IMO_Problems/Problem_6
+IMO,2007,1,IMO 2007 P1,IMO-2007-1,"Real numbers \(a_1, a_2, \dots , a_n\) are given. For each \(i\) (\(1\le i\le n\)) define
+
+\[
+d_i=\max\{a_j:1\le j\le i\}-\min\{a_j:i\le j\le n\}
+\]
+
+and let
+
+\[
+d=\max\{d_i:1\le i\le n\}.
+\]
+
+(a) Prove that, for any real numbers \(x_1\le x_2\le \cdots\le x_n\),
+
+\[
+\max\{|x_i-a_i|:1\le i\le n\}\ge \dfrac{d}{2}   (*)
+\]
+
+(b) Show that there are real numbers \(x_1\le x_2\le x_n\) such that equality holds in (*)",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_1
+IMO,2007,2,IMO 2007 P2,IMO-2007-2,"Consider five points \(A,B,C,D\), and \(E\) such that \(ABCD\) is a parallelogram and \(BCED\) is a cyclic quadrilateral. Let \(\ell\) be a line passing through \(A\). Suppose that \(\ell\) intersects the interior of the segment \(DC\) at \(F\) and intersects line \(BC\) at \(G\). Suppose also that \(EF=EG=EC\). Prove that \(\ell\) is the bisector of \(\angle DAB\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_2
+IMO,2007,3,IMO 2007 P3,IMO-2007-3,"In a mathematical competition some competitors are friends. Friendship is always mutual. Call a group of competitors a clique if each two of them are friends. (In particular, any group of fewer than two competitors is a clique.) The number of members of a clique is called its size. Given that, in this competition, the largest size of a clique is even, prove that the competitors can be arranged in two rooms such that the largest size of a clique contained in one room is the same as the largest size of a clique contained in the other room.",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_3
+IMO,2007,4,IMO 2007 P4,IMO-2007-4,"In \(\triangle ABC\) the bisector of \(\angle{BCA}\) intersects the circumcircle again at \(R\), the perpendicular bisector of \(BC\) at \(P\), and the perpendicular bisector of \(AC\) at \(Q\). The midpoint of \(BC\) is \(K\) and the midpoint of \(AC\) is \(L\). Prove that the triangles \(RPK\) and \(RQL\) have the same area.",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_4
+IMO,2007,5,IMO 2007 P5,IMO-2007-5,"Let \(a\) and \(b\) be positive integers. Show that if \(4ab-1\) divides \((4a^2-1)^2\), then \(a=b\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_5
+IMO,2007,6,IMO 2007 P6,IMO-2007-6,"Let \(n\) be a positive integer. Consider
+
+\[
+S=\{(x,y,z)~:~x,y,z\in \{0,1,\ldots,n \},~x+y+z>0\}
+\]
+
+as a set of \((n+1)^3-1\) points in three-dimensional space. Determine the smallest possible number of planes, the union of which contain \(S\) but does not include \((0,0,0)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2007_IMO_Problems/Problem_6
+IMO,2008,1,IMO 2008 P1,IMO-2008-1,"An acute-angled triangle \(ABC\) has orthocentre \(H\). The circle passing through \(H\) with centre the midpoint of \(BC\) intersects the line \(BC\) at \(A_1\) and \(A_2\). Similarly, the circle passing through \(H\) with centre the midpoint of \(CA\) intersects the line \(CA\) at \(B_1\) and \(B_2\), and the circle passing through \(H\) with centre the midpoint of \(AB\) intersects the line \(AB\) at \(C_1\) and \(C_2\). Show that \(A_1\), \(A_2\), \(B_1\), \(B_2\), \(C_1\), \(C_2\) lie on a circle.",AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_1
+IMO,2008,2,IMO 2008 P2,IMO-2008-2,"(i) If \(x\), \(y\) and \(z\) are three real numbers, all different from \(1\), such that \(xyz = 1\), then prove that \(\frac {x^{2}}{\left(x - 1\right)^{2}} + \frac {y^{2}}{\left(y - 1\right)^{2}} + \frac {z^{2}}{\left(z - 1\right)^{2}} \geq 1\). (With the \(\sum\) sign for cyclic summation, this inequality could be rewritten as \(\sum \frac {x^{2}}{\left(x - 1\right)^{2}} \geq 1\).)
+
+(ii) Prove that equality is achieved for infinitely many triples of rational numbers \(x\), \(y\) and \(z\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_2
+IMO,2008,3,IMO 2008 P3,IMO-2008-3,Prove that there are infinitely many positive integers \(n\) such that \(n^{2} + 1\) has a prime divisor greater than \(2n + \sqrt {2n}\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_3
+IMO,2008,4,IMO 2008 P4,IMO-2008-4,"Find all functions \(f: (0, \infty) \mapsto (0, \infty)\) (so \(f\) is a function from the positive real numbers) such that
+
+\[
+\frac {\left( f(w) \right)^2 + \left( f(x) \right)^2}{f(y^2) + f(z^2) } = \frac {w^2 + x^2}{y^2 + z^2}
+\]
+
+for all positive real numbers \(w,x,y,z,\) satisfying \(wx = yz.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_4
+IMO,2008,5,IMO 2008 P5,IMO-2008-5,"Let \(n\) and \(k\) be positive integers with \(k \geq n\) and \(k - n\) an even number. Let \(2n\) lamps labelled \(1\), \(2\), ..., \(2n\) be given, each of which can be either on or off. Initially all the lamps are off. We consider sequences of steps: at each step one of the lamps is switched (from on to off or from off to on).
+
+Let \(N\) be the number of such sequences consisting of \(k\) steps and resulting in the state where lamps \(1\) through \(n\) are all on, and lamps \(n + 1\) through \(2n\) are all off.
+
+Let \(M\) be number of such sequences consisting of \(k\) steps, resulting in the state where lamps \(1\) through \(n\) are all on, and lamps \(n + 1\) through \(2n\) are all off, but where none of the lamps \(n + 1\) through \(2n\) is ever switched on.
+
+Determine \(\frac {N}{M}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_5
+IMO,2008,6,IMO 2008 P6,IMO-2008-6,"Let \(ABCD\) be a convex quadrilateral with \(BA \ne BC\). Denote the incircles of triangles \(ABC\) and \(ADC\) by \(\omega _1\) and \(\omega _2\) respectively. Suppose that there exists a circle \(\omega\) tangent to ray \(BA\) beyond \(A\) and to the ray \(BC\) beyond \(C\), which is also tangent to the lines \(AD\) and \(CD\). Prove that the common external tangents to \(\omega _1\) and \(\omega _2\) intersect on \(\omega\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2008_IMO_Problems/Problem_6
+IMO,2009,1,IMO 2009 P1,IMO-2009-1,"Let \(n\) be a positive integer and let \(a_1,\ldots,a_k (k\ge2)\) be distinct integers in the set \(\{1,\ldots,n\}\) such that \(n\) divides \(a_i(a_{i+1}-1)\) for \(i=1,\ldots,k-1\). Prove that \(n\) doesn't divide \(a_k(a_1-1)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_1
+IMO,2009,2,IMO 2009 P2,IMO-2009-2,"Let \(ABC\) be a triangle with circumcentre \(O\). The points \(P\) and \(Q\) are interior points of the sides \(CA\) and \(AB\) respectively. Let \(K,L\) and \(M\) be the midpoints of the segments \(BP,CQ\) and \(PQ\), respectively, and let \(\Gamma\) be the circle passing through \(K,L\) and \(M\). Suppose that the line \(PQ\) is tangent to the circle \(\Gamma\). Prove that \(OP=OQ\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_2
+IMO,2009,3,IMO 2009 P3,IMO-2009-3,"Suppose that \(s_1,s_2,s_3,\ldots\) is a strictly increasing sequence of positive integers such that the subsequences
+
+\[
+s_{s_1},s_{s_2},s_{s_3},\ldots
+\]
+
+and
+
+\[
+s_{s_1+1},s_{s_2+1},s_{s_3+1},\ldots
+\]
+
+are both arithmetic progressions. Prove that the sequence \(s_1,s_2,s_3,\ldots\) is itself an arithmetic progression.",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_3
+IMO,2009,4,IMO 2009 P4,IMO-2009-4,"Let \(ABC\) be a triangle with \(AB=AC\). The angle bisectors of \(\angle CAB\) and \(\angle ABC\) meet the sides \(BC\) and \(CA\) at \(D\) and \(E\), respectively. Let \(K\) be the incenter of triangle \(ADC\). Suppose that \(\angle BEK=45^\circ\). Find all possible values of \(\angle CAB\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_4
+IMO,2009,5,IMO 2009 P5,IMO-2009-5,"Determine all functions \(f\) from the set of positive integers to the set of positive integers such that, for all positive integers \(a\) and \(b\), there exists a non-degenerate triangle with sides of lengths
+
+\[
+a,f(b)
+\]
+
+and
+
+\[
+f(b+f(a)-1).
+\]
+
+(A triangle is non-degenerate if its vertices are not collinear.)",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_5
+IMO,2009,6,IMO 2009 P6,IMO-2009-6,"Let \(a_1,a_2,\ldots,a_n\) be distinct positive integers and let \(M\) be a set of \(n-1\) positive integers not containing \(s=a_1+a_2+\ldots+a_n\). A grasshopper is to jump along the real axis, starting at the point \(0\) and making \(n\) jumps to the right with lengths \(a_1,a_2,\ldots,a_n\) in some order. Prove that the order can be chosen in such a way that the grasshopper never lands on any point in \(M\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2009_IMO_Problems/Problem_6
+IMO,2010,1,IMO 2010 P1,IMO-2010-1,"Find all functions \(f:\mathbb{R}\rightarrow\mathbb{R}\) such that for all \(x,y\in\mathbb{R}\) the following equality holds
+
+\[
+f(\left\lfloor x\right\rfloor y)=f(x)\left\lfloor f(y)\right\rfloor
+\]
+
+where \(\left\lfloor a\right\rfloor\) is greatest integer not greater than \(a.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_1
+IMO,2010,2,IMO 2010 P2,IMO-2010-2,"Given a triangle \(ABC\), with \(I\) as its incenter and \(\Gamma\) as its circumcircle, \(AI\) intersects \(\Gamma\) again at \(D\). Let \(E\) be a point on arc \(BDC\), and \(F\) a point on the segment \(BC\), such that \(\angle BAF=\angle CAE< \frac12\angle BAC\). If \(G\) is the midpoint of \(IF\), prove that the intersection of lines \(EI\) and \(DG\) lies on \(\Gamma\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_2
+IMO,2010,3,IMO 2010 P3,IMO-2010-3,"Find all functions \(g:\mathbb{N}\rightarrow\mathbb{N}\) such that \(\left(g(m)+n\right)\left(g(n)+m\right)\) is a perfect square for all \(m,n\in\mathbb{N}.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_3
+IMO,2010,4,IMO 2010 P4,IMO-2010-4,"Let \(P\) be a point interior to triangle \(ABC\) (with \(CA \neq CB\)). The lines \(AP\), \(BP\) and \(CP\) meet again its circumcircle \(\Gamma\) at \(K\), \(L\), respectively \(M\). The tangent line at \(C\) to \(\Gamma\) meets the line \(AB\) at \(S\). Show that from \(SC = SP\) follows \(MK = ML\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_4
+IMO,2010,5,IMO 2010 P5,IMO-2010-5,"Each of the six boxes \(B_1\), \(B_2\), \(B_3\), \(B_4\), \(B_5\), \(B_6\) initially contains one coin. The following operations are allowed
+
+Type 1) Choose a non-empty box \(B_j\), \(1\leq j \leq 5\), remove one coin from \(B_j\) and add two coins to \(B_{j+1}\);
+
+Type 2) Choose a non-empty box \(B_k\), \(1\leq k \leq 4\), remove one coin from \(B_k\) and swap the contents (maybe empty) of the boxes \(B_{k+1}\) and \(B_{k+2}\).
+
+Determine if there exists a finite sequence of operations of the allowed types, such that the five boxes \(B_1\), \(B_2\), \(B_3\), \(B_4\), \(B_5\) become empty, while box \(B_6\) contains exactly \(2010^{2010^{2010}}\) coins.",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_5
+IMO,2010,6,IMO 2010 P6,IMO-2010-6,"Let \(a_1, a_2, a_3\) be a sequence of positive real numbers, and \(s\) be a positive integer, such that
+
+\[
+a_n = \max \{ a_k + a_{n-k} \mid 1 \leq k \leq n-1 \} \ \textrm{ for all } \ n > s.
+\]
+
+Prove there exist positive integers \(\ell \leq s\) and \(N\), such that
+
+\[
+a_n = a_{\ell} + a_{n - \ell} \ \textrm{ for all } \ n \geq N.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2010_IMO_Problems/Problem_6
+IMO,2011,1,IMO 2011 P1,IMO-2011-1,"Given any set \(A = \{a_1, a_2, a_3, a_4\}\) of four distinct positive integers, we denote the sum \(a_1 +a_2 +a_3 +a_4\) by \(s_A\). Let \(n_A\) denote the number of pairs \((i, j)\) with \(1 \leq i < j \leq 4\) for which \(a_i +a_j\) divides \(s_A\). Find all sets \(A\) of four distinct positive integers which achieve the largest possible value of \(n_A\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_1
+IMO,2011,2,IMO 2011 P2,IMO-2011-2,"Let \(\mathcal{S}\) be a finite set of at least two points in the plane. Assume that no three points of \(\mathcal S\) are collinear. A windmill is a process that starts with a line \(\ell\) going through a single point \(P \in \mathcal S\). The line rotates clockwise about the pivot \(P\) until the first time that the line meets some other point belonging to \(\mathcal S\). This point, \(Q\), takes over as the new pivot, and the line now rotates clockwise about \(Q\), until it next meets a point of \(\mathcal S\). This process continues indefinitely. Show that we can choose a point \(P\) in \(\mathcal S\) and a line \(\ell\) going through \(P\) such that the resulting windmill uses each point of \(\mathcal S\) as a pivot infinitely many times.",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_2
+IMO,2011,3,IMO 2011 P3,IMO-2011-3,"Let \(f: \mathbb R \to \mathbb R\) be a real-valued function defined on the set of real numbers that satisfies
+
+\[
+f(x + y) \le yf(x) + f(f(x))
+\]
+
+for all real numbers \(x\) and \(y\). Prove that \(f(x) = 0\) for all \(x \le 0\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_3
+IMO,2011,4,IMO 2011 P4,IMO-2011-4,"Let \(n > 0\) be an integer. We are given a balance and \(n\) weights of weight \(2^0,2^1, \cdots ,2^{n-1}\). We are to place each of the \(n\) weights on the balance, one after another, in such a way that the right pan is never heavier than the left pan. At each step we choose one of the weights that has not yet been placed on the balance, and place it on either the left pan or the right pan, until all of the weights have been placed. Determine the number of ways in which this can be done.",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_4
+IMO,2011,5,IMO 2011 P5,IMO-2011-5,"Let \(f\) be a function from the set of integers to the set of positive integers. Suppose that, for any two integers \(m\) and \(n\), the difference \(f(m) - f(n)\) is divisible by \(f(m - n)\). Prove that, for all integers \(m\) and \(n\) with \(f(m) \leq f(n)\), the number \(f(n)\) is divisible by \(f(m)\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_5
+IMO,2011,6,IMO 2011 P6,IMO-2011-6,"Let \(ABC\) be an acute triangle with circumcircle \(\Gamma\). Let \(\ell\) be a tangent line to \(\Gamma\), and let \(\ell_a, \ell_b\) and \(\ell_c\) be the lines obtained by reflecting \(\ell\) in the lines \(BC\), \(CA\) and \(AB\), respectively. Show that the circumcircle of the triangle determined by the lines \(\ell_a, \ell_b\) and \(\ell_c\) is tangent to the circle \(\Gamma\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_6
+IMO,2012,1,IMO 2012 P1,IMO-2012-1,"Given triangle \(ABC\) the point \(J\) is the centre of the excircle opposite the vertex \(A.\) This excircle is tangent to the side \(BC\) at \(M\), and to the lines \(AB\) and \(AC\) at \(K\) and \(L\), respectively. The lines \(LM\) and \(BJ\) meet at \(F\), and the lines \(KM\) and \(CJ\) meet at \(G.\) Let \(S\) be the point of intersection of the lines \(AF\) and \(BC\), and let \(T\) be the point of intersection of the lines \(AG\) and \(BC.\) Prove that \(M\) is the midpoint of \(ST\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_1
+IMO,2012,2,IMO 2012 P2,IMO-2012-2,"Let \({{a}_{2}}, {{a}_{3}}, \cdots, {{a}_{n}}\) be positive real numbers that satisfy \({{a}_{2}}\cdot {{a}_{3}}\cdots {{a}_{n}}=1\) . Prove that
+
+\[
+\left(a_2+1\right)^2\cdot \left(a_3+1\right)^3\cdots \left(a_n+1\right)^n\gneq n^n
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_2
+IMO,2012,3,IMO 2012 P3,IMO-2012-3,"The liar’s guessing game is a game played between two players A and B. The rules of the game depend on two positive integers \(k\) and \(n\) which are known to both players.
+
+At the start of the game the player A chooses integers \(x\) and \(N\) with \(1 \le x \le N\). Player A keeps \(x\) secret, and truthfully tells \(N\) to the player B. The player B now tries to obtain information about \(x\) by asking player A questions as follows: each question consists of B specifying an arbitrary set \(S\) of positive integers (possibly one specified in some previous question), and asking A whether \(x\) belongs to \(S\). Player B may ask as many questions as he wishes. After each question, player A must immediately answer it with yes or no, but is allowed to lie as many times as she wants; the only restriction is that, among any \(k+1\) consecutive answers, at least one answer must be truthful.
+
+After B has asked as many questions as he wants, he must specify a set \(X\) of at most \(n\) positive integers. If \(x \in X\), then B wins; otherwise, he loses. Prove that:
+
+(a) If \(n \ge 2^k\) then B has a winning strategy.
+
+(b) There exists a positive integer \(k_0\) such that for every \(k \ge k_0\) there exists an integer \(n \ge 1.99^k\) for which B cannot guarantee a victory.",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_3
+IMO,2012,4,IMO 2012 P4,IMO-2012-4,"Find all functions \(f: \mathbb{Z} \to \mathbb{Z}\) such that, for all integers \(a, b,\) and \(c\) that satisfy \(a + b+ c = 0\), the following equality holds:
+
+\[
+f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a).
+\]
+
+(Here \(\mathbb{Z}\) denotes the set of integers.)",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_4
+IMO,2012,5,IMO 2012 P5,IMO-2012-5,"Let \(ABC\) be a triangle with \(\angle BCA=90^{\circ}\), and let \(D\) be the foot of the altitude from \(C\). Let \(X\) be a point in the interior of the segment \(CD\). Let \(K\) be the point on the segment \(AX\) such that \(BK=BC\). Similarly, let \(L\) be the point on the segment \(BX\) such that \(AL=AC\). Let \(M=\overline{AL}\cap \overline{BK}\). Prove that \(MK=ML\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_5
+IMO,2012,6,IMO 2012 P6,IMO-2012-6,"Find all positive integers \(n\) for which there exist non-negative integers \(a_1, a_2, \ldots, a_n\) such that
+
+\[
+\frac{1}{2^{a_1}} + \frac{1}{2^{a_2}} + \cdots + \frac{1}{2^{a_n}} =  \frac{1}{3^{a_1}} + \frac{2}{3^{a_2}} + \cdots + \frac{n}{3^{a_n}} = 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2012_IMO_Problems/Problem_6
+IMO,2013,1,IMO 2013 P1,IMO-2013-1,"Prove that for any pair of positive integers \(k\) and \(n\), there exist \(k\) positive integers \(m_1,m_2,...,m_k\) (not necessarily different) such that
+
+\(1+\frac{2^k-1}{n}=(1+\frac{1}{m_1})(1+\frac{1}{m_2})...(1+\frac{1}{m_k})\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_1
+IMO,2013,2,IMO 2013 P2,IMO-2013-2,"A configuration of \(4027\) points in the plane is called Colombian if it consists of \(2013\) red points and \(2014\) blue points, and no three of the points of the configuration are collinear. By drawing some lines, the plane is divided into several regions. An arrangement of lines is good for a Colombian configuration if the following two conditions are satisfied:
+
+- no line passes through any point of the configuration;
+- no region contains points of both colours.
+
+Find the least value of \(k\) such that for any Colombian configuration of \(4027\) points, there is a good arrangement of \(k\) lines.",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_2
+IMO,2013,3,IMO 2013 P3,IMO-2013-3,"Let the excircle of triangle \(ABC\) opposite the vertex \(A\) be tangent to the side \(BC\) at the point \(A_1\). Define the points \(B_1\) on \(CA\) and \(C_1\) on \(AB\) analogously, using the excircles opposite \(B\) and \(C\), respectively. Suppose that the circumcentre of triangle \(A_1B_1C_1\) lies on the circumcircle of triangle \(ABC\). Prove that triangle \(ABC\) is right-angled.
+
+Proposed by Alexander A. Polyansky, Russia",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_3
+IMO,2013,4,IMO 2013 P4,IMO-2013-4,"Let \(ABC\) be an acute triangle with orthocenter \(H\), and let \(W\) be a point on the side \(BC\), lying strictly between \(B\) and \(C\). The points \(M\) and \(N\) are the feet of the altitudes from \(B\) and \(C\), respectively. Denote by \(\omega_1\) is the circumcircle of \(BWN\), and let \(X\) be the point on \(\omega_1\) such that \(WX\) is a diameter of \(\omega_1\). Analogously, denote by \(\omega_2\) the circumcircle of triangle \(CWM\), and let \(Y\) be the point such that \(WY\) is a diameter of \(\omega_2\). Prove that \(X, Y\) and \(H\) are collinear.",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_4
+IMO,2013,5,IMO 2013 P5,IMO-2013-5,"Let \(\mathbb Q_{>0}\) be the set of all positive rational numbers. Let \(f:\mathbb Q_{>0}\to\mathbb R\) be a function satisfying the following three conditions:
+
+(i) for all \(x,y\in\mathbb Q_{>0}\), we have \(f(x)f(y)\geq f(xy)\); (ii) for all \(x,y\in\mathbb Q_{>0}\), we have \(f(x+y)\geq f(x)+f(y)\); (iii) there exists a rational number \(a>1\) such that \(f(a)=a\).
+
+Prove that \(f(x)=x\) for all \(x\in\mathbb Q_{>0}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_5
+IMO,2013,6,IMO 2013 P6,IMO-2013-6,"Let \(n \ge 3\) be an integer, and consider a circle with \(n + 1\) equally spaced points marked on it. Consider all labellings of these points with the numbers \(0, 1, ... , n\) such that each label is used exactly once; two such labellings are considered to be the same if one can be obtained from the other by a rotation of the circle. A labelling is called beautiful if, for any four labels \(a < b < c < d\) with \(a + d = b + c\), the chord joining the points labelled \(a\) and \(d\) does not intersect the chord joining the points labelled \(b\) and \(c\).
+
+Let \(M\) be the number of beautiful labelings, and let N be the number of ordered pairs \((x, y)\) of positive integers such that \(x + y \le n\) and \(\gcd(x, y) = 1\). Prove that
+
+\[
+M = N + 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2013_IMO_Problems/Problem_6
+IMO,2014,1,IMO 2014 P1,IMO-2014-1,"Let \(a_0<a_1<a_2<\cdots \quad\) be an infinite sequence of positive integers, Prove that there exists a unique integer \(n\ge1\) such that
+
+\[
+a_n<\frac{a_0+a_1+\cdots + a_n}{n}\le a_{n+1}.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_1
+IMO,2014,2,IMO 2014 P2,IMO-2014-2,"Let \(n\ge2\) be an integer. Consider an \(n\times n\) chessboard consisting of \(n^2\) unit squares. A configuration of \(n\) rooks on this board is \(\textit{peaceful}\) if every row and every column contains exactly one rook. Find the greatest positive integer \(k\) such that, for each peaceful configuration of \(n\) rooks, there is a \(k\times k\) square which does not contain a rook on any of its \(k^2\) squares.",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_2
+IMO,2014,3,IMO 2014 P3,IMO-2014-3,"Convex quadrilateral \(ABCD\) has \(\angle{ABC}=\angle{CDA}=90^{\circ}\). Point \(H\) is the foot of the perpendicular from \(A\) to \(BD\). Points \(S\) and \(T\) lie on sides \(AB\) and \(AD\), respectively, such that \(H\) lies inside \(\triangle{SCT}\) and
+
+\[
+\angle{CHS}-\angle{CSB}=90^{\circ},\quad \angle{THC}-\angle{DTC} = 90^{\circ}.
+\]
+
+Prove that line \(BD\) is tangent to the circumcircle of \(\triangle{TSH}.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_3
+IMO,2014,4,IMO 2014 P4,IMO-2014-4,"Points \(P\) and \(Q\) lie on side \(BC\) of acute-angled \(\triangle{ABC}\) so that \(\angle{PAB}=\angle{BCA}\) and \(\angle{CAQ}=\angle{ABC}\). Points \(M\) and \(N\) lie on lines \(AP\) and \(AQ\), respectively, such that \(P\) is the midpoint of \(AM\), and \(Q\) is the midpoint of \(AN\). Prove that lines \(BM\) and \(CN\) intersect on the circumcircle of \(\triangle{ABC}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_4
+IMO,2014,5,IMO 2014 P5,IMO-2014-5,"For each positive integer \(n\), the Bank of Cape Town issues coins of denomination \(\tfrac{1}{n}\). Given a finite collection of such coins (of not necessarily different denominations) with total value at most \(99+\tfrac{1}{2}\), prove that it is possible to split this collection into \(100\) or fewer groups, such that each group has total value at most \(1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_5
+IMO,2014,6,IMO 2014 P6,IMO-2014-6,"A set of lines in the plane is in \(\textit{general position}\) if no two are parallel and no three pass through the same point. A set of lines in general position cuts the plane into regions, some of which have finite area; we call these its \(\textit{finite regions}\). Prove that for all sufficiently large \(n\), in any set of \(n\) lines in general position it is possible to colour at least \(\sqrt{n}\) of the lines blue in such a way that none of its finite regions has a completely blue boundary.",AoPS,https://artofproblemsolving.com/wiki/index.php/2014_IMO_Problems/Problem_6
+IMO,2015,1,IMO 2015 P1,IMO-2015-1,"We say that a finite set \(\mathcal{S}\) in the plane is balanced if, for any two different points \(A\), \(B\) in \(\mathcal{S}\), there is a point \(C\) in \(\mathcal{S}\) such that \(AC=BC\). We say that \(\mathcal{S}\) is centre-free if for any three points \(A\), \(B\), \(C\) in \(\mathcal{S}\), there is no point \(P\) in \(\mathcal{S}\) such that \(PA=PB=PC\).
+
+1. Show that for all integers \(n\geq 3\), there exists a balanced set consisting of \(n\) points.
+2. Determine all integers \(n\geq 3\) for which there exists a balanced centre-free set consisting of \(n\) points.",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_1
+IMO,2015,2,IMO 2015 P2,IMO-2015-2,"Determine all triples of positive integers \((a,b,c)\) such that each of the numbers
+
+\[
+ab-c,\; bc-a,\; ca-b
+\]
+
+is a power of 2.
+
+(A power of 2 is an integer of the form \(2^n\) where \(n\) is a non-negative integer ).",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_2
+IMO,2015,3,IMO 2015 P3,IMO-2015-3,"Let \(ABC\) be an acute triangle with \(AB>AC\). Let \(\Gamma\) be its circumcircle, \(H\) its orthocenter, and \(F\) the foot of the altitude from \(A\). Let \(M\) be the midpoint of \(BC\). Let \(Q\) be the point on \(\Gamma\) such that \(\angle HKQ=90^\circ\). Assume that the points \(A\), \(B\), \(C\), \(K\), and \(Q\) are all different, and lie on \(\Gamma\) in this order.
+
+Prove that the circumcircles of triangles \(KQH\) and \(FKM\) are tangent to each other.",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_3
+IMO,2015,4,IMO 2015 P4,IMO-2015-4,"Triangle \(ABC\) has circumcircle \(\Omega\) and circumcenter \(O\). A circle \(\Gamma\) with center \(A\) intersects the segment \(BC\) at points \(D\) and \(E\), such that \(B\), \(D\), \(E\), and \(C\) are all different and lie on line \(BC\) in this order. Let \(F\) and \(G\) be the points of intersection of \(\Gamma\) and \(\Omega\), such that \(A\), \(F\), \(B\), \(C\), and \(G\) lie on \(\Omega\) in this order. Let \(K\) be the second point of intersection of the circumcircle of triangle \(BDF\) and the segment \(AB\). Let \(L\) be the second point of intersection of the circumcircle of triangle \(CGE\) and the segment \(CA\). Suppose that the lines \(FK\) and \(GL\) are different and intersect at the point \(X\). Prove that \(X\) lies on the line \(AO\). Proposed by Silouanos Brazitikos and Evangelos Psychas, Greece",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_4
+IMO,2015,5,IMO 2015 P5,IMO-2015-5,"Let \(\mathbb{R}\) be the set of real numbers. Determine all functions \(f\):\(\mathbb{R}\rightarrow\mathbb{R}\) satisfying the equation
+
+\[
+f(x+f(x+y))+f(xy) = x+f(x+y)+yf(x)
+\]
+
+for all real numbers \(x\) and \(y\).
+
+Proposed by Dorlir Ahmeti, Albania",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_5
+IMO,2015,6,IMO 2015 P6,IMO-2015-6,"The sequence \(a_1,a_2,\dots\) of integers satisfies the conditions: (i) \(1\le a_j\le2015\) for all \(j\ge1\), (ii) \(k+a_k\neq \ell+a_\ell\) for all \(1\le k<\ell\). Prove that there exist two positive integers \(b\) and \(N\) for which
+
+\[
+\left\vert\sum_{j=m+1}^n(a_j-b)\right\vert\le1007^2
+\]
+
+for all integers \(m\) and \(n\) such that \(n>m\ge N\). Proposed by Ivan Guo and Ross Atkins, Australia.",AoPS,https://artofproblemsolving.com/wiki/index.php/2015_IMO_Problems/Problem_6
+IMO,2016,1,IMO 2016 P1,IMO-2016-1,"Triangle \(BCF\) has a right angle at \(B\). Let \(A\) be the point on line \(CF\) such that \(FA=FB\) and \(F\) lies between \(A\) and \(C\). Point \(D\) is chosen so that \(DA=DC\) and \(AC\) is the bisector of \(\angle{DAB}\). Point \(E\) is chosen so that \(EA=ED\) and \(AD\) is the bisector of \(\angle{EAC}\). Let \(M\) be the midpoint of \(CF\). Let \(X\) be the point such that \(AMXE\) is a parallelogram. Prove that \(BD,FX\) and \(ME\) are concurrent.
+
+\[
+2016IMOQ1.jpg
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_1
+IMO,2016,2,IMO 2016 P2,IMO-2016-2,"Find all integers \(n\) for which each cell of \(n \times n\) table can be filled with one of the letters \(I,M\) and \(O\) in such a way that:
+
+Note. The rows and columns of an \(n \times n\) table are each labelled \(1\) to \(n\) in a natural order. Thus each cell corresponds to a pair of positive integer \((i,j)\) with \(1 \le i,j \le n\). For \(n>1\), the table has \(4n-2\) diagonals of two types. A diagonal of first type consists all cells \((i,j)\) for which \(i+j\) is a constant, and the diagonal of this second type consists all cells \((i,j)\) for which \(i-j\) is constant.",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_2
+IMO,2016,3,IMO 2016 P3,IMO-2016-3,"Let \(P = A_1A_2 \cdots A_k\) be a convex polygon in the plane. The vertices \(A_1,A_2,\dots, A_k\) have integral coordinates and lie on a circle. Let \(S\) be the area of \(P\). An odd positive integer \(n\) is given such that the squares of the side lengths of \(P\) are integers divisible by \(n\). Prove that \(2S\) is an integer divisible by \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_3
+IMO,2016,4,IMO 2016 P4,IMO-2016-4,"A set of positive integers is called fragrant if it contains at least two elements and each of its elements has a prime factor in common with at least one of the other elements. Let \(P(n)=n^2+n+1\). What is the least possible positive integer value of \(b\) such that there exists a non-negative integer \(a\) for which the set \(\{P(a+1),P(a+2),\ldots,P(a+b)\}\) is fragrant?",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_4
+IMO,2016,5,IMO 2016 P5,IMO-2016-5,"The equation
+
+\[
+(x-1)(x-2)\cdots(x-2016)=(x-1)(x-2)\cdots (x-2016)
+\]
+
+is written on the board, with \(2016\) linear factors on each side. What is the least possible value of \(k\) for which it is possible to erase exactly \(k\) of these \(4032\) linear factors so that at least one factor remains on each side and the resulting equation has no real solutions?",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_5
+IMO,2016,6,IMO 2016 P6,IMO-2016-6,"There are \(n\ge 2\) line segments in the plane such that every two segments cross and no three segments meet at a point. Geoff has to choose an endpoint of each segment and place a frog on it facing the other endpoint. Then he will clap his hands \(n-1\) times. Every time he claps,each frog will immediately jump forward to the next intersection point on its segment. Frogs never change the direction of their jumps. Geoff wishes to place the frogs in such a way that no two of them will ever occupy the same intersection point at the same time.
+
+(a) Prove that Geoff can always fulfill his wish if \(n\) is odd.
+
+(b) Prove that Geoff can never fulfill his wish if \(n\) is even.",AoPS,https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_6
+IMO,2017,1,IMO 2017 P1,IMO-2017-1,"For each integer \(a_0 > 1\), define the sequence \(a_0, a_1, a_2, \ldots\) for \(n \geq 0\) as
+
+\[
+a_{n+1} =  \begin{cases} \sqrt{a_n} & \text{if } \sqrt{a_n} \text{ is an integer,} \\ a_n + 3 & \text{otherwise.} \end{cases}
+\]
+
+Determine all values of \(a_0\) such that there exists a number \(A\) such that \(a_n = A\) for infinitely many values of \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_1
+IMO,2017,2,IMO 2017 P2,IMO-2017-2,"Let \(\mathbb{R}\) be the set of real numbers , determine all functions \(f:\mathbb{R}\rightarrow\mathbb{R}\) such that for any real numbers \(x\) and \(y\)
+
+\[
+f(f(x)f(y)) + f(x+y)=f(xy)
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_2
+IMO,2017,3,IMO 2017 P3,IMO-2017-3,"A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point, \(A_0\), and the hunter's starting point, \(B_0\), are the same. After \(n-1\) rounds of the game, the rabbit is at point \(A_{n-1}\) and the hunter is at point \(B_{n-1}\). In the nth round of the game, three things occur in order.
+
+(i) The rabbit moves invisibly to a point \(A_n\) such that the distance between \(A_{n-1}\) and \(A_n\) is exactly 1.
+
+(ii) A tracking device reports a point \(P_n\) to the hunter. The only guarantee provided by the tracking device is that the distance between \(P_n\) and \(A_n\) is at most 1.
+
+(iii) The hunter moves visibly to a point \(B_n\) such that the distance between \(B_{n-1}\) and \(B_n\) is exactly 1.
+
+Is it always possible, no matter how the rabbit moves, and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after \(10^9\) rounds she can ensure that the distance between her and the rabbit is at most 100?",AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_3
+IMO,2017,4,IMO 2017 P4,IMO-2017-4,Let \(R\) and \(S\) be different points on a circle \(\Omega\) such that \(RS\) is not a diameter. Let \(\ell\) be the tangent line to \(\Omega\) at \(R\). Point \(T\) is such that \(S\) is the midpoint of the line segment \(RT\). Point \(J\) is chosen on the shorter arc \(RS\) of \(\Omega\) so that the circumcircle \(\Gamma\) of triangle \(JST\) intersects \(\ell\) at two distinct points. Let \(A\) be the common point of \(\Gamma\) and \(\ell\) that is closer to \(R\). Line \(AJ\) meets \(\Omega\) again at \(K\). Prove that the line \(KT\) is tangent to \(\Gamma\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_4
+IMO,2017,5,IMO 2017 P5,IMO-2017-5,"An integer \(N \ge 2\) is given. A collection of \(N(N + 1)\) soccer players, no two of whom are of the same height, stand in a row. Sir Alex wants to remove \(N(N - 1)\) players from this row leaving a new row of \(2N\) players in which the following \(N\) conditions hold:
+
+(\(1\)) no one stands between the two tallest players,
+
+(\(2\)) no one stands between the third and fourth tallest players,
+
+\[
+\;\;\vdots
+\]
+
+(\(N\)) no one stands between the two shortest players.
+
+Show that this is always possible.",AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_5
+IMO,2017,6,IMO 2017 P6,IMO-2017-6,"An ordered pair \((x, y)\) of integers is a primitive point if the greatest common divisor of \(x\) and \(y\) is \(1\). Given a finite set \(S\) of primitive points, prove that there exist a positive integer \(n\) and integers \(a_0, a_1, \ldots , a_n\) such that, for each \((x, y)\) in \(S\), we have:
+
+\[
+a_0x^n + a_1x^{n-1} y + a_2x^{n-2}y^2 + \cdots + a_{n-1}xy^{n-1} + a_ny^n = 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2017_IMO_Problems/Problem_6
+IMO,2018,1,IMO 2018 P1,IMO-2018-1,Let \(\Gamma\) be the circumcircle of acute triangle \(ABC\). Points \(D\) and \(E\) are on segments \(AB\) and \(AC\) respectively such that \(AD = AE\). The perpendicular bisectors of \(BD\) and \(CE\) intersect minor arcs \(AB\) and \(AC\) of \(\Gamma\) at points \(F\) and \(G\) respectively. Prove that lines \(DE\) and \(FG\) are either parallel or they are the same line.,AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_1
+IMO,2018,2,IMO 2018 P2,IMO-2018-2,"Find all numbers \(n \ge 3\) for which there exists real numbers \(a_1, a_2, ..., a_{n+2}\) satisfying \(a_{n+1} = a_1, a_{n+2} = a_2\) and
+
+\[
+a_{i}a_{i+1} + 1 = a_{i+2}
+\]
+
+for \(i = 1, 2, ..., n.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_2
+IMO,2018,3,IMO 2018 P3,IMO-2018-3,"An anti-Pascal triangle is an equilateral triangular array of numbers such that, except for the numbers in the bottom row, each number is the absolute value of the difference of the two numbers immediately below it. For example, the following is an anti-Pascal triangle with four rows which contains every integer from \(1\) to \(10\)
+
+\[
+4
+\]
+
+\[
+2\quad 6
+\]
+
+\[
+5\quad 7 \quad 1
+\]
+
+\[
+8\quad 3 \quad 10 \quad 9
+\]
+
+Does there exist an anti-Pascal triangle with \(2018\) rows which contains every integer from \(1\) to \(1 + 2 + 3 + \dots + 2018\)?",AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_3
+IMO,2018,4,IMO 2018 P4,IMO-2018-4,"A site is any point \((x, y)\) in the plane such that \(x\) and \(y\) are both positive integers less than or equal to 20. Initially, each of the 400 sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to \(\sqrt{5}\). On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone. Find the greatest \(K\) such that Amy can ensure that she places at least \(K\) red stones, no matter how Ben places his blue stones.",AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_4
+IMO,2018,5,IMO 2018 P5,IMO-2018-5,"Let \(a_1, a_2, \dots\) be an infinite sequence of positive integers. Suppose that there is an integer\(N > 1\) such that, for each \(n \geq N\), the number \(\frac{a_1}{a_2}+\frac{a_2}{a_3}+\dots +\frac{a_{n-1}}{a_n}+\frac{a_n}{a_1}\) is an integer. Prove that there is a positive integer \(M\) such that \(a_m = a_{m+1}\) for all \(m \geq M.\)",AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_5
+IMO,2018,6,IMO 2018 P6,IMO-2018-6,A convex quadrilateral \(ABCD\) satisfies \(AB\cdot CD=BC \cdot DA.\) Point \(X\) lies inside \(ABCD\) so that \(\angle XAB = \angle XCD\) and \(\angle XBC = \angle XDA.\) Prove that \(\angle BXA + \angle DXC = 180^{\circ}\),AoPS,https://artofproblemsolving.com/wiki/index.php/2018_IMO_Problems/Problem_6
+IMO,2019,1,IMO 2019 P1,IMO-2019-1,"Let \(\mathbb{Z}\) be the set of integers. Determine all functions \(f : \mathbb{Z} \to \mathbb{Z}\) such that, for all integers \(a\) and \(b\),
+
+\[
+f(2a) + 2f(b) = f(f(a + b)).
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_1
+IMO,2019,2,IMO 2019 P2,IMO-2019-2,"In triangle \(ABC\), point \(A_1\) lies on side \(BC\) and point \(B_1\) lies on side \(AC\). Let \(P\) and \(Q\) be points on segments \(AA_1\) and \(BB_1\), respectively, such that \(PQ\) is parallel to \(AB\). Let \(P_1\) be a point on line \(PB_1\), such that \(B_1\) lies strictly between \(P\) and \(P_1\), and \(\angle PP_1C=\angle BAC\). Similarly, let \(Q_1\) be the point on line \(QA_1\), such that \(A_1\) lies strictly between \(Q\) and \(Q_1\), and \(\angle CQ_1Q=\angle CBA\).
+
+Prove that points \(P,Q,P_1\), and \(Q_1\) are concyclic.",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_2
+IMO,2019,3,IMO 2019 P3,IMO-2019-3,"A social network has \(2019\) users, some pairs of whom are friends. Whenever user \(A\) is friends with user \(B\), user \(B\) is also friends with user \(A\). Events of the following kind may happen repeatedly, one at a time: Three users \(A\), \(B\), and \(C\) such that \(A\) is friends with both \(B\) and \(C\), but \(B\) and \(C\) are not friends, change their friendship statuses such that \(B\) and \(C\) are now friends, but \(A\) is no longer friends with \(B\), and no longer friends with \(C\). All other friendship statuses are unchanged. Initially, \(1010\) users have \(1009\) friends each, and \(1009\) users have \(1010\) friends each. Prove that there exists a sequence of such events after which each user is friends with at most one other user.",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_3
+IMO,2019,4,IMO 2019 P4,IMO-2019-4,"Find all pairs \((k,n)\) of positive integers such that
+
+\[
+k!=(2^n-1)(2^n-2)(2^n-4)\dots(2^n-2^{n-1}).
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_4
+IMO,2019,5,IMO 2019 P5,IMO-2019-5,"The Bank of Bath issues coins with an \(H\) on one side and a \(T\) on the other. Harry has \(n\) of these coins arranged in a line from left to right. He repeatedly performs the following operation:
+
+If there are exactly \(k > 0\) coins showing \(H\), then he turns over the \(k^{th}\) coin from the left; otherwise, all coins show \(T\) and he stops. For example, if \(n = 3\) the process starting with the configuration \(THT\) would be \(THT \rightarrow HHT \rightarrow HTT \rightarrow TTT\), which stops after three operations.
+
+(a) Show that, for each initial configuration, Harry stops after a finite number of operations.
+
+(b) For each initial configuration \(C\), let \(L(C)\) be the number of operations before Harry stops. For example, \(L(THT) = 3\) and \(L(TTT) = 0\). Determine the average value of \(L(C)\) over all \(2^n\) possible initial configurations \(C\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_5
+IMO,2019,6,IMO 2019 P6,IMO-2019-6,"Let \(I\) be the incenter of acute triangle \(ABC\) with \(AB \neq AC\). The incircle \(\omega\) of \(ABC\) is tangent to sides \(BC\), \(CA\), and \(AB\) at \(D\), \(E\), and \(F\), respectively. The line through \(D\) perpendicular to \(EF\) meets \(\omega\) again at \(R\). Line \(AR\) meets ω again at \(P\). The circumcircles of triangles \(PCE\) and \(PBF\) meet again at \(Q\). Prove that lines \(DI\) and \(PQ\) meet on the line through \(A\) perpendicular to \(AI\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2019_IMO_Problems/Problem_6
+IMO,2020,1,IMO 2020 P1,IMO-2020-1,"Consider the convex quadrilateral \(ABCD\). The point \(P\) is in the interior of \(ABCD\). The following ratio equalities hold:
+
+\[
+\angle PAD : \angle PBA : \angle DPA = 1 : 2 : 3 = \angle CBP : \angle BAP : \angle BPC.
+\]
+
+Prove that the following three lines meet in a point: the internal bisectors of angles \(\angle ADP\) and \(\angle PCB\) and the perpendicular bisector of segment \(\overline{AB}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_1
+IMO,2020,2,IMO 2020 P2,IMO-2020-2,"The real numbers \(a\), \(b\), \(c\), \(d\) are such that \(a \geq b \geq c \geq d > 0\) and \(a + b + c + d = 1\). Prove that
+
+\[
+(a + 2b + 3c + 4d) a^a b^b c^c d^d < 1.
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_2
+IMO,2020,3,IMO 2020 P3,IMO-2020-3,"There are \(4n\) pebbles of weights \(1, 2, 3, . . . , 4n\). Each pebble is colored in one of \(n\) colors and there are four pebbles of each color. Show that we can arrange the pebbles into two piles so that the following two conditions are both satisfied:
+
+- The total weights of both piles are the same.
+- Each pile contains two pebbles of each color.",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_3
+IMO,2020,4,IMO 2020 P4,IMO-2020-4,"There is an integer \(n > 1\). There are \(n^2\) stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, \(A\) and \(B\), operates \(k\) cable cars; each cable car provides a transfer from one of the stations to a higher one (with no intermediate stops). The \(k\) cable cars of \(A\) have \(k\) different starting points and \(k\) different finishing points, and a cable car that starts higher also finishes higher. The same conditions hold for \(B\). We say that two stations are linked by a company if one can start from the lower station and reach the higher one by using one or more cars of that company (no other movements between stations are allowed).
+
+Determine the smallest positive integer k for which one can guarantee that there are two stations that are linked by both companies.",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_4
+IMO,2020,5,IMO 2020 P5,IMO-2020-5,"A deck of \(n > 1\) cards is given. A positive integer is written on each card. The deck has the property that the arithmetic mean of the numbers on each pair of cards is also the geometric mean of the numbers on some collection of one or more cards.
+
+For which \(n\) does it follow that the numbers on the cards are all equal?",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_5
+IMO,2020,6,IMO 2020 P6,IMO-2020-6,"Prove that there exists a positive constant \(c\) such that the following statement is true:
+
+Consider an integer \(n > 1\), and a set \(S\) of n points in the plane such that the distance between any two different points in \(S\) is at least \(1\). It follows that there is a line \(\ell\) separating \(S\) such that the distance from any point of \(S\) to \(\ell\) is at least \(cn^{- \frac{1}{3}}\).
+
+(A line \(\ell\) separates a set of points \(S\) if some segment joining two points in \(S\) crosses \(\ell\).)
+
+Note. Weaker results with \(cn^{- \frac{1}{3}}\) replaced by \(cn^{- \alpha}\) may be awarded points depending on the value of the constant \(\alpha > \frac{1}{3}\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2020_IMO_Problems/Problem_6
+IMO,2021,1,IMO 2021 P1,IMO-2021-1,"Let \(n \geq 100\) be an integer. Ivan writes the numbers \(n, n+1, \ldots, 2 n\) each on different cards. He then shuffles these \(n+1\) cards, and divides them into two piles. Prove that at least one of the piles contains two cards such that the sum of their numbers is a perfect square.",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_1
+IMO,2021,2,IMO 2021 P2,IMO-2021-2,"Show that the inequality
+
+\[
+\sum_{i=1}^n \sum_{j=1}^n \sqrt{|x_i-x_j|} \le \sum_{i=1}^n \sum_{j=1}^n \sqrt{|x_i+x_j|}
+\]
+
+holds for all real numbers \(x_1,x_2,\dots,x_n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_2
+IMO,2021,3,IMO 2021 P3,IMO-2021-3,"Let \(D\) be an interior point of the acute triangle \(ABC\) with \(AB > AC\) so that \(\angle DAB= \angle CAD\). The point \(E\) on the segment \(AC\) satisfies \(\angle ADE= \angle BCD\), the point \(F\) on the segment \(AB\) satisfies \(\angle FDA= \angle DBC\), and the point \(X\) on the line \(AC\) satisfies \(CX=BX\). Let \(O_1\) and \(O_2\) be the circumcentres of the triangles \(ADC\) and \(EXD\) respectively. Prove that the lines \(BC\), \(EF\), and \(O_1 O_2\) are concurrent.",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_3
+IMO,2021,4,IMO 2021 P4,IMO-2021-4,"Let \(\Gamma\) be a circle with centre \(I\), and \(ABCD\) a convex quadrilateral such that each of the segments \(AB, BC, CD\) and \(DA\) is tangent to \(\Gamma\). Let \(\Omega\) be the circumcircle of the triangle \(AIC\). The extension of \(BA\) beyond \(A\) meets \(\Omega\) at \(X\), and the extension of \(BC\) beyond \(C\) meets \(\Omega\) at \(Z\). The extensions of \(AD\) and \(CD\) beyond \(D\) meet \(\Omega\) at \(Y\) and \(T\), respectively. Prove that
+
+\[
+AD + DT + T X + XA = CD + DY + Y Z + ZC
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_4
+IMO,2021,5,IMO 2021 P5,IMO-2021-5,"Two squirrels, Bushy and Jumpy, have collected 2021 walnuts for the winter. Jumpy numbers the walnuts from 1 through 2021, and digs 2021 little holes in a circular pattern in the ground around their favourite tree. The next morning Jumpy notices that Bushy had placed one walnut into each hole, but had paid no attention to the numbering. Unhappy, Jumpy decides to reorder the walnuts by performing a sequence of 2021 moves. In the \(k\)-th move, Jumpy swaps the positions of the two walnuts adjacent to walnut \(k\).
+
+Prove that there exists a value of \(k\) such that, on the \(k\)-th move, Jumpy swaps some walnuts \(a\) and \(b\) such that \(a < k < b\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_5
+IMO,2021,6,IMO 2021 P6,IMO-2021-6,"Let \(m \ge 2\) be an integer, \(A\) be a finite set of (not necessarily positive) integers, and \(B_1, B_2, B_3 , \ldots, B_m\) be subsets of \(A\). Assume that for each \(k = 1, 2,...,m\) the sum of the elements of \(B_k\) is \(m^k\). Prove that \(A\) contains at least \(m/2\) elements.",AoPS,https://artofproblemsolving.com/wiki/index.php/2021_IMO_Problems/Problem_6
+IMO,2022,1,IMO 2022 P1,IMO-2022-1,"The Bank of Oslo issues two types of coin: aluminium (denoted A) and bronze (denoted B). Marianne has \(n\) aluminium coins and \(n\) bronze coins, arranged in a row in some arbitrary initial order. A chain is any subsequence of consecutive coins of the same type. Given a fixed positive integer \(k\le 2n\), Marianne repeatedly performs the following operation: she identifies the longest chain containing the \(k^{th}\) coin from the left, and moves all coins in that chain to the left end of the row. For example, if \(n = 4\) and \(k = 4\), the process starting from the ordering AABBBABA would be
+
+AABBBABA → BBBAAABA → AAABBBBA → BBBBAAAA → BBBBAAAA → ...
+
+Find all pairs \((n, k)\) with \(1 \le k \le 2n\) such that for every initial ordering, at some moment during the process, the leftmost \(n\) coins will all be of the same type.",AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_1
+IMO,2022,2,IMO 2022 P2,IMO-2022-2,"Let \(\mathbb{R}^+\) denote the set of positive real numbers. Find all functions \(f : \mathbb{R}^+ \to \mathbb{R}^+\) such that for each \(x \in \mathbb{R}^+\), there is exactly one \(y \in \mathbb{R}^+\) satisfying
+
+\[
+xf (y) + yf (x) \le 2
+\]
+
+.",AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_2
+IMO,2022,3,IMO 2022 P3,IMO-2022-3,Let \(k\) be a positive integer and let \(S\) be a finite set of odd prime numbers. Prove that there is at most one way (up to rotation and reflection) to place the elements of \(S\) around a circle such that the product of any two neighbours is of the form \(x^2 + x + k\) for some positive integer \(x\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_3
+IMO,2022,4,IMO 2022 P4,IMO-2022-4,"Let \(ABCDE\) be a convex pentagon such that \(BC = DE\). Assume that there is a point \(T\) inside \(ABCDE\) with \(TB = TD\), \(TC = TE\) and \(\angle ABT = \angle TEA\). Let line \(AB\) intersect lines \(CD\) and \(CT\) at points \(P\) and \(Q\), respectively. Assume that the points \(P, B, A, Q\) occur on their line in that order. Let line \(AE\) intersect lines \(CD\) and \(DT\) at points \(R\) and \(S\), respectively. Assume that the points \(R, E, A, S\) occur on their line in that order. Prove that the points \(P, S, Q, R\) lie on a circle.",AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_4
+IMO,2022,5,IMO 2022 P5,IMO-2022-5,"Find all triples \((a,b,p)\) of positive integers with \(p\) prime and
+
+\[
+a^p = b! + p
+\]",AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_5
+IMO,2022,6,IMO 2022 P6,IMO-2022-6,"Let \(n\) be a positive integer. A Nordic square is an \(n \times n\) board containing all the integers from \(1\) to \(n^2\) so that each cell contains exactly one number. Two different cells are considered adjacent if they share an edge. Every cell that is adjacent only to cells containing larger numbers is called a valley. An uphill path is a sequence of one or more cells such that:
+
+(i) the first cell in the sequence is a valley,
+
+(ii) each subsequent cell in the sequence is adjacent to the previous cell, and
+
+(iii) the numbers written in the cells in the sequence are in increasing order.
+
+Find, as a function of \(n\), the smallest possible total number of uphill paths in a Nordic square.",AoPS,https://artofproblemsolving.com/wiki/index.php/2022_IMO_Problems/Problem_6
+IMO,2023,1,IMO 2023 P1,IMO-2023-1,"Determine all composite integers \(n>1\) that satisfy the following property: if \(d_1,d_2,\dots,d_k\) are all the positive divisors of \(n\) with \(1=d_1<d_2<\dots<d_k=n\), then \(d_i\) divides \(d_{i+1}+d_{i+2}\) for every \(1\le i \le k-2\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_1
+IMO,2023,2,IMO 2023 P2,IMO-2023-2,Let \(ABC\) be an acute-angled triangle with \(AB < AC\). Let \(\Omega\) be the circumcircle of \(ABC\). Let \(S\) be the midpoint of the arc \(CB\) of \(\Omega\) containing \(A\). The perpendicular from \(A\) to \(BC\) meets \(BS\) at \(D\) and meets \(\Omega\) again at \(E \neq A\). The line through \(D\) parallel to \(BC\) meets line \(BE\) at \(L\). Denote the circumcircle of triangle \(BDL\) by \(\omega\). Let \(\omega\) meet \(\Omega\) again at \(P \neq B\). Prove that the line tangent to \(\omega\) at \(P\) meets line \(BS\) on the internal angle bisector of \(\angle BAC\).,AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_2
+IMO,2023,3,IMO 2023 P3,IMO-2023-3,"For each integer \(k \geqslant 2\), determine all infinite sequences of positive integers \(a_1, a_2, \ldots\) for which there exists a polynomial \(P\) of the form \(P(x)=x^k+c_{k-1} x^{k-1}+\cdots+c_1 x+c_0\), where \(c_0, c_1, \ldots, c_{k-1}\) are non-negative integers, such that
+
+\[
+P\left(a_n\right)=a_{n+1} a_{n+2} \cdots a_{n+k}
+\]
+
+for every integer \(n \geqslant 1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_3
+IMO,2023,4,IMO 2023 P4,IMO-2023-4,"Let \(x_1, x_2, \cdots , x_{2023}\) be pairwise different positive real numbers such that
+
+\[
+a_n = \sqrt{(x_1+x_2+ \text{···} +x_n)(\frac1{x_1} + \frac1{x_2} + \text{···} +\frac1{x_n})}
+\]
+
+is an integer for every \(n = 1,2,\cdots,2023\). Prove that \(a_{2023} \ge 3034\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_4
+IMO,2023,5,IMO 2023 P5,IMO-2023-5,"Let \(n\) be a positive integer. A Japanese triangle consists of \(1 + 2 + \dots + n\) circles arranged in an equilateral triangular shape such that for each \(i = 1\), \(2\), \(\dots\), \(n\), the \(i^{th}\) row contains exactly \(i\) circles, exactly one of which is coloured red. A ninja path in a Japanese triangle is a sequence of \(n\) circles obtained by starting in the top row, then repeatedly going from a circle to one of the two circles immediately below it and finishing in the bottom row. Here is an example of a Japanese triangle with \(n = 6\), along with a ninja path in that triangle containing two red circles.
+
+\[
+[asy] size(4cm);   pair X = dir(240); pair Y = dir(0);   path c = scale(0.5)*unitcircle;   int[] t = {0,0,2,2,3,0};   for (int i=0; i<=5; ++i) {     for (int j=0; j<=i; ++j) {       filldraw(shift(i*X+j*Y)*c, (t[i]==j) ? lightred : white);       draw(shift(i*X+j*Y)*c);     }   }   draw((0,0)--(X+Y)--(2*X+Y)--(3*X+2*Y)--(4*X+2*Y)--(5*X+2*Y),linewidth(1.5));   path q = (3,-3sqrt(3))--(-3,-3sqrt(3));   draw(q,Arrows(TeXHead, 1));   label(""$n = 6$"", q, S); label(""$n = 6$"", q, S); [/asy]
+\]
+
+In terms of \(n\), find the greatest \(k\) such that in each Japanese triangle there is a ninja path containing at least \(k\) red circles.",AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_5
+IMO,2023,6,IMO 2023 P6,IMO-2023-6,"Let \(ABC\) be an equilateral triangle. Let \(A_1,B_1,C_1\) be interior points of \(ABC\) such that \(BA_1=A_1C\), \(CB_1=B_1A\), \(AC_1=C_1B\), and
+
+\[
+\angle BA_1C+\angle CB_1A+\angle AC_1B=480^\circ
+\]
+
+Let \(BC_1\) and \(CB_1\) meet at \(A_2,\) let \(CA_1\) and \(AC_1\) meet at \(B_2,\) and let \(AB_1\) and \(BA_1\) meet at \(C_2.\)
+
+Prove that if triangle \(A_1B_1C_1\) is scalene, then the three circumcircles of triangles \(AA_1A_2, BB_1B_2\) and \(CC_1C_2\) all pass through two common points.
+
+(Note: a scalene triangle is one where no two sides have equal length.)",AoPS,https://artofproblemsolving.com/wiki/index.php/2023_IMO_Problems/Problem_6
+IMO,2024,1,IMO 2024 P1,IMO-2024-1,"Determine all real numbers \(\alpha\) such that, for every positive integer \(n\), the integer
+
+\[
+\lfloor \alpha \rfloor + \lfloor 2\alpha \rfloor + \dots +\lfloor n\alpha \rfloor
+\]
+
+is a multiple of \(n\). (Note that \(\lfloor z \rfloor\) denotes the greatest integer less than or equal to \(z\). For example, \(\lfloor -\pi \rfloor = -4\) and \(\lfloor 2 \rfloor = \lfloor 2.9 \rfloor = 2\).)",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_1
+IMO,2024,2,IMO 2024 P2,IMO-2024-2,"Find all positive integer pairs \((a,b),\) such that there exists positive integer \(g,N,\)
+
+\[
+\gcd (a^n+b,b^n+a)=g
+\]
+
+holds for all integer \(n\ge N\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_2
+IMO,2024,3,IMO 2024 P3,IMO-2024-3,"Let \(a_1, a_2, a_3, \dots\) be an infinite sequence of positive integers, and let \(N\) be a positive integer. Suppose that, for each \(n > N\), \(a_n\) is equal to the number of times \(a_{n-1}\) appears in the list \(a_1, a_2, \dots, a_{n-1}\).
+
+Prove that at least one of the sequence \(a_1, a_3, a_5, \dots\) and \(a_2, a_4, a_6, \dots\) is eventually periodic.
+
+(An infinite sequence \(b_1, b_2, b_3, \dots\) is eventually periodic if there exist positive integers \(p\) and \(M\) such that \(b_{m+p} = b_m\) for all \(m \ge M\).)",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_3
+IMO,2024,4,IMO 2024 P4,IMO-2024-4,"Let \(ABC\) be a triangle with \(AB < AC < BC\). Let the incentre and incircle of triangle \(ABC\) be \(I\) and \(\omega\), respectively. Let \(X\) be the point on line \(BC\) different from \(C\) such that the line through \(X\) parallel to \(AC\) is tangent to \(\omega\). Similarly, let \(Y\) be the point on line \(BC\) different from \(B\) such that the line through \(Y\) parallel to \(AB\) is tangent to \(\omega\). Let \(AI\) intersect the circumcircle of triangle \(ABC\) again at \(P \neq A\). Let \(K\) and \(L\) be the midpoints of \(AC\) and \(AB\), respectively. Prove that \(\angle KIL + \angle YPX = 180^{\circ}\) .",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_4
+IMO,2024,5,IMO 2024 P5,IMO-2024-5,"Turbo the snail plays a game on a board with 2024 rows and 2023 columns. There are hidden monsters in 2022 of the cells. Initially, Turbo does not know where any of the monsters are, but he knows that there is exactly one monster in each row except the first row and the last row, and that each column contains at most one monster.
+
+Turbo makes a series of attempts to go from the first row to the last row. On each attempt, he chooses to start on any cell in the first row, then repeatedly moves to an adjacent cell sharing a common side. (He is allowed to return to a previously visited cell.) If he reaches a cell with a monster, his attempt ends and he is transported back to the first row to start a new attempt. The monsters do not move, and Turbo remembers whether or not each cell he has visited contains a monster. If he reaches any cell in the last row, his attempt ends and the game is over.
+
+Determine the minimum value of \(n\) for which Turbo has a strategy that guarantees reaching the last row on the \(n^{th}\) attempt or earlier, regardless of the locations of the monsters.",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_5
+IMO,2024,6,IMO 2024 P6,IMO-2024-6,"Let \(\mathbb{Q}\) be the set of rational numbers. A function \(f: \mathbb{Q} \to \mathbb{Q}\) is called \(\emph{aquaesulian}\) if the following property holds: for every \(x,y \in \mathbb{Q}\),
+
+\[
+f(x+f(y)) = f(x) + y \quad \text{or} \quad f(f(x)+y) = x + f(y).
+\]
+
+Show that there exists an integer \(c\) such that for any aquaesulian function \(f\) there are at most \(c\) different rational numbers of the form \(f(r) + f(-r)\) for some rational number \(r\), and find the smallest possible value of \(c\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_6
+IMO,2025,1,IMO 2025 P1,IMO-2025-1,"A line in the plane is called sunny if it is not parallel to any of the \(x\)–axis, the \(y\)–axis, and the line \(x+y=0\).
+
+Let \(n\ge3\) be a given integer. Determine all nonnegative integers \(k\) such that there exist \(n\) distinct lines in the plane satisfying both of the following:
+
+- for all positive integers \(a\) and \(b\) with \(a+b\le n+1\), the point \((a,b)\) is on at least one of the lines; and
+- exactly \(k\) of the \(n\) lines are sunny.",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_1
+IMO,2025,2,IMO 2025 P2,IMO-2025-2,"Let \(\Omega\) and \(\Gamma\) be circles with centers \(M\) and \(N\), respectively, such that the radius of \(\Omega\) is less than the radius of \(\Gamma\). Suppose circles \(\Omega\) and \(\Gamma\) intersect at two distinct points \(A\) and \(B\). Line \(MN\) intersects \(\Omega\) at \(C\) and \(\Gamma\) at \(D\), such that points \(C\), \(M\), \(N\), and \(D\) lie on the line in that order. Let \(P\) be the circumcenter of triangle \(ACD\). Line \(AP\) intersects \(\Omega\) again at \(E\neq A\). Line \(AP\) intersects \(\Gamma\) again at \(F\neq A\). Let \(H\) be the orthocenter of triangle \(PMN\).
+
+Prove that the line through \(H\) parallel to \(AP\) is tangent to the circumcircle of triangle \(BEF\).
+
+(The orthocenter of a triangle is the point of intersection of its altitudes.)",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_2
+IMO,2025,3,IMO 2025 P3,IMO-2025-3,"Let \(\mathbb{N}\) denote the set of positive integers. A function \(f: \mathbb{N} \rightarrow \mathbb{N}\) is said to be bonza if
+
+\[
+f(a)
+\]
+
+divides
+
+\[
+b^{a} - f(b)^{f(a)}
+\]
+
+for all positive integers \(a\) and \(b\). Determine the smallest real constant \(c\) such that \(f(n) \leq cn\) for all bonza functions \(f\) and all positive integers \(n\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_3
+IMO,2025,4,IMO 2025 P4,IMO-2025-4,"A proper divisor of a positive integer \(N\) is a positive divisor of \(N\) other than \(N\) itself.
+
+The infinite sequence \(a_1,a_2,\dots\) consists of positive integers, each of which has at least three proper divisors. For each \(n\ge1\), the integer \(a_{n+1}\) is the sum of the three largest proper divisors of \(a_n\).
+
+Determine all possible values of \(a_1\).",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_4
+IMO,2025,5,IMO 2025 P5,IMO-2025-5,"Alice and Bazza are playing the inekoalaty game, a two‑player game whose rules depend on a positive real number \(\lambda\) which is known to both players. On the \(n\)th turn of the game (starting with \(n=1\)) the following happens:
+
+- If \(n\) is odd, Alice chooses a nonnegative real number \(x_n\) such that \(x_1 + x_2 + \cdots + x_n \le \lambda n\).
+
+- If \(n\) is even, Bazza chooses a nonnegative real number \(x_n\) such that \(x_1^2 + x_2^2 + \cdots + x_n^2 \le n\)
+
+If a player cannot choose a suitable \(x_n\), the game ends and the other player wins. If the game goes on forever, neither player wins. All chosen numbers are known to both players.
+
+Determine all values of \(\lambda\) for which Alice has a winning strategy and all those for which Bazza has a winning strategy.",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_5
+IMO,2025,6,IMO 2025 P6,IMO-2025-6,"Consider a 2025 x 2025 grid of unit squares. Matlida wishes to place on the grid some rectangular tiles, possibly of different sizes, such that each side of every tile lies on a grid line and every unit square is covered by at most one tile.
+
+Determine the minimum number of tiles Matlida needs to place so that each row and each column of the grid has exactly one unit square that is not covered by any tile.",AoPS,https://artofproblemsolving.com/wiki/index.php/2025_IMO_Problems/Problem_6

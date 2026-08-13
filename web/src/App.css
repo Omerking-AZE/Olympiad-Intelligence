@@ -555,7 +555,6 @@ button {
 
 /* ============================================================
    TEMPORARY MINI CARD
-   This will later be replaced by the final card design.
    ============================================================ */
 
 .mini-card {
@@ -1165,20 +1164,927 @@ button {
 }
 
 /* ============================================================
-   LIGHT THEME CONTRAST
+   PROBLEM ACTIONS
    ============================================================ */
 
-.theme-light .mini-card {
-  box-shadow:
-    0 24px 60px
-    rgba(67, 40, 125, 0.18);
+.problem-actions {
+  width: 100%;
+
+  margin-top: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
 }
 
-.theme-light .mini-rating,
-.theme-light .mini-name,
-.theme-light .mini-skills,
-.theme-light .mini-label {
-  color: #ffffff;
+.problem-actions .problem-button {
+  margin-top: 0;
+}
+
+/* ============================================================
+   PREMIUM REPORT BUTTON
+   ============================================================ */
+
+.oi-report-button {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  min-height: 36px;
+
+  padding:
+    0 12px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 10px;
+
+  color:
+    var(--text-muted);
+
+  background:
+    transparent;
+
+  cursor: pointer;
+
+  font-size: 9px;
+  font-weight: 850;
+
+  pointer-events: auto;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.oi-report-button:hover {
+  color:
+    var(--accent-light);
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--accent) 32%,
+      var(--border)
+    );
+
+  background:
+    var(--accent-soft);
+
+  transform:
+    translateY(-1px);
+}
+
+/* ============================================================
+   REPORT OVERLAY
+   ============================================================ */
+
+.oi-report-overlay {
+  position: fixed !important;
+
+  inset: 0 !important;
+
+  z-index: 999999 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  padding: 24px;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  background:
+    rgba(
+      4,
+      4,
+      10,
+      0.74
+    );
+
+  backdrop-filter:
+    blur(16px);
+
+  -webkit-backdrop-filter:
+    blur(16px);
+
+  pointer-events: auto !important;
+
+  animation:
+    oiReportFadeIn
+    0.18s ease-out;
+}
+
+.oi-report-dialog {
+  position: relative;
+
+  z-index: 1000000;
+
+  width:
+    min(
+      560px,
+      calc(100vw - 32px)
+    );
+
+  max-height:
+    calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #191823 0%,
+      #111119 100%
+    );
+
+  box-shadow:
+    0 45px 120px
+    rgba(
+      0,
+      0,
+      0,
+      0.56
+    );
+
+  color:
+    var(--text-main);
+
+  pointer-events: auto;
+
+  animation:
+    oiReportOpen
+    0.22s
+    cubic-bezier(
+      0.2,
+      0.8,
+      0.2,
+      1
+    );
+}
+
+.theme-light .oi-report-dialog {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f6f4fb 100%
+    );
+
+  border-color:
+    rgba(
+      30,
+      34,
+      50,
+      0.11
+    );
+
+  box-shadow:
+    0 35px 90px
+    rgba(
+      30,
+      25,
+      50,
+      0.18
+    );
+}
+
+/* ============================================================
+   REPORT HEADER
+   ============================================================ */
+
+.oi-report-header {
+  padding:
+    24px 25px 21px;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  border-bottom:
+    1px solid
+    var(--border);
+}
+
+.oi-report-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+.oi-report-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    color-mix(
+      in srgb,
+      var(--accent) 35%,
+      transparent
+    );
+
+  border-radius: 12px;
+
+  color:
+    var(--accent-light);
+
+  background:
+    var(--accent-soft);
+}
+
+.oi-report-eyebrow {
+  margin-bottom: 5px;
+
+  color:
+    var(--accent-light);
+
+  font-size: 8px;
+  font-weight: 950;
+
+  letter-spacing:
+    0.16em;
+}
+
+.oi-report-title {
+  margin: 0;
+
+  color:
+    var(--text-main);
+
+  font-size: 22px;
+  font-weight: 950;
+
+  letter-spacing:
+    -0.03em;
+}
+
+.oi-report-subtitle {
+  margin:
+    6px 0 0;
+
+  color:
+    var(--text-muted);
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.oi-report-close {
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 10px;
+
+  color:
+    var(--text-muted);
+
+  background:
+    var(--surface-soft);
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.oi-report-close:hover {
+  color:
+    var(--text-main);
+
+  background:
+    var(--surface-hover);
+
+  border-color:
+    var(--border-strong);
+}
+
+/* ============================================================
+   REPORT BODY
+   ============================================================ */
+
+.oi-report-body {
+  padding:
+    23px 25px 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 21px;
+}
+
+.oi-report-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color:
+    var(--text-muted);
+
+  font-size: 8px;
+  font-weight: 950;
+
+  letter-spacing:
+    0.14em;
+}
+
+.oi-current-card {
+  min-height: 64px;
+
+  padding:
+    13px 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  border:
+    1px solid
+    color-mix(
+      in srgb,
+      var(--accent) 20%,
+      var(--border)
+    );
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-soft),
+      transparent
+    );
+}
+
+.oi-current-title {
+  color:
+    var(--text-main);
+
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.oi-current-id {
+  color:
+    var(--text-dim);
+
+  font-size: 8px;
+}
+
+/* ============================================================
+   ISSUE OPTIONS
+   ============================================================ */
+
+.oi-issue-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+.oi-issue-option {
+  min-height: 49px;
+
+  padding:
+    10px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 12px;
+
+  color:
+    var(--text-soft);
+
+  background:
+    var(--surface-soft);
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  text-align: left;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.oi-issue-option:hover {
+  color:
+    var(--text-main);
+
+  background:
+    var(--surface-hover);
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--accent) 30%,
+      var(--border)
+    );
+
+  transform:
+    translateY(-1px);
+}
+
+.oi-issue-option.is-selected {
+  color:
+    var(--text-main);
+
+  background:
+    var(--accent-soft);
+
+  border-color:
+    color-mix(
+      in srgb,
+      var(--accent) 55%,
+      transparent
+    );
+}
+
+.oi-radio {
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    var(--border-strong);
+
+  border-radius: 50%;
+}
+
+.oi-issue-option.is-selected
+.oi-radio {
+  border-color:
+    var(--accent);
+}
+
+.oi-radio span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background:
+    var(--accent);
+}
+
+/* ============================================================
+   REPORT INPUTS
+   ============================================================ */
+
+.oi-report-input,
+.oi-report-textarea {
+  width: 100%;
+
+  display: block;
+
+  outline: none;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 12px;
+
+  color:
+    var(--text-main);
+
+  background:
+    var(--surface-soft);
+
+  font-family:
+    inherit;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.oi-report-input {
+  height: 46px;
+
+  padding:
+    0 13px;
+
+  font-size: 11px;
+}
+
+.oi-report-textarea {
+  min-height: 110px;
+
+  padding:
+    12px 13px;
+
+  resize: vertical;
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+.oi-report-input::placeholder,
+.oi-report-textarea::placeholder {
+  color:
+    var(--text-dim);
+}
+
+.oi-report-input:focus,
+.oi-report-textarea:focus {
+  border-color:
+    color-mix(
+      in srgb,
+      var(--accent) 62%,
+      transparent
+    );
+
+  background:
+    color-mix(
+      in srgb,
+      var(--accent) 4%,
+      var(--surface-soft)
+    );
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      169,
+      130,
+      255,
+      0.08
+    );
+}
+
+.oi-label-row {
+  display: flex;
+
+  align-items: center;
+}
+
+.oi-label-row
+.oi-report-label {
+  margin-bottom: 8px;
+}
+
+.oi-optional {
+  margin-left: auto;
+  margin-bottom: 8px;
+
+  color:
+    var(--text-dim);
+
+  font-size: 8px;
+}
+
+/* ============================================================
+   REPORT FOOTER
+   ============================================================ */
+
+.oi-report-footer {
+  min-height: 72px;
+
+  padding:
+    13px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  border-top:
+    1px solid
+    var(--border);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--surface) 80%,
+      transparent
+    );
+}
+
+.oi-cancel-button,
+.oi-submit-button {
+  min-height: 41px;
+
+  padding:
+    0 16px;
+
+  border-radius: 10px;
+
+  font-family:
+    inherit;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease,
+    background 0.2s ease;
+}
+
+.oi-cancel-button {
+  border:
+    1px solid
+    var(--border);
+
+  color:
+    var(--text-soft);
+
+  background:
+    transparent;
+}
+
+.oi-cancel-button:hover {
+  color:
+    var(--text-main);
+
+  background:
+    var(--surface-hover);
+}
+
+.oi-submit-button {
+  min-width: 125px;
+
+  border:
+    1px solid
+    color-mix(
+      in srgb,
+      var(--accent) 35%,
+      transparent
+    );
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-strong),
+      var(--accent)
+    );
+
+  box-shadow:
+    0 9px 24px
+    rgba(
+      116,
+      64,
+      231,
+      0.20
+    );
+}
+
+.oi-submit-button:hover:not(:disabled) {
+  transform:
+    translateY(-1px);
+
+  filter:
+    brightness(1.06);
+}
+
+.oi-submit-button:disabled {
+  opacity: 0.42;
+
+  cursor:
+    not-allowed;
+
+  box-shadow:
+    none;
+}
+
+/* ============================================================
+   REPORT SUCCESS
+   ============================================================ */
+
+.oi-success {
+  min-height: 390px;
+
+  padding:
+    44px 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.oi-success-icon {
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    color-mix(
+      in srgb,
+      var(--accent) 40%,
+      transparent
+    );
+
+  border-radius: 18px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-strong),
+      var(--accent)
+    );
+
+  box-shadow:
+    0 18px 45px
+    rgba(
+      116,
+      64,
+      231,
+      0.22
+    );
+}
+
+.oi-success-title {
+  margin: 0;
+
+  color:
+    var(--text-main);
+
+  font-size: 24px;
+  font-weight: 950;
+}
+
+.oi-success-text {
+  max-width: 330px;
+
+  margin:
+    9px 0 22px;
+
+  color:
+    var(--text-muted);
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+/* ============================================================
+   REPORT MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .oi-report-overlay {
+    padding: 12px !important;
+  }
+
+  .oi-report-dialog {
+    width:
+      calc(100vw - 24px);
+
+    max-height:
+      calc(100vh - 24px);
+
+    border-radius: 20px;
+  }
+
+  .oi-report-header {
+    padding:
+      20px 18px;
+  }
+
+  .oi-report-body {
+    padding:
+      19px 18px 21px;
+  }
+
+  .oi-report-footer {
+    padding:
+      12px 18px;
+  }
+
+  .oi-issue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   LIGHT THEME REPORT
+   ============================================================ */
+
+.theme-light .oi-report-icon {
+  background:
+    var(--accent-soft);
+}
+
+.theme-light .oi-current-card {
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-soft),
+      rgba(
+        100,
+        67,
+        200,
+        0.025
+      )
+    );
 }
 
 /* ============================================================
@@ -1277,5 +2183,37 @@ button {
   .problem-metric {
     padding:
       10px 11px;
+  }
+}
+
+/* ============================================================
+   REPORT ANIMATION
+   ============================================================ */
+
+@keyframes oiReportFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes oiReportOpen {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px)
+      scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
   }
 }

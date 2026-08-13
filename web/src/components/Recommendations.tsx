@@ -1,52 +1,244 @@
+import ReportIssue from "./ReportIssue";
+
 export type Recommendation = {
   problem_id: string;
 
-  // Human-readable olympiad metadata
-  contest_name?: string;
-  contest_year?: number;
-  problem_number?: number;
+  title?: string | null;
+
+  competition?: string | null;
+  year?: number | null;
+  problem_number?: number | null;
+  section?: string | null;
 
   target_domain: string;
+
   difficulty_score: number;
+
   student_skill: number;
+
   recommendation_skill: number;
+
   weakness_priority: number;
+
   weakness_classification: string;
+
   weakness_confidence: number;
+
   difficulty_gap: number;
+
   difficulty_fit: number;
+
   adaptive_score: number;
+
   training_zone: boolean;
+
   skill_unknown: boolean;
+
   problem_type: string;
+
+  metadata_status?: string | null;
+
+  match_score?: number | null;
+
+  source?: string | null;
+
+  source_url?: string | null;
 };
 
-type Props = {
+type RecommendationsProps = {
   recommendations: Recommendation[];
 };
 
-function getProblemTitle(
-  problem: Recommendation
-) {
+function cleanText(
+  value?: string | null
+): string {
   if (
-    problem.contest_name &&
-    problem.contest_year &&
-    problem.problem_number
+    value === null ||
+    value === undefined
   ) {
-    return `${problem.contest_name} ${problem.contest_year} P${problem.problem_number}`;
+    return "";
   }
 
-  // Fallback until metadata is available.
-  return problem.problem_id;
+  return String(value).trim();
+}
+
+function getProblemTitle(
+  problem: Recommendation
+): string {
+  const title = cleanText(
+    problem.title
+  );
+
+  if (title) {
+    return title;
+  }
+
+  const competition =
+    cleanText(
+      problem.competition
+    );
+
+  const year =
+    problem.year !== null &&
+    problem.year !== undefined
+      ? Number(problem.year)
+      : null;
+
+  const problemNumber =
+    problem.problem_number !==
+      null &&
+    problem.problem_number !==
+      undefined
+      ? Number(
+          problem.problem_number
+        )
+      : null;
+
+  if (
+    competition &&
+    year !== null &&
+    Number.isFinite(year) &&
+    problemNumber !== null &&
+    Number.isFinite(problemNumber)
+  ) {
+    const normalizedCompetition =
+      competition
+        .toUpperCase()
+        .includes("IMO")
+        ? "IMO"
+        : competition;
+
+    return (
+      `${normalizedCompetition} ` +
+      `${year} ` +
+      `P${problemNumber}`
+    );
+  }
+
+  if (
+    competition &&
+    year !== null &&
+    Number.isFinite(year)
+  ) {
+    return (
+      `${competition} ${year}`
+    );
+  }
+
+  if (competition) {
+    return competition;
+  }
+
+  return "Olympiad Problem";
+}
+
+function formatDomain(
+  value: string
+): string {
+  if (!value) {
+    return "Mathematics";
+  }
+
+  const labels: Record<
+    string,
+    string
+  > = {
+    algebra: "Algebra",
+    geometry: "Geometry",
+    number_theory:
+      "Number Theory",
+    discrete_mathematics:
+      "Discrete Mathematics",
+    calculus: "Calculus",
+    statistics: "Statistics",
+  };
+
+  return (
+    labels[value] ||
+    value
+      .replaceAll("_", " ")
+      .replace(/\b\w/g, (letter) =>
+        letter.toUpperCase()
+      )
+  );
+}
+
+function formatProblemType(
+  value: string
+): string {
+  if (!value) {
+    return "Olympiad problem";
+  }
+
+  const labels: Record<
+    string,
+    string
+  > = {
+    "proof and answer":
+      "Proof and answer",
+    "proof only":
+      "Proof only",
+    "final answer only":
+      "Final answer only",
+    MCQ: "Multiple choice",
+  };
+
+  return (
+    labels[value] ||
+    value
+  );
+}
+
+function formatScore(
+  value: number,
+  digits = 0
+): string {
+  const number = Number(value);
+
+  if (!Number.isFinite(number)) {
+    return "—";
+  }
+
+  return number.toFixed(
+    digits
+  );
 }
 
 export default function Recommendations({
   recommendations,
-}: Props) {
-  const visible = recommendations.slice(
-    0,
-    6
-  );
+}: RecommendationsProps) {
+  const visibleRecommendations =
+    recommendations.slice(
+      0,
+      15
+    );
+
+  if (
+    visibleRecommendations.length === 0
+  ) {
+    return (
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">
+              AI TRAINING PATH
+            </p>
+
+            <h2>
+              Recommended Problems
+            </h2>
+          </div>
+        </div>
+
+        <div className="empty-state">
+          <p>
+            No recommendations available
+            right now.
+          </p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="section">
@@ -62,65 +254,101 @@ export default function Recommendations({
         </div>
 
         <span className="section-note">
-          Personalized
+          Personalized for your profile
         </span>
       </div>
 
       <div className="recommendation-grid">
-        {visible.map((problem) => (
-          <article
-            className="problem-card"
-            key={problem.problem_id}
-          >
-            <div className="problem-top">
-              <span>
-                {problem.target_domain}
-              </span>
+        {visibleRecommendations.map(
+          (problem) => {
+            const title =
+              getProblemTitle(
+                problem
+              );
 
-              <span>
-                {Math.round(
-                  problem.difficulty_score
-                )}
-              </span>
-            </div>
+            const domain =
+              formatDomain(
+                problem.target_domain
+              );
 
-            <h3 className="problem-title">
-              {getProblemTitle(problem)}
-            </h3>
+            const type =
+              formatProblemType(
+                problem.problem_type
+              );
 
-            <p className="problem-type">
-              {problem.problem_type}
-            </p>
+            return (
+              <article
+                className="problem-card"
+                key={
+                  problem.problem_id
+                }
+              >
+                <div className="problem-top">
+                  <span>
+                    {domain}
+                  </span>
 
-            <div className="problem-meta">
-              <div className="problem-metric">
-                <span className="metric-label">
-                  SKILL
-                </span>
+                  <span>
+                    {formatScore(
+                      problem.difficulty_score
+                    )}
+                  </span>
+                </div>
 
-                <strong>
-                  {problem.student_skill}
-                </strong>
-              </div>
+                <h3 className="problem-title">
+                  {title}
+                </h3>
 
-              <div className="problem-metric">
-                <span className="metric-label">
-                  FIT
-                </span>
+                <p className="problem-type">
+                  {type}
+                </p>
 
-                <strong>
-                  {problem.difficulty_fit.toFixed(
-                    1
-                  )}
-                </strong>
-              </div>
-            </div>
+                <div className="problem-meta">
+                  <div className="problem-metric">
+                    <span className="metric-label">
+                      SKILL
+                    </span>
 
-            <button className="problem-button">
-              View Problem
-            </button>
-          </article>
-        ))}
+                    <strong>
+                      {formatScore(
+                        problem.student_skill
+                      )}
+                    </strong>
+                  </div>
+
+                  <div className="problem-metric">
+                    <span className="metric-label">
+                      FIT
+                    </span>
+
+                    <strong>
+                      {formatScore(
+                        problem.difficulty_fit,
+                        1
+                      )}
+                    </strong>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  className="problem-button"
+                >
+                  View Problem
+                </button>
+
+                <ReportIssue
+                  problemId={
+                    problem.problem_id
+                  }
+                  currentTitle={
+                    title
+                  }
+                />
+              </article>
+            );
+          }
+        )}
       </div>
     </section>
   );
