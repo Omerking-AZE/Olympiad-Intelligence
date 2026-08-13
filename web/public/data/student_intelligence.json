@@ -1,0 +1,31 @@
+{
+    "student_id": "TEST-001",
+    "student_name": "Test Student",
+    "overall_rating": 57,
+    "tier": "BEGINNER",
+    "problems_attempted": 5,
+    "problems_solved": 3,
+    "achievement": "NONE",
+    "strongest_skills": [
+        "algebra",
+        "proof",
+        "reasoning"
+    ],
+    "high_priority_weaknesses": [],
+    "medium_priority_weaknesses": [
+        "number_theory"
+    ],
+    "unknown_skills": [
+        "discrete_mathematics"
+    ],
+    "skill_ratings": {
+        "algebra": 94,
+        "geometry": 72,
+        "number_theory": 42,
+        "discrete_mathematics": 0,
+        "proof": 83,
+        "reasoning": 81,
+        "calculation": 74,
+        "case_analysis": 78
+    }
+}

@@ -2,15 +2,9 @@
 OLYMPIAD INTELLIGENCE
 Adaptive Recommendation Engine
 
-Uses:
-- Student skill ratings
-- Weakness priorities
-- Problem difficulty
-- Unknown-skill handling
-
-Goal:
-Recommend problems that target weaknesses while
-remaining appropriately challenging.
+Exports recommendations as:
+- CSV for analysis
+- JSON for the web dashboard
 """
 
 import json
@@ -31,8 +25,12 @@ PROBLEMS_PATH = Path(
     "data/processed/mathnet_difficulty.csv"
 )
 
-OUTPUT_PATH = Path(
+OUTPUT_CSV = Path(
     "data/processed/adaptive_recommendations.csv"
+)
+
+OUTPUT_JSON = Path(
+    "data/processed/adaptive_recommendations.json"
 )
 
 
@@ -67,10 +65,6 @@ def calculate_difficulty_fit(
     difficulty,
     skill
 ):
-    """
-    Best training zone:
-    approximately 3-10 points above current level.
-    """
 
     target = skill + 6
 
@@ -78,12 +72,10 @@ def calculate_difficulty_fit(
         difficulty - target
     )
 
-    score = max(
+    return max(
         0,
         50 - distance * 2
     )
-
-    return score
 
 
 def calculate_adaptive_score(
@@ -91,11 +83,6 @@ def calculate_adaptive_score(
     skill,
     weakness_priority
 ):
-    """
-    Combine:
-    - weakness priority
-    - difficulty fit
-    """
 
     difficulty_score = (
         calculate_difficulty_fit(
@@ -138,7 +125,6 @@ def recommend_domain(
     if domain_problems.empty:
         return pd.DataFrame()
 
-    # For unknown domains use a neutral skill.
     recommendation_skill = (
         NEUTRAL_SKILL
         if skill_unknown
@@ -167,7 +153,8 @@ def recommend_domain(
         domain_problems[
             "difficulty_score"
         ]
-        - recommendation_skill
+        -
+        recommendation_skill
     )
 
     domain_problems[
@@ -258,15 +245,11 @@ def build_recommendations(
             0
         )
 
-        # Unknown skill:
-        # keep rating 0, recommend from neutral 55.
         skill_unknown = (
             classification == "NOT_ENOUGH_DATA"
             or rating == 0
         )
 
-        # Unknown areas get some exploratory priority,
-        # but are not treated as actual weaknesses.
         if skill_unknown:
             recommendation_priority = 20
         else:
@@ -276,9 +259,7 @@ def build_recommendations(
             problems=problems,
             domain_name=domain_name,
             skill=rating,
-            weakness_priority=(
-                recommendation_priority
-            ),
+            weakness_priority=recommendation_priority,
             skill_unknown=skill_unknown,
             count=5
         )
@@ -301,10 +282,71 @@ def build_recommendations(
     if not results:
         return pd.DataFrame()
 
-    return pd.concat(
+    result = pd.concat(
         results,
         ignore_index=True
     )
+
+    return (
+        result
+        .sort_values(
+            "adaptive_score",
+            ascending=False
+        )
+        .reset_index(drop=True)
+    )
+
+
+def save_json(
+    recommendations
+):
+
+    frontend_columns = [
+        "problem_id",
+        "target_domain",
+        "difficulty_score",
+        "student_skill",
+        "recommendation_skill",
+        "weakness_priority",
+        "weakness_classification",
+        "weakness_confidence",
+        "difficulty_gap",
+        "difficulty_fit",
+        "adaptive_score",
+        "training_zone",
+        "skill_unknown",
+        "problem_type",
+    ]
+
+    available = [
+        column
+        for column in frontend_columns
+        if column in recommendations.columns
+    ]
+
+    data = recommendations[
+        available
+    ].head(15).to_dict(
+        orient="records"
+    )
+
+    OUTPUT_JSON.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    with open(
+        OUTPUT_JSON,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            indent=4,
+            ensure_ascii=False
+        )
 
 
 def main():
@@ -336,55 +378,30 @@ def main():
 
     if recommendations.empty:
 
-        print()
         print(
-            "No recommendations generated."
+            "\nNo recommendations generated."
         )
 
         return
 
-    columns = [
-        "problem_id",
-        "target_domain",
-        "difficulty_score",
-        "student_skill",
-        "recommendation_skill",
-        "weakness_priority",
-        "weakness_classification",
-        "weakness_confidence",
-        "difficulty_gap",
-        "difficulty_fit",
-        "adaptive_score",
-        "training_zone",
-        "skill_unknown",
-        "problem_type",
-    ]
-
-    columns = [
-        column
-        for column in columns
-        if column in recommendations.columns
-    ]
-
-    recommendations = recommendations[
-        columns
-    ]
-
     recommendations.to_csv(
-        OUTPUT_PATH,
+        OUTPUT_CSV,
         index=False
     )
 
+    save_json(
+        recommendations
+    )
+
     print()
-    print("TOP ADAPTIVE RECOMMENDATIONS")
-    print("-" * 110)
+    print(
+        "TOP ADAPTIVE RECOMMENDATIONS"
+    )
+
+    print("-" * 100)
 
     print(
         recommendations
-        .sort_values(
-            "adaptive_score",
-            ascending=False
-        )
         .head(15)
         .to_string(
             index=False
@@ -393,7 +410,11 @@ def main():
 
     print()
     print(
-        f"Saved: {OUTPUT_PATH}"
+        f"Saved CSV:  {OUTPUT_CSV}"
+    )
+
+    print(
+        f"Saved JSON: {OUTPUT_JSON}"
     )
 
     print()

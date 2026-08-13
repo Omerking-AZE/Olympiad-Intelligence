@@ -172,13 +172,6 @@ EVENT_STYLES = {
 
     "standard": {},
 
-    "proof_master": {
-        "gold": (209, 149, 255),
-        "light": (246, 228, 255),
-        "accent": (133, 72, 211),
-        "pattern": "proof",
-    },
-
     "geometry_master": {
         "gold": (80, 233, 207),
         "light": (226, 255, 250),
@@ -192,23 +185,150 @@ EVENT_STYLES = {
         "accent": (139, 95, 219),
         "pattern": "elite",
     },
-
-    "champion": {
-        "gold": (255, 220, 77),
-        "light": (255, 247, 181),
-        "accent": (210, 143, 20),
-        "pattern": "champion",
-    },
 }
 
 
 EVENT_NAMES = {
     "standard": "SPECIAL",
-    "proof_master": "PROOF MASTER",
     "geometry_master": "GEOMETRY MASTER",
     "olympiad_elite": "OLYMPIAD ELITE",
-    "champion": "CHAMPION",
 }
+
+
+# ============================================================
+# SPECIAL EVENT CARDS
+# Each entry is a COMPLETE, self-contained theme (background,
+# colors and pattern) - these fully replace the rating-based
+# theme, the way FIFA's special cards look nothing like the
+# base gold/silver/bronze cards underneath them.
+#
+# Optional "min_rating" / "max_rating" gate an event to a rating
+# window (used for LEGENDARY). If the profile's rating falls
+# outside that window, create_card() quietly falls back to the
+# normal rating-based card instead of forcing the special design.
+# ============================================================
+
+SPECIAL_EVENTS = {
+
+    # ---- 1. National Olympiad medals (patriotic red, laurel + star) ----
+    "national_gold": {
+        "name": "NATIONAL GOLD",
+        "bg_top": (46, 10, 10), "bg_bottom": (150, 25, 25),
+        "gold": (255, 208, 64), "light": (255, 241, 204),
+        "accent": (214, 158, 42), "dark": (20, 4, 4),
+        "pattern": "laurel_star",
+    },
+    "national_silver": {
+        "name": "NATIONAL SILVER",
+        "bg_top": (40, 12, 12), "bg_bottom": (130, 34, 34),
+        "gold": (224, 227, 232), "light": (255, 255, 255),
+        "accent": (163, 168, 178), "dark": (18, 6, 6),
+        "pattern": "laurel_star",
+    },
+    "national_bronze": {
+        "name": "NATIONAL BRONZE",
+        "bg_top": (42, 14, 10), "bg_bottom": (138, 55, 28),
+        "gold": (214, 140, 80), "light": (255, 224, 188),
+        "accent": (160, 90, 46), "dark": (20, 7, 4),
+        "pattern": "laurel_star",
+    },
+
+    # ---- 2. International Olympiad medals (globe blue, laurel + globe) ----
+    "international_gold": {
+        "name": "INTERNATIONAL GOLD",
+        "bg_top": (4, 14, 42), "bg_bottom": (18, 72, 150),
+        "gold": (255, 208, 64), "light": (255, 241, 204),
+        "accent": (94, 163, 235), "dark": (3, 8, 24),
+        "pattern": "laurel_globe",
+    },
+    "international_silver": {
+        "name": "INTERNATIONAL SILVER",
+        "bg_top": (6, 14, 34), "bg_bottom": (72, 90, 118),
+        "gold": (226, 229, 235), "light": (255, 255, 255),
+        "accent": (150, 165, 185), "dark": (4, 8, 18),
+        "pattern": "laurel_globe",
+    },
+    "international_bronze": {
+        "name": "INTERNATIONAL BRONZE",
+        "bg_top": (8, 13, 30), "bg_bottom": (112, 68, 36),
+        "gold": (214, 140, 80), "light": (255, 224, 188),
+        "accent": (120, 140, 180), "dark": (4, 7, 18),
+        "pattern": "laurel_globe",
+    },
+
+    # ---- 3. Legendary - only for 98-99 OVR ----
+    "legendary": {
+        "name": "LEGENDARY",
+        "bg_top": (4, 4, 6), "bg_bottom": (58, 58, 66),
+        "gold": (255, 255, 255), "light": (255, 255, 255),
+        "accent": (190, 190, 205), "dark": (0, 0, 0),
+        "pattern": "legend_aura",
+        "min_rating": 98, "max_rating": 99,
+    },
+
+    # ---- 4. Proof Master ----
+    "proof_master": {
+        "name": "PROOF MASTER",
+        "bg_top": (10, 6, 30), "bg_bottom": (70, 34, 120),
+        "gold": (209, 149, 255), "light": (246, 228, 255),
+        "accent": (133, 72, 211), "dark": (6, 4, 18),
+        "pattern": "proof",
+    },
+
+    # ---- 5. Tournament Champion ----
+    "tournament_champion": {
+        "name": "TOURNAMENT CHAMPION",
+        "bg_top": (20, 16, 4), "bg_bottom": (120, 90, 18),
+        "gold": (255, 220, 77), "light": (255, 247, 181),
+        "accent": (210, 143, 20), "dark": (14, 10, 3),
+        "pattern": "champion",
+    },
+
+    # ---- 6-9. Seasonal events ----
+    "winter_event": {
+        "name": "WINTER EVENT",
+        "bg_top": (10, 22, 40), "bg_bottom": (70, 120, 170),
+        "gold": (220, 240, 255), "light": (255, 255, 255),
+        "accent": (140, 190, 230), "dark": (6, 14, 26),
+        "pattern": "snowflake",
+    },
+    "summer_event": {
+        "name": "SUMMER EVENT",
+        "bg_top": (50, 18, 4), "bg_bottom": (205, 112, 20),
+        "gold": (255, 210, 70), "light": (255, 240, 190),
+        "accent": (230, 140, 40), "dark": (30, 10, 2),
+        "pattern": "sun_burst",
+    },
+    "spring_event": {
+        "name": "SPRING EVENT",
+        "bg_top": (8, 28, 14), "bg_bottom": (70, 150, 90),
+        "gold": (255, 190, 215), "light": (240, 255, 235),
+        "accent": (120, 200, 140), "dark": (4, 16, 8),
+        "pattern": "petals",
+    },
+    "autumn_event": {
+        "name": "AUTUMN EVENT",
+        "bg_top": (34, 14, 4), "bg_bottom": (150, 70, 20),
+        "gold": (255, 160, 60), "light": (255, 220, 170),
+        "accent": (190, 90, 30), "dark": (20, 8, 2),
+        "pattern": "leaves",
+    },
+
+    # ---- 10. Math Master streak badge (valid 7 days) ----
+    "math_master": {
+        "name": "MATH MASTER",
+        "bg_top": (2, 10, 10), "bg_bottom": (10, 60, 58),
+        "gold": (80, 240, 220), "light": (210, 255, 250),
+        "accent": (30, 170, 150), "dark": (0, 4, 4),
+        "pattern": "flame_streak",
+    },
+}
+
+# keep the old id working as an alias for anyone already using it
+SPECIAL_EVENTS["champion"] = SPECIAL_EVENTS["tournament_champion"]
+
+for _event_id, _spec in SPECIAL_EVENTS.items():
+    EVENT_NAMES[_event_id] = _spec["name"]
 
 
 # ============================================================
@@ -512,7 +632,7 @@ def draw_patterns(draw, theme, pattern):
             draw.line([(x, 560), (x + 160, 560)], fill=gold, width=4)
 
     # --------------------------------------------------------
-    # CHAMPION - starburst
+    # TOURNAMENT CHAMPION - starburst + trophy silhouette
     # --------------------------------------------------------
 
     elif pattern == "champion":
@@ -524,6 +644,284 @@ def draw_patterns(draw, theme, pattern):
             end_x = center_x + math.cos(rad) * 400
             end_y = center_y + math.sin(rad) * 400
             draw.line([(center_x, center_y), (end_x, end_y)], fill=light, width=3)
+
+        _draw_trophy(draw, gold, center_x, 260)
+
+    # --------------------------------------------------------
+    # NATIONAL MEDALS - laurel wreath + star
+    # --------------------------------------------------------
+
+    elif pattern == "laurel_star":
+
+        _draw_laurel(draw, light, 512, 440)
+        _draw_star(draw, gold, 512, 250, r_outer=48, r_inner=20)
+
+    # --------------------------------------------------------
+    # INTERNATIONAL MEDALS - laurel wreath + globe
+    # --------------------------------------------------------
+
+    elif pattern == "laurel_globe":
+
+        _draw_laurel(draw, light, 512, 440)
+        _draw_globe(draw, gold, 512, 245, r=55)
+
+    # --------------------------------------------------------
+    # LEGENDARY - crown + radiant halo (98-99 OVR only)
+    # --------------------------------------------------------
+
+    elif pattern == "legend_aura":
+
+        center = (512, 470)
+
+        for radius in [110, 200, 290]:
+            draw.ellipse(
+                [
+                    center[0] - radius, center[1] - radius,
+                    center[0] + radius, center[1] + radius,
+                ],
+                outline=accent,
+                width=2,
+            )
+
+        for angle in range(0, 360, 15):
+            rad = math.radians(angle)
+            end = (
+                int(center[0] + math.cos(rad) * 290),
+                int(center[1] + math.sin(rad) * 290),
+            )
+            draw.line([center, end], fill=light, width=1)
+
+        _draw_crown(draw, gold, 512, 245)
+
+    # --------------------------------------------------------
+    # WINTER EVENT - scattered snowflakes
+    # --------------------------------------------------------
+
+    elif pattern == "snowflake":
+
+        positions = [
+            (150, 150, 26), (330, 110, 18), (700, 130, 24), (880, 180, 16),
+            (210, 320, 16), (620, 260, 30), (800, 340, 18), (420, 200, 20),
+            (100, 480, 18), (930, 480, 20), (500, 620, 22), (280, 620, 16),
+        ]
+        for x, y, r in positions:
+            _draw_snowflake(draw, light, x, y, r=r)
+
+    # --------------------------------------------------------
+    # SUMMER EVENT - sun + heat waves
+    # --------------------------------------------------------
+
+    elif pattern == "sun_burst":
+
+        center = (512, 400)
+
+        draw.ellipse(
+            [center[0] - 70, center[1] - 70, center[0] + 70, center[1] + 70],
+            outline=gold, width=5,
+        )
+
+        for angle in range(0, 360, 30):
+            rad = math.radians(angle)
+            x1 = center[0] + math.cos(rad) * 85
+            y1 = center[1] + math.sin(rad) * 85
+            x2 = center[0] + math.cos(rad) * 135
+            y2 = center[1] + math.sin(rad) * 135
+            draw.line([(x1, y1), (x2, y2)], fill=gold, width=6)
+
+        for wy in (560, 610, 660):
+            pts = [
+                (x, wy + 14 * math.sin(x / 42)) for x in range(90, 935, 16)
+            ]
+            draw.line(pts, fill=light, width=3, joint="curve")
+
+    # --------------------------------------------------------
+    # SPRING EVENT - scattered blossoms
+    # --------------------------------------------------------
+
+    elif pattern == "petals":
+
+        positions = [
+            (150, 160, 16), (340, 120, 12), (700, 140, 18), (880, 210, 13),
+            (220, 340, 13), (610, 260, 20), (790, 370, 14), (440, 210, 15),
+            (110, 500, 14), (940, 480, 15), (500, 630, 17), (300, 600, 12),
+        ]
+        for x, y, r in positions:
+            _draw_blossom(draw, light, gold, x, y, r=r)
+
+    # --------------------------------------------------------
+    # AUTUMN EVENT - falling leaves
+    # --------------------------------------------------------
+
+    elif pattern == "leaves":
+
+        leaves = [
+            (150, 150, 24, 20), (340, 110, 18, -30), (700, 140, 26, 50),
+            (880, 210, 20, -15), (220, 340, 20, 80), (610, 260, 28, 10),
+            (790, 370, 20, -45), (440, 210, 22, 35), (110, 500, 18, -20),
+            (940, 480, 20, 60), (500, 630, 24, 0), (300, 600, 16, 40),
+        ]
+        for x, y, size, ang in leaves:
+            _draw_leaf(draw, light, x, y, size=size, angle_deg=ang)
+
+    # --------------------------------------------------------
+    # MATH MASTER - streak flame
+    # --------------------------------------------------------
+
+    elif pattern == "flame_streak":
+
+        _draw_flame(draw, gold, light, 512, 250, scale=0.72)
+
+        for angle in range(0, 360, 30):
+            rad = math.radians(angle)
+            x1 = 512 + math.cos(rad) * 220
+            y1 = 460 + math.sin(rad) * 220
+            x2 = 512 + math.cos(rad) * 260
+            y2 = 460 + math.sin(rad) * 260
+            draw.line([(x1, y1), (x2, y2)], fill=accent, width=3)
+
+
+# --------------------------------------------------------
+# Reusable motif helpers for the special-event patterns
+# --------------------------------------------------------
+
+def _draw_laurel(draw, color, cx, cy, radius=210, segments=16, width=6):
+
+    for i in range(segments):
+        t = i / (segments - 1)
+        ln = 24 + 18 * math.sin(t * math.pi)
+
+        for _side, a0, a1 in ((-1, 96, 195), (1, 84, -15)):
+            angle = math.radians(a0 + t * (a1 - a0))
+            bx = cx + math.cos(angle) * radius
+            by = cy + math.sin(angle) * radius * 1.05
+            tx, ty = -math.sin(angle), math.cos(angle)
+            draw.line(
+                [(bx - tx * ln / 2, by - ty * ln / 2), (bx + tx * ln / 2, by + ty * ln / 2)],
+                fill=color, width=width,
+            )
+
+
+def _draw_star(draw, color, cx, cy, r_outer=50, r_inner=20, width=4):
+
+    pts = []
+    for i in range(10):
+        ang = math.radians(-90 + i * 36)
+        r = r_outer if i % 2 == 0 else r_inner
+        pts.append((cx + math.cos(ang) * r, cy + math.sin(ang) * r))
+
+    draw.polygon(pts + [pts[0]], outline=color, width=width)
+
+
+def _draw_globe(draw, color, cx, cy, r=55, width=3):
+
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=color, width=width)
+    draw.ellipse([cx - r * 0.42, cy - r, cx + r * 0.42, cy + r], outline=color, width=width)
+    draw.line([(cx - r, cy), (cx + r, cy)], fill=color, width=width)
+
+
+def _draw_crown(draw, color, cx, cy, width=5):
+
+    base_y = cy + 45
+    mid_y = cy + 5
+    pts = [
+        (cx - 75, base_y), (cx - 75, mid_y),
+        (cx - 42, cy - 45), (cx - 15, mid_y),
+        (cx, cy - 62), (cx + 15, mid_y),
+        (cx + 42, cy - 45), (cx + 75, mid_y),
+        (cx + 75, base_y), (cx - 75, base_y),
+    ]
+    draw.line(pts, fill=color, width=width, joint="curve")
+
+    for gx, gy in ((cx - 42, cy - 45), (cx, cy - 62), (cx + 42, cy - 45)):
+        draw.ellipse([gx - 6, gy - 6, gx + 6, gy + 6], fill=color)
+
+
+def _draw_trophy(draw, color, cx, cy, width=4):
+
+    cup_top = cy - 55
+    cup_bottom = cy + 10
+
+    draw.line(
+        [
+            (cx - 45, cup_top), (cx - 38, cup_bottom),
+            (cx + 38, cup_bottom), (cx + 45, cup_top),
+        ],
+        fill=color, width=width, joint="curve",
+    )
+    draw.arc([cx - 70, cup_top - 4, cx - 30, cup_top + 40], -90, 100, fill=color, width=width)
+    draw.arc([cx + 30, cup_top - 4, cx + 70, cup_top + 40], 80, 270, fill=color, width=width)
+    draw.line([(cx, cup_bottom), (cx, cup_bottom + 28)], fill=color, width=width)
+    draw.line(
+        [(cx - 30, cup_bottom + 28), (cx + 30, cup_bottom + 28)],
+        fill=color, width=width,
+    )
+    draw.line(
+        [(cx - 42, cup_bottom + 46), (cx + 42, cup_bottom + 46)],
+        fill=color, width=width,
+    )
+
+
+def _draw_snowflake(draw, color, cx, cy, r=20, width=3):
+
+    for i in range(6):
+        ang = math.radians(i * 60)
+        x2 = cx + math.cos(ang) * r
+        y2 = cy + math.sin(ang) * r
+        draw.line([(cx, cy), (x2, y2)], fill=color, width=width)
+
+        mx, my = cx + math.cos(ang) * r * 0.6, cy + math.sin(ang) * r * 0.6
+        perp = ang + math.pi / 2
+        tick = r * 0.28
+        draw.line(
+            [
+                (mx - math.cos(perp) * tick, my - math.sin(perp) * tick),
+                (mx + math.cos(perp) * tick, my + math.sin(perp) * tick),
+            ],
+            fill=color, width=max(1, width - 1),
+        )
+
+
+def _draw_blossom(draw, outline_color, center_color, cx, cy, r=16, width=2):
+
+    orbit = r * 0.9
+
+    for i in range(5):
+        ang = math.radians(i * 72 - 90)
+        px, py = cx + math.cos(ang) * orbit, cy + math.sin(ang) * orbit
+        draw.ellipse([px - r, py - r, px + r, py + r], outline=outline_color, width=width)
+
+    draw.ellipse([cx - r * 0.35, cy - r * 0.35, cx + r * 0.35, cy + r * 0.35], fill=center_color)
+
+
+def _draw_leaf(draw, color, cx, cy, size=20, angle_deg=0, width=3):
+
+    ang = math.radians(angle_deg)
+    local_pts = [(0, -size), (size * 0.55, 0), (0, size), (-size * 0.55, 0)]
+
+    pts = []
+    for lx, ly in local_pts:
+        rx = lx * math.cos(ang) - ly * math.sin(ang)
+        ry = lx * math.sin(ang) + ly * math.cos(ang)
+        pts.append((cx + rx, cy + ry))
+
+    draw.polygon(pts + [pts[0]], outline=color, width=width)
+    draw.line([pts[0], pts[2]], fill=color, width=max(1, width - 1))
+
+
+def _draw_flame(draw, outline_color, inner_color, cx, cy, width=5, scale=1.0):
+
+    outer = [
+        (cx, cy - 150 * scale), (cx + 58 * scale, cy - 45 * scale),
+        (cx + 38 * scale, cy + 45 * scale), (cx, cy + 100 * scale),
+        (cx - 38 * scale, cy + 45 * scale), (cx - 58 * scale, cy - 45 * scale),
+    ]
+    draw.polygon(outer + [outer[0]], outline=outline_color, width=width)
+
+    inner = [
+        (cx, cy - 78 * scale), (cx + 24 * scale, cy - 10 * scale),
+        (cx, cy + 55 * scale), (cx - 24 * scale, cy - 10 * scale),
+    ]
+    draw.polygon(inner + [inner[0]], outline=inner_color, width=max(2, width - 2))
 
 
 def apply_patterns(background, theme):
@@ -699,6 +1097,35 @@ def draw_header(draw, profile, theme, event_id):
         fill=theme["light"],
     )
 
+    expires_on = profile.get("badge_expires_on")
+    if expires_on and event_id == "math_master":
+
+        expiry_font = load_font(16, False)
+        expiry_text = f"VALID UNTIL {expires_on}"
+        ex_box = draw.textbbox((0, 0), expiry_text, font=expiry_font)
+        ex_w = ex_box[2] - ex_box[0]
+        ex_h = ex_box[3] - ex_box[1]
+
+        pill_pad_x, pill_pad_y = 14, 8
+        pill_h = ex_h + pill_pad_y * 2
+        pill_top = badge_top + badge_h + 8
+        pill_right = badge_right
+        pill_left = pill_right - (ex_w + pill_pad_x * 2)
+
+        draw.rounded_rectangle(
+            [pill_left, pill_top, pill_right, pill_top + pill_h],
+            radius=pill_h / 2,
+            fill=theme["dark"],
+        )
+
+        draw.text(
+            (pill_right - pill_pad_x, pill_top + pill_h / 2),
+            expiry_text,
+            anchor="rm",
+            font=expiry_font,
+            fill=theme["gold"],
+        )
+
     # --------------------------------------------------------
     # Name - shrinks to fit so long names can't cross the frame
     # --------------------------------------------------------
@@ -739,7 +1166,7 @@ def draw_skills(draw, profile, theme):
     left_x = 165
     right_x = 540
 
-    start_y = 965
+    start_y = 940
     row_gap = 72
     bar_width = 112
     bar_height = 7
@@ -856,13 +1283,39 @@ def draw_footer(draw, profile, theme):
 # CREATE ONE CARD
 # ============================================================
 
+def resolve_theme(event_id, rating):
+    """
+    A special event (medal, legendary, season, etc.) gets a fully
+    self-contained theme that replaces the rating-based one. If the
+    event has a rating window (e.g. LEGENDARY is 98-99 only) and the
+    rating falls outside it, we quietly fall back to the normal
+    rating-based card (theme AND badge label) instead of forcing a
+    design - and a name - that shouldn't apply.
+    """
+
+    spec = SPECIAL_EVENTS.get(event_id)
+
+    if spec:
+        min_r = spec.get("min_rating")
+        max_r = spec.get("max_rating")
+        in_window = (min_r is None or rating >= min_r) and (max_r is None or rating <= max_r)
+
+        if in_window:
+            theme = {k: v for k, v in spec.items() if k not in ("name", "min_rating", "max_rating")}
+            return theme, get_card_type(rating), event_id
+
+    card_type = get_card_type(rating)
+    theme = CARD_THEMES[card_type].copy()
+    theme.update(EVENT_STYLES.get(event_id, {}))
+
+    effective_event_id = event_id if event_id in EVENT_STYLES else "standard"
+    return theme, card_type, effective_event_id
+
+
 def create_card(profile, event_id):
 
     rating = int(profile["overall_rating"])
-    card_type = get_card_type(rating)
-
-    theme = CARD_THEMES[card_type].copy()
-    theme.update(EVENT_STYLES.get(event_id, {}))
+    theme, card_type, effective_event_id = resolve_theme(event_id, rating)
 
     background = gradient_background(theme)
     apply_patterns(background, theme)
@@ -876,7 +1329,7 @@ def create_card(profile, event_id):
 
     draw_frame(draw, theme)
     draw_student_image(card, profile, theme)
-    draw_header(draw, profile, theme, event_id)
+    draw_header(draw, profile, theme, effective_event_id)
     draw_skills(draw, profile, theme)
     draw_footer(draw, profile, theme)
 
