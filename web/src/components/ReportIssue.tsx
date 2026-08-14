@@ -13,15 +13,9 @@ type IssueType =
   | "wrong_problem"
   | "other";
 
-type EditRequest = {
-  id: string;
-  problem_id: string;
-  current_title: string;
-  issue_type: IssueType;
-  suggested_value: string;
-  description: string;
-  created_at: string;
-  status: "PENDING";
+type ServerResponse = {
+  ok?: boolean;
+  error?: string;
 };
 
 const ISSUE_OPTIONS: {
@@ -54,8 +48,7 @@ export default function ReportIssue({
   problemId,
   currentTitle,
 }: Props) {
-  const [open, setOpen] =
-    useState(false);
+  const [open, setOpen] = useState(false);
 
   const [issueType, setIssueType] =
     useState<IssueType>(
@@ -70,6 +63,16 @@ export default function ReportIssue({
 
   const [submitted, setSubmitted] =
     useState(false);
+
+  const [submitting, setSubmitting] =
+    useState(false);
+
+  const [error, setError] =
+    useState("");
+
+  /* ==========================================================
+     LOCK PAGE SCROLL WHILE MODAL IS OPEN
+     ========================================================== */
 
   useEffect(() => {
     if (!open) {
@@ -88,6 +91,10 @@ export default function ReportIssue({
     };
   }, [open]);
 
+  /* ==========================================================
+     ESCAPE KEY
+     ========================================================== */
+
   useEffect(() => {
     if (!open) {
       return;
@@ -96,7 +103,10 @@ export default function ReportIssue({
     const handleEscape = (
       event: KeyboardEvent
     ) => {
-      if (event.key === "Escape") {
+      if (
+        event.key === "Escape" &&
+        !submitting
+      ) {
         close();
       }
     };
@@ -112,76 +122,129 @@ export default function ReportIssue({
         handleEscape
       );
     };
-  });
+  }, [open, submitting]);
+
+  /* ==========================================================
+     CLOSE
+     ========================================================== */
 
   function close() {
+    if (submitting) {
+      return;
+    }
+
     setOpen(false);
     setSubmitted(false);
+
     setSuggestedValue("");
     setDescription("");
+
     setIssueType(
       "problem_number"
     );
+
+    setSubmitting(false);
+    setError("");
   }
 
-  function submit() {
-    const request: EditRequest = {
-      id: crypto.randomUUID(),
+  /* ==========================================================
+     SUBMIT REPORT
+     ========================================================== */
 
-      problem_id:
-        problemId,
+  async function submit() {
+    const suggested =
+      suggestedValue.trim();
 
-      current_title:
-        currentTitle,
-
-      issue_type:
-        issueType,
-
-      suggested_value:
-        suggestedValue.trim(),
-
-      description:
-        description.trim(),
-
-      created_at:
-        new Date().toISOString(),
-
-      status:
-        "PENDING",
-    };
-
-    const raw =
-      localStorage.getItem(
-        "oi_edit_requests"
+    if (!suggested) {
+      setError(
+        "Please enter a suggested correction."
       );
 
-    let existing: EditRequest[] =
-      [];
-
-    if (raw) {
-      try {
-        const parsed =
-          JSON.parse(raw);
-
-        if (
-          Array.isArray(parsed)
-        ) {
-          existing = parsed;
-        }
-      } catch {
-        existing = [];
-      }
+      return;
     }
 
-    existing.push(request);
+    setSubmitting(true);
+    setError("");
 
-    localStorage.setItem(
-      "oi_edit_requests",
-      JSON.stringify(existing)
-    );
+    const requestId =
+      typeof crypto !== "undefined" &&
+      "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `req_${Date.now()}_${Math.random()
+            .toString(36)
+            .slice(2)}`;
 
-    setSubmitted(true);
+    try {
+      const response =
+        await fetch(
+          "http://127.0.0.1:8000/api/reports",
+          {
+            method: "POST",
+
+            headers: {
+              "Content-Type":
+                "application/json",
+            },
+
+            body: JSON.stringify({
+              id: requestId,
+
+              problem_id:
+                problemId,
+
+              current_title:
+                currentTitle,
+
+              issue_type:
+                issueType,
+
+              suggested_value:
+                suggested,
+
+              description:
+                description.trim(),
+            }),
+          }
+        );
+
+      let data: ServerResponse =
+        {};
+
+      try {
+        data =
+          await response.json();
+      } catch {
+        data = {};
+      }
+
+      if (
+        !response.ok ||
+        data.ok !== true
+      ) {
+        throw new Error(
+          data.error ||
+            "The report could not be submitted."
+        );
+      }
+
+      setSubmitted(true);
+    } catch (submitError) {
+      console.error(
+        "Report submission failed:",
+        submitError
+      );
+
+      setError(
+        "Couldn't submit the report. Please make sure the report server is running."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
+
+  /* ==========================================================
+     MODAL
+     ========================================================== */
 
   function renderModal() {
     if (!open) {
@@ -190,7 +253,7 @@ export default function ReportIssue({
 
     return createPortal(
       <div
-        className="report-overlay"
+        className="oi-report-overlay"
         role="presentation"
         onMouseDown={(event) => {
           if (
@@ -202,7 +265,7 @@ export default function ReportIssue({
         }}
       >
         <section
-          className="report-modal"
+          className="oi-report-dialog"
           role="dialog"
           aria-modal="true"
           aria-labelledby="report-title"
@@ -210,9 +273,13 @@ export default function ReportIssue({
         >
           {!submitted ? (
             <>
-              <header className="report-modal-header">
-                <div className="report-heading">
-                  <div className="report-icon">
+              {/* ==================================================
+                  HEADER
+                 ================================================== */}
+
+              <header className="oi-report-header">
+                <div className="oi-report-heading">
+                  <div className="oi-report-icon">
                     <svg
                       width="18"
                       height="18"
@@ -226,12 +293,14 @@ export default function ReportIssue({
                         strokeWidth="2"
                         strokeLinecap="round"
                       />
+
                       <path
                         d="M12 17.01L12.01 16.998"
                         stroke="currentColor"
                         strokeWidth="2.5"
                         strokeLinecap="round"
                       />
+
                       <path
                         d="M10.3 3.8L2.7 17C1.93 18.33 2.89 20 4.42 20H19.58C21.11 20 22.07 18.33 21.3 17L13.7 3.8C12.95 2.5 11.05 2.5 10.3 3.8Z"
                         stroke="currentColor"
@@ -241,20 +310,20 @@ export default function ReportIssue({
                   </div>
 
                   <div>
-                    <div className="report-kicker">
+                    <div className="oi-report-eyebrow">
                       DATA QUALITY
                     </div>
 
                     <h2
                       id="report-title"
-                      className="report-title"
+                      className="oi-report-title"
                     >
                       Report information
                     </h2>
 
                     <p
                       id="report-description"
-                      className="report-description"
+                      className="oi-report-subtitle"
                     >
                       Help us keep the problem
                       information accurate.
@@ -264,9 +333,10 @@ export default function ReportIssue({
 
                 <button
                   type="button"
-                  className="report-close"
+                  className="oi-report-close"
                   aria-label="Close report dialog"
                   onClick={close}
+                  disabled={submitting}
                 >
                   <svg
                     width="17"
@@ -281,6 +351,7 @@ export default function ReportIssue({
                       strokeWidth="1.8"
                       strokeLinecap="round"
                     />
+
                     <path
                       d="M18 6L6 18"
                       stroke="currentColor"
@@ -291,31 +362,41 @@ export default function ReportIssue({
                 </button>
               </header>
 
-              <div className="report-divider" />
+              {/* ==================================================
+                  BODY
+                 ================================================== */}
 
-              <div className="report-body">
-                <div className="report-current">
-                  <span className="report-label">
+              <div className="oi-report-body">
+                {/* CURRENT */}
+
+                <div>
+                  <span className="oi-report-label">
                     CURRENT INFORMATION
                   </span>
 
-                  <div className="report-current-card">
-                    <span className="report-current-title">
+                  <div className="oi-current-card">
+                    <span className="oi-current-title">
                       {currentTitle}
                     </span>
 
-                    <span className="report-current-id">
-                      Problem ID: {problemId}
+                    <span className="oi-current-id">
+                      Problem ID:{" "}
+                      {problemId}
                     </span>
                   </div>
                 </div>
 
-                <fieldset className="report-fieldset">
-                  <legend className="report-label">
-                    WHAT'S WRONG?
-                  </legend>
+                {/* ISSUE TYPE */}
 
-                  <div className="issue-grid">
+                <div
+                  role="group"
+                  aria-label="What's wrong?"
+                >
+                  <span className="oi-report-label">
+                    WHAT'S WRONG?
+                  </span>
+
+                  <div className="oi-issue-grid">
                     {ISSUE_OPTIONS.map(
                       (option) => {
                         const selected =
@@ -324,11 +405,13 @@ export default function ReportIssue({
 
                         return (
                           <button
-                            key={option.value}
+                            key={
+                              option.value
+                            }
                             type="button"
-                            className={`issue-option ${
+                            className={`oi-issue-option ${
                               selected
-                                ? "selected"
+                                ? "is-selected"
                                 : ""
                             }`}
                             onClick={() =>
@@ -339,36 +422,41 @@ export default function ReportIssue({
                             aria-pressed={
                               selected
                             }
+                            disabled={
+                              submitting
+                            }
                           >
-                            <span
-                              className="issue-radio"
-                            >
+                            <span className="oi-radio">
                               {selected && (
                                 <span />
                               )}
                             </span>
 
                             <span>
-                              {option.label}
+                              {
+                                option.label
+                              }
                             </span>
                           </button>
                         );
                       }
                     )}
                   </div>
-                </fieldset>
+                </div>
 
-                <div className="report-field">
+                {/* SUGGESTED CORRECTION */}
+
+                <div>
                   <label
                     htmlFor={`suggested-${problemId}`}
-                    className="report-label"
+                    className="oi-report-label"
                   >
                     SUGGESTED CORRECTION
                   </label>
 
                   <input
                     id={`suggested-${problemId}`}
-                    className="report-input"
+                    className="oi-report-input"
                     value={
                       suggestedValue
                     }
@@ -379,23 +467,31 @@ export default function ReportIssue({
                     }
                     placeholder="Example: IMO 2023 P2"
                     autoComplete="off"
+                    disabled={
+                      submitting
+                    }
                   />
                 </div>
 
-                <div className="report-field">
-                  <label
-                    htmlFor={`details-${problemId}`}
-                    className="report-label"
-                  >
-                    DETAILS
-                    <span className="optional">
+                {/* DETAILS */}
+
+                <div>
+                  <div className="oi-label-row">
+                    <label
+                      htmlFor={`details-${problemId}`}
+                      className="oi-report-label"
+                    >
+                      DETAILS
+                    </label>
+
+                    <span className="oi-optional">
                       Optional
                     </span>
-                  </label>
+                  </div>
 
                   <textarea
                     id={`details-${problemId}`}
-                    className="report-textarea"
+                    className="oi-report-textarea"
                     value={
                       description
                     }
@@ -406,34 +502,60 @@ export default function ReportIssue({
                     }
                     placeholder="Tell us what should be changed..."
                     rows={4}
+                    disabled={
+                      submitting
+                    }
                   />
                 </div>
+
+                {/* ERROR */}
+
+                {error && (
+                  <div
+                    className="oi-report-error"
+                    role="alert"
+                  >
+                    {error}
+                  </div>
+                )}
               </div>
 
-              <footer className="report-footer">
+              {/* ==================================================
+                  FOOTER
+                 ================================================== */}
+
+              <footer className="oi-report-footer">
                 <button
                   type="button"
-                  className="report-cancel"
+                  className="oi-cancel-button"
                   onClick={close}
+                  disabled={submitting}
                 >
                   Cancel
                 </button>
 
                 <button
                   type="button"
-                  className="report-submit"
+                  className="oi-submit-button"
                   disabled={
+                    submitting ||
                     !suggestedValue.trim()
                   }
                   onClick={submit}
                 >
-                  Submit report
+                  {submitting
+                    ? "Submitting..."
+                    : "Submit report"}
                 </button>
               </footer>
             </>
           ) : (
-            <div className="report-success">
-              <div className="success-icon">
+            /* ====================================================
+               SUCCESS
+               ==================================================== */
+
+            <div className="oi-success">
+              <div className="oi-success-icon">
                 <svg
                   width="24"
                   height="24"
@@ -451,15 +573,15 @@ export default function ReportIssue({
                 </svg>
               </div>
 
-              <div className="report-kicker">
+              <div className="oi-report-eyebrow">
                 THANK YOU
               </div>
 
-              <h2 className="report-success-title">
+              <h2 className="oi-success-title">
                 Report submitted
               </h2>
 
-              <p className="report-success-text">
+              <p className="oi-success-text">
                 Your correction has been
                 saved and will be reviewed
                 for accuracy.
@@ -467,7 +589,7 @@ export default function ReportIssue({
 
               <button
                 type="button"
-                className="report-submit success-button"
+                className="oi-submit-button"
                 onClick={close}
               >
                 Done
@@ -480,12 +602,18 @@ export default function ReportIssue({
     );
   }
 
+  /* ==========================================================
+     TRIGGER
+     ========================================================== */
+
   return (
     <>
       <button
         type="button"
-        className="report-button"
-        onClick={() => setOpen(true)}
+        className="oi-report-button"
+        onClick={() =>
+          setOpen(true)
+        }
       >
         <svg
           width="14"

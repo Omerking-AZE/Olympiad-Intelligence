@@ -1,0 +1,17 @@
+[
+  {
+    "problem_id": "mathnet-0l5r",
+    "issue_type": "competition",
+    "suggested_value": "imo 2016 p4",
+    "report_count": 1,
+    "priority": "LOW",
+    "analysis": {
+      "status": "SUGGESTION_UNSUPPORTED",
+      "reason": "The suggested external problem does not match the MathNet problem text.",
+      "suggested_candidate_exists": true,
+      "best_text_candidate": "IMO 1964 P1",
+      "best_text_score": 0.3124
+    },
+    "action": "MANUAL_REVIEW"
+  }
+]

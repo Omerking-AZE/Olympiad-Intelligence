@@ -1,0 +1,23 @@
+[
+  {
+    "problem_id": "mathnet-0l5r",
+    "issue_type": "competition",
+    "current_value": "hmmt february",
+    "suggested_value": "imo 2016 p4",
+    "report_count": 1,
+    "same_as_current": false,
+    "status": "PENDING",
+    "confidence": "LOW",
+    "metadata": {
+      "title": "HMMT February",
+      "competition": "HMMT February",
+      "year": null,
+      "problem_number": null,
+      "section": null,
+      "metadata_status": "COMPETITION_ONLY",
+      "match_score": null,
+      "source": "MathNet",
+      "source_url": null
+    }
+  }
+]

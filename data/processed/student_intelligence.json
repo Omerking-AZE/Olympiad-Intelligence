@@ -27,5 +27,24 @@
         "reasoning": 81,
         "calculation": 74,
         "case_analysis": 78
+    },
+    "recommendations": {
+        "count": 15,
+        "csv_path": "data\\processed\\adaptive_recommendations.csv",
+        "json_path": "data\\processed\\adaptive_recommendations.json"
+    },
+    "feedback": {
+        "reports": 1,
+        "grouped_suggestions": 1,
+        "external_verification": 1,
+        "high_confidence": 0,
+        "medium_confidence": 0,
+        "low_confidence": 1,
+        "review_queue": 1
+    },
+    "pipeline_status": {
+        "metadata_changed": false,
+        "human_review_required": true,
+        "ready_for_review": 1
     }
 }

@@ -1,0 +1,102 @@
+[
+  {
+    "problem_id": "mathnet-0l5r",
+    "issue_type": "competition",
+    "suggested_value": "imo 2016 p4",
+    "report_count": 1,
+    "current_problem": {
+      "competition": "HMMT February",
+      "domain": "Algebra | Number Theory",
+      "problem_text_length": 188
+    },
+    "suggested_candidate": {
+      "title": "IMO 2016 P4",
+      "problem_id_external": "IMO-2016-4",
+      "source_url": "https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_4",
+      "year": 2016,
+      "problem_number": 4,
+      "competition": "IMO"
+    },
+    "suggested_is_best_text_match": false,
+    "best_text_candidate": {
+      "title": "IMO 1964 P1",
+      "problem_id_external": "IMO-1964-1",
+      "source_url": "https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_1",
+      "year": 1964,
+      "problem_number": 1,
+      "competition": "IMO",
+      "word_similarity": 0.1829,
+      "char_similarity": 0.3763,
+      "sequence_similarity": 0.4303,
+      "combined_similarity": 0.3124
+    },
+    "top_text_candidates": [
+      {
+        "title": "IMO 1964 P1",
+        "problem_id_external": "IMO-1964-1",
+        "source_url": "https://artofproblemsolving.com/wiki/index.php/1964_IMO_Problems/Problem_1",
+        "year": 1964,
+        "problem_number": 1,
+        "competition": "IMO",
+        "word_similarity": 0.1829,
+        "char_similarity": 0.3763,
+        "sequence_similarity": 0.4303,
+        "combined_similarity": 0.3124
+      },
+      {
+        "title": "IMO 2011 P5",
+        "problem_id_external": "IMO-2011-5",
+        "source_url": "https://artofproblemsolving.com/wiki/index.php/2011_IMO_Problems/Problem_5",
+        "year": 2011,
+        "problem_number": 5,
+        "competition": "IMO",
+        "word_similarity": 0.1422,
+        "char_similarity": 0.3284,
+        "sequence_similarity": 0.4506,
+        "combined_similarity": 0.2845
+      },
+      {
+        "title": "IMO 1984 P2",
+        "problem_id_external": "IMO-1984-2",
+        "source_url": "https://artofproblemsolving.com/wiki/index.php/1984_IMO_Problems/Problem_2",
+        "year": 1984,
+        "problem_number": 2,
+        "competition": "IMO",
+        "word_similarity": 0.1467,
+        "char_similarity": 0.3246,
+        "sequence_similarity": 0.3696,
+        "combined_similarity": 0.2647
+      },
+      {
+        "title": "IMO 2016 P3",
+        "problem_id_external": "IMO-2016-3",
+        "source_url": "https://artofproblemsolving.com/wiki/index.php/2016_IMO_Problems/Problem_3",
+        "year": 2016,
+        "problem_number": 3,
+        "competition": "IMO",
+        "word_similarity": 0.1051,
+        "char_similarity": 0.2433,
+        "sequence_similarity": 0.4091,
+        "combined_similarity": 0.2295
+      },
+      {
+        "title": "IMO 2002 P4",
+        "problem_id_external": "IMO-2002-4",
+        "source_url": "https://artofproblemsolving.com/wiki/index.php/2002_IMO_Problems/Problem_4",
+        "year": 2002,
+        "problem_number": 4,
+        "competition": "IMO",
+        "word_similarity": 0.0453,
+        "char_similarity": 0.2552,
+        "sequence_similarity": 0.4866,
+        "combined_similarity": 0.2291
+      }
+    ],
+    "verification": {
+      "status": "SUGGESTION_UNSUPPORTED",
+      "confidence": "LOW",
+      "reason": "The suggested external problem does not match the MathNet problem text."
+    },
+    "auto_apply_eligible": false
+  }
+]

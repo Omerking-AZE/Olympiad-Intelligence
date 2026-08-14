@@ -2217,3 +2217,35 @@ button {
       scale(1);
   }
 }
+
+/* ============================================================
+   APPLE-VARİ QLOBAL KEÇİDLƏR
+   ============================================================ */
+
+button {
+  transition:
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.965);
+}
+
+.oi-issue-option,
+.oi-report-button,
+.theme-toggle,
+.problem-button,
+.oi-submit-button,
+.oi-cancel-button {
+  transition:
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -4,13 +4,19 @@ Student Intelligence Pipeline
 
 Runs the complete student-analysis pipeline:
 
-1. Student history
-2. Dynamic profile
-3. Weakness detection
-4. Adaptive recommendations
-5. Summary JSON
+1. Update student profile
+2. Detect weaknesses
+3. Generate adaptive recommendations
+4. Aggregate user edit requests
+5. Verify reported metadata externally
+6. Build review queue
+7. Generate final student intelligence summary
 
-The visual card can then consume student_profile.json.
+Important:
+
+- Review decisions are NOT automatically applied here.
+- Human review remains a separate step.
+- Metadata is never modified by this pipeline.
 """
 
 import json
@@ -19,62 +25,253 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent.parent
+# ============================================================
+# PATHS
+# ============================================================
 
-PROFILE_PATH = ROOT / "data/processed/student_profile.json"
-WEAKNESS_PATH = ROOT / "data/processed/student_weaknesses.json"
-RECOMMENDATION_PATH = (
-    ROOT / "data/processed/adaptive_recommendations.csv"
+ROOT = Path(
+    __file__
+).resolve().parent.parent
+
+PROFILE_PATH = (
+    ROOT
+    / "data/processed/student_profile.json"
 )
-HISTORY_PATH = ROOT / "data/processed/student_history.json"
+
+WEAKNESS_PATH = (
+    ROOT
+    / "data/processed/student_weaknesses.json"
+)
+
+RECOMMENDATION_CSV_PATH = (
+    ROOT
+    / "data/processed/adaptive_recommendations.csv"
+)
+
+RECOMMENDATION_JSON_PATH = (
+    ROOT
+    / "data/processed/adaptive_recommendations.json"
+)
+
+HISTORY_PATH = (
+    ROOT
+    / "data/processed/student_history.json"
+)
+
+REPORTS_PATH = (
+    ROOT
+    / "data/feedback/edit_requests.json"
+)
+
+REPORT_SUMMARY_PATH = (
+    ROOT
+    / "data/feedback/edit_request_summary.json"
+)
+
+EXTERNAL_VERIFICATION_PATH = (
+    ROOT
+    / "data/feedback/external_verification.json"
+)
+
+REVIEW_QUEUE_PATH = (
+    ROOT
+    / "data/feedback/review_queue.json"
+)
+
+INTELLIGENCE_PATH = (
+    ROOT
+    / "data/processed/student_intelligence.json"
+)
 
 
-def run_script(script_name):
-    """Run another project script safely."""
+# ============================================================
+# PIPELINE SCRIPTS
+# ============================================================
 
-    script_path = ROOT / "src" / script_name
+PIPELINE_STEPS = [
+    (
+        "update_student_profile.py",
+        "Build/update student profile",
+    ),
+    (
+        "detect_weaknesses.py",
+        "Detect student weaknesses",
+    ),
+    (
+        "adaptive_recommendations.py",
+        "Generate adaptive recommendations",
+    ),
+    (
+        "aggregate_edit_requests.py",
+        "Aggregate user reports",
+    ),
+    (
+        "verify_edit_requests.py",
+        "Verify edit requests",
+    ),
+    (
+        "external_metadata_verifier.py",
+        "Verify against external catalog",
+    ),
+    (
+        "build_review_queue.py",
+        "Build manual review queue",
+    ),
+]
+
+
+# ============================================================
+# RUN SCRIPT
+# ============================================================
+
+def run_script(
+    script_name,
+    description,
+):
+    """
+    Run another project script safely.
+
+    Uses the current Python interpreter and the project
+    root as cwd.
+    """
+
+    script_path = (
+        ROOT
+        / "src"
+        / script_name
+    )
+
+    if not script_path.exists():
+        raise FileNotFoundError(
+            f"Pipeline script not found: "
+            f"{script_path}"
+        )
 
     print()
     print("=" * 70)
-    print(f"RUNNING: {script_name}")
+    print(
+        f"PIPELINE STEP: {description}"
+    )
+    print(
+        f"SCRIPT: {script_name}"
+    )
     print("=" * 70)
 
     result = subprocess.run(
-        [sys.executable, str(script_path)],
+        [
+            sys.executable,
+            str(script_path),
+        ],
         cwd=ROOT,
         check=False,
     )
 
     if result.returncode != 0:
         raise RuntimeError(
-            f"{script_name} failed with "
-            f"exit code {result.returncode}"
+            f"{script_name} failed "
+            f"with exit code "
+            f"{result.returncode}"
         )
 
+    print()
+    print(
+        f"COMPLETED: {script_name}"
+    )
 
-def load_json(path):
-    """Load JSON safely."""
+
+# ============================================================
+# JSON LOADER
+# ============================================================
+
+def load_json(
+    path,
+    default=None,
+):
+    """
+    Load JSON safely.
+    """
+
+    if default is None:
+        default = {}
 
     if not path.exists():
-        return {}
+        return default
 
-    with open(
-        path,
-        "r",
-        encoding="utf-8",
-    ) as file:
-        return json.load(file)
+    try:
+        with open(
+            path,
+            "r",
+            encoding="utf-8",
+        ) as file:
+            return json.load(
+                file
+            )
 
+    except (
+        OSError,
+        json.JSONDecodeError,
+    ):
+        return default
+
+
+# ============================================================
+# FINAL SUMMARY
+# ============================================================
 
 def create_summary():
-    """Create a compact student intelligence summary."""
+    """
+    Create compact student intelligence summary.
+    """
 
-    profile = load_json(PROFILE_PATH)
-    weaknesses = load_json(WEAKNESS_PATH)
-    history = load_json(HISTORY_PATH)
+    profile = load_json(
+        PROFILE_PATH,
+        {},
+    )
+
+    weaknesses = load_json(
+        WEAKNESS_PATH,
+        {},
+    )
+
+    history = load_json(
+        HISTORY_PATH,
+        [],
+    )
+
+    recommendations = load_json(
+        RECOMMENDATION_JSON_PATH,
+        [],
+    )
+
+    reports = load_json(
+        REPORTS_PATH,
+        [],
+    )
+
+    report_summary = load_json(
+        REPORT_SUMMARY_PATH,
+        [],
+    )
+
+    external_verification = load_json(
+        EXTERNAL_VERIFICATION_PATH,
+        [],
+    )
+
+    review_queue = load_json(
+        REVIEW_QUEUE_PATH,
+        [],
+    )
+
+    # --------------------------------------------------------
+    # Weakness buckets
+    # --------------------------------------------------------
 
     high_priority = []
+
     medium_priority = []
+
+    unknown_skills = []
 
     for skill, data in weaknesses.items():
 
@@ -83,10 +280,153 @@ def create_summary():
         )
 
         if classification == "HIGH":
-            high_priority.append(skill)
+            high_priority.append(
+                skill
+            )
 
         elif classification == "MEDIUM":
-            medium_priority.append(skill)
+            medium_priority.append(
+                skill
+            )
+
+        elif (
+            classification
+            == "NOT_ENOUGH_DATA"
+        ):
+            unknown_skills.append(
+                skill
+            )
+
+    # --------------------------------------------------------
+    # Recommendation count
+    # --------------------------------------------------------
+
+    if isinstance(
+        recommendations,
+        list,
+    ):
+        recommendation_count = len(
+            recommendations
+        )
+
+    else:
+        recommendation_count = 0
+
+    # --------------------------------------------------------
+    # Report statistics
+    # --------------------------------------------------------
+
+    if isinstance(
+        reports,
+        list,
+    ):
+        report_count = len(
+            reports
+        )
+
+    else:
+        report_count = 0
+
+    if isinstance(
+        report_summary,
+        list,
+    ):
+        grouped_report_count = len(
+            report_summary
+        )
+
+    else:
+        grouped_report_count = 0
+
+    # --------------------------------------------------------
+    # Verification statistics
+    # --------------------------------------------------------
+
+    verified_high = 0
+
+    verified_medium = 0
+
+    verified_low = 0
+
+    for item in external_verification:
+
+        verification = item.get(
+            "verification",
+            {},
+        )
+
+        confidence = verification.get(
+            "confidence"
+        )
+
+        if confidence == "HIGH":
+            verified_high += 1
+
+        elif confidence == "MEDIUM":
+            verified_medium += 1
+
+        elif confidence == "LOW":
+            verified_low += 1
+
+    # --------------------------------------------------------
+    # Review queue statistics
+    # --------------------------------------------------------
+
+    review_count = (
+        len(review_queue)
+        if isinstance(
+            review_queue,
+            list,
+        )
+        else 0
+    )
+
+    # --------------------------------------------------------
+    # Student skill ratings
+    # --------------------------------------------------------
+
+    skill_names = [
+        "algebra",
+        "geometry",
+        "number_theory",
+        "discrete_mathematics",
+        "proof",
+        "reasoning",
+        "calculation",
+        "case_analysis",
+    ]
+
+    skill_ratings = {}
+
+    for skill in skill_names:
+        skill_ratings[skill] = profile.get(
+            skill,
+            0,
+        )
+
+    # --------------------------------------------------------
+    # Strongest skills
+    # --------------------------------------------------------
+
+    ranked = sorted(
+        skill_ratings.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    strongest_skills = [
+        skill
+        for skill, rating in ranked
+        if isinstance(
+            rating,
+            (int, float),
+        )
+        and rating > 0
+    ][:3]
+
+    # --------------------------------------------------------
+    # Final summary
+    # --------------------------------------------------------
 
     summary = {
         "student_id": profile.get(
@@ -109,7 +449,12 @@ def create_summary():
 
         "problems_attempted": profile.get(
             "problems_attempted",
-            len(history),
+            len(history)
+            if isinstance(
+                history,
+                list,
+            )
+            else 0,
         ),
 
         "problems_solved": profile.get(
@@ -122,67 +467,101 @@ def create_summary():
             "NONE",
         ),
 
-        "strongest_skills": [],
+        "strongest_skills":
+            strongest_skills,
 
-        "high_priority_weaknesses": high_priority,
+        "high_priority_weaknesses":
+            high_priority,
 
-        "medium_priority_weaknesses": medium_priority,
+        "medium_priority_weaknesses":
+            medium_priority,
 
-        "unknown_skills": [
-            skill
-            for skill, data in weaknesses.items()
-            if data.get("classification")
-            == "NOT_ENOUGH_DATA"
-        ],
+        "unknown_skills":
+            unknown_skills,
 
-        "skill_ratings": {
-            skill: profile.get(
-                skill,
-                0,
-            )
-            for skill in [
-                "algebra",
-                "geometry",
-                "number_theory",
-                "discrete_mathematics",
-                "proof",
-                "reasoning",
-                "calculation",
-                "case_analysis",
-            ]
+        "skill_ratings":
+            skill_ratings,
+
+        "recommendations": {
+            "count":
+                recommendation_count,
+
+            "csv_path":
+                str(
+                    RECOMMENDATION_CSV_PATH
+                    .relative_to(ROOT)
+                ),
+
+            "json_path":
+                str(
+                    RECOMMENDATION_JSON_PATH
+                    .relative_to(ROOT)
+                ),
+        },
+
+        "feedback": {
+            "reports":
+                report_count,
+
+            "grouped_suggestions":
+                grouped_report_count,
+
+            "external_verification":
+                len(
+                    external_verification
+                )
+                if isinstance(
+                    external_verification,
+                    list,
+                )
+                else 0,
+
+            "high_confidence":
+                verified_high,
+
+            "medium_confidence":
+                verified_medium,
+
+            "low_confidence":
+                verified_low,
+
+            "review_queue":
+                review_count,
+        },
+
+        "pipeline_status": {
+            "metadata_changed":
+                False,
+
+            "human_review_required":
+                review_count > 0,
+
+            "ready_for_review":
+                review_count,
         },
     }
-
-    # Find strongest skills
-    ranked = sorted(
-        summary["skill_ratings"].items(),
-        key=lambda item: item[1],
-        reverse=True,
-    )
-
-    summary["strongest_skills"] = [
-        skill
-        for skill, rating in ranked
-        if rating > 0
-    ][:3]
 
     return summary
 
 
-def save_summary(summary):
-    """Save final intelligence summary."""
+# ============================================================
+# SAVE SUMMARY
+# ============================================================
 
-    output_path = (
-        ROOT / "data/processed/student_intelligence.json"
-    )
+def save_summary(
+    summary,
+):
+    """
+    Save final intelligence summary.
+    """
 
-    output_path.parent.mkdir(
+    INTELLIGENCE_PATH.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
     with open(
-        output_path,
+        INTELLIGENCE_PATH,
         "w",
         encoding="utf-8",
     ) as file:
@@ -193,17 +572,21 @@ def save_summary(summary):
             ensure_ascii=False,
         )
 
-    return output_path
+    return INTELLIGENCE_PATH
 
 
-def print_summary(summary):
-    """Display final pipeline result."""
+# ============================================================
+# PRINT SUMMARY
+# ============================================================
 
+def print_summary(
+    summary,
+):
     print()
     print("=" * 70)
     print(
         "OLYMPIAD INTELLIGENCE - "
-        "STUDENT INTELLIGENCE SUMMARY"
+        "FINAL STUDENT SUMMARY"
     )
     print("=" * 70)
 
@@ -239,82 +622,230 @@ def print_summary(summary):
 
     print()
 
-    print("STRONGEST SKILLS")
-    print("-" * 50)
+    print(
+        "STRONGEST SKILLS"
+    )
 
-    for skill in summary["strongest_skills"]:
+    print(
+        "-" * 50
+    )
+
+    if summary[
+        "strongest_skills"
+    ]:
+
+        for skill in summary[
+            "strongest_skills"
+        ]:
+
+            rating = summary[
+                "skill_ratings"
+            ].get(
+                skill,
+                0,
+            )
+
+            print(
+                f"- {skill}: "
+                f"{rating}"
+            )
+
+    else:
         print(
-            f"- {skill}: "
-            f"{summary['skill_ratings'][skill]}"
+            "- None"
         )
 
     print()
 
-    print("HIGH PRIORITY WEAKNESSES")
-    print("-" * 50)
+    print(
+        "HIGH PRIORITY WEAKNESSES"
+    )
 
-    if summary["high_priority_weaknesses"]:
+    print(
+        "-" * 50
+    )
+
+    if summary[
+        "high_priority_weaknesses"
+    ]:
+
         for skill in summary[
             "high_priority_weaknesses"
         ]:
-            print(f"- {skill}")
+
+            print(
+                f"- {skill}"
+            )
+
     else:
-        print("- None")
+        print(
+            "- None"
+        )
 
     print()
 
-    print("MEDIUM PRIORITY WEAKNESSES")
-    print("-" * 50)
+    print(
+        "MEDIUM PRIORITY WEAKNESSES"
+    )
 
-    if summary["medium_priority_weaknesses"]:
+    print(
+        "-" * 50
+    )
+
+    if summary[
+        "medium_priority_weaknesses"
+    ]:
+
         for skill in summary[
             "medium_priority_weaknesses"
         ]:
-            print(f"- {skill}")
+
+            print(
+                f"- {skill}"
+            )
+
     else:
-        print("- None")
+        print(
+            "- None"
+        )
 
     print()
 
-    print("UNKNOWN SKILLS")
-    print("-" * 50)
+    print(
+        "UNKNOWN SKILLS"
+    )
 
-    if summary["unknown_skills"]:
-        for skill in summary["unknown_skills"]:
-            print(f"- {skill}")
+    print(
+        "-" * 50
+    )
+
+    if summary[
+        "unknown_skills"
+    ]:
+
+        for skill in summary[
+            "unknown_skills"
+        ]:
+
+            print(
+                f"- {skill}"
+            )
+
     else:
-        print("- None")
+        print(
+            "- None"
+        )
+
+    print()
+
+    print(
+        "FEEDBACK PIPELINE"
+    )
+
+    print(
+        "-" * 50
+    )
+
+    feedback = summary[
+        "feedback"
+    ]
+
+    print(
+        f"Reports: "
+        f"{feedback['reports']}"
+    )
+
+    print(
+        f"Grouped suggestions: "
+        f"{feedback['grouped_suggestions']}"
+    )
+
+    print(
+        f"External verification: "
+        f"{feedback['external_verification']}"
+    )
+
+    print(
+        f"High confidence: "
+        f"{feedback['high_confidence']}"
+    )
+
+    print(
+        f"Medium confidence: "
+        f"{feedback['medium_confidence']}"
+    )
+
+    print(
+        f"Low confidence: "
+        f"{feedback['low_confidence']}"
+    )
+
+    print(
+        f"Review queue: "
+        f"{feedback['review_queue']}"
+    )
+
+    print()
+
+    print(
+        "PIPELINE SAFETY"
+    )
+
+    print(
+        "-" * 50
+    )
+
+    pipeline_status = summary[
+        "pipeline_status"
+    ]
+
+    print(
+        f"Metadata changed: "
+        f"{pipeline_status['metadata_changed']}"
+    )
+
+    print(
+        f"Human review required: "
+        f"{pipeline_status['human_review_required']}"
+    )
 
     print()
 
     print("=" * 70)
 
+
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
 
     print("=" * 70)
+
     print(
         "OLYMPIAD INTELLIGENCE - "
         "FULL STUDENT PIPELINE"
     )
+
     print("=" * 70)
 
-    # 1. Build/update profile
-    run_script(
-        "update_student_profile.py"
-    )
+    # --------------------------------------------------------
+    # Run all automatic stages
+    # --------------------------------------------------------
 
-    # 2. Detect weaknesses
-    run_script(
-        "detect_weaknesses.py"
-    )
+    for script_name, description in (
+        PIPELINE_STEPS
+    ):
 
-    # 3. Generate adaptive recommendations
-    run_script(
-        "adaptive_recommendations.py"
-    )
+        run_script(
+            script_name,
+            description,
+        )
 
-    # 4. Build final summary
+    # --------------------------------------------------------
+    # Build final summary
+    # --------------------------------------------------------
+
     summary = create_summary()
 
     output_path = save_summary(
@@ -326,16 +857,20 @@ def main():
     )
 
     print()
+
     print(
         f"Final summary saved to: "
         f"{output_path}"
     )
 
     print()
+
     print("=" * 70)
+
     print(
         "FULL STUDENT PIPELINE COMPLETE"
     )
+
     print("=" * 70)
 
 
