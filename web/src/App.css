@@ -17,6 +17,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -42,32 +44,96 @@ button {
 }
 
 /* ============================================================
+   SELECTION
+   ============================================================ */
+
+::selection {
+  background: rgba(169, 130, 255, 0.32);
+  color: #ffffff;
+}
+
+.theme-light ::selection {
+  background: rgba(100, 67, 200, 0.22);
+  color: #171925;
+}
+
+/* ============================================================
+   PREMIUM SCROLLBAR
+   ============================================================ */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(169, 130, 255, 0.35) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(169, 130, 255, 0.28);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.2s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(169, 130, 255, 0.5);
+  background-clip: padding-box;
+}
+
+.theme-light *::-webkit-scrollbar-thumb {
+  background: rgba(100, 67, 200, 0.22);
+  background-clip: padding-box;
+}
+
+.theme-light *::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 67, 200, 0.4);
+  background-clip: padding-box;
+}
+
+.theme-light * {
+  scrollbar-color: rgba(100, 67, 200, 0.28) transparent;
+}
+
+/* ============================================================
    THEME VARIABLES
    ============================================================ */
 
 .app {
-  --page-bg: #07070c;
+  /* Softer near-black instead of pure black — easier on the eyes
+     during long sessions, still reads as premium/dark. */
+  --page-bg: #0a0a12;
 
-  --surface: #15151f;
-  --surface-2: #1b1b27;
-  --surface-soft: rgba(255, 255, 255, 0.055);
-  --surface-hover: rgba(255, 255, 255, 0.09);
+  --surface: #16161f;
+  --surface-2: #1c1c28;
+  --surface-soft: rgba(255, 255, 255, 0.05);
+  --surface-hover: rgba(255, 255, 255, 0.085);
 
-  --text-main: #f8f8fc;
-  --text-soft: #c8c8d5;
-  --text-muted: #9090a1;
+  /* Slightly off-white text — reduces glare vs pure #ffffff-ish tones
+     while keeping strong readability. */
+  --text-main: #edecf4;
+  --text-soft: #c2c1cf;
+  --text-muted: #92909f;
+  --text-dim: rgba(237, 236, 244, 0.36);
 
-  --border: rgba(255, 255, 255, 0.11);
-  --border-strong: rgba(255, 255, 255, 0.17);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.16);
 
-  --accent: #a982ff;
-  --accent-strong: #7d4fe6;
-  --accent-light: #c2a7ff;
+  --accent: #a37ef2;
+  --accent-strong: #7d52dd;
+  --accent-light: #c3a9fa;
 
-  --accent-soft: rgba(169, 130, 255, 0.14);
+  --accent-soft: rgba(163, 126, 242, 0.14);
 
-  --hero-start: #271744;
-  --hero-end: #111119;
+  --hero-start: #241a3d;
+  --hero-end: #121118;
 
   --success: #6ee7b7;
   --warning: #f5cf68;
@@ -81,12 +147,12 @@ button {
   background:
     radial-gradient(
       circle at 8% 0%,
-      rgba(132, 72, 255, 0.17),
+      rgba(132, 90, 240, 0.15),
       transparent 27%
     ),
     radial-gradient(
       circle at 94% 4%,
-      rgba(73, 116, 255, 0.11),
+      rgba(73, 116, 255, 0.10),
       transparent 24%
     ),
     var(--page-bg);
@@ -101,31 +167,34 @@ button {
    ============================================================ */
 
 .app.theme-light {
-  --page-bg: #f1f3f8;
+  /* A hint off pure white keeps large bright areas from feeling
+     harsh, while remaining a clean "light" surface. */
+  --page-bg: #f0f2f7;
 
   --surface: #ffffff;
-  --surface-2: #f8f9fc;
-  --surface-soft: rgba(35, 39, 56, 0.045);
-  --surface-hover: rgba(35, 39, 56, 0.075);
+  --surface-2: #f8f8fc;
+  --surface-soft: rgba(35, 39, 56, 0.04);
+  --surface-hover: rgba(35, 39, 56, 0.07);
 
-  --text-main: #171925;
-  --text-soft: #4d5261;
-  --text-muted: #707587;
+  --text-main: #1c1e2a;
+  --text-soft: #52566a;
+  --text-muted: #74788a;
+  --text-dim: rgba(28, 30, 42, 0.38);
 
-  --border: rgba(30, 34, 50, 0.11);
-  --border-strong: rgba(30, 34, 50, 0.17);
+  --border: rgba(30, 34, 50, 0.10);
+  --border-strong: rgba(30, 34, 50, 0.16);
 
-  --accent: #6443c8;
-  --accent-strong: #5232b4;
-  --accent-light: #7655d5;
+  --accent: #6a49cf;
+  --accent-strong: #5636b8;
+  --accent-light: #7a5cd8;
 
-  --accent-soft: rgba(100, 67, 200, 0.10);
+  --accent-soft: rgba(106, 73, 207, 0.09);
 
-  --hero-start: #ebe3ff;
+  --hero-start: #ece4ff;
   --hero-end: #ffffff;
 
   --success: #0c8b63;
-  --warning: #a16e00;
+  --warning: #966400;
   --danger: #b82e48;
 }
 
@@ -146,10 +215,10 @@ button {
   background:
     radial-gradient(
       circle at 50% 15%,
-      rgba(132, 72, 255, 0.18),
+      rgba(132, 90, 240, 0.16),
       transparent 35%
     ),
-    #07070c;
+    #0a0a12;
 }
 
 .state-card {
@@ -161,11 +230,12 @@ button {
 
   border:
     1px solid
-    rgba(255, 255, 255, 0.11);
+    rgba(255, 255, 255, 0.10);
 
   border-radius: 24px;
 
-  background: #171722;
+  background: #18172289;
+  background: #181722;
 
   box-shadow:
     0 30px 80px
@@ -174,18 +244,19 @@ button {
 
 .state-title {
   font-size: 18px;
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: 0.12em;
 
-  color: #b89cff;
+  color: #bda3fa;
 }
 
 .state-text {
   margin-top: 14px;
 
-  color: #b9b9c8;
+  color: #bdbcca;
 
-  line-height: 1.6;
+  line-height: 1.65;
+  font-size: 14px;
 }
 
 .error-state {
@@ -217,14 +288,15 @@ button {
     var(--border);
 
   background:
-    rgba(7, 7, 12, 0.87);
+    rgba(10, 10, 18, 0.87);
 
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .theme-light .topbar {
   background:
-    rgba(247, 248, 252, 0.92);
+    rgba(248, 249, 252, 0.92);
 }
 
 .brand-group {
@@ -234,18 +306,18 @@ button {
 }
 
 .brand {
-  font-size: 20px;
-  font-weight: 950;
-  letter-spacing: 0.14em;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
   line-height: 1;
 }
 
 .brand-subtitle {
-  margin-top: 4px;
+  margin-top: 5px;
 
   font-size: 10px;
-  font-weight: 850;
-  letter-spacing: 0.34em;
+  font-weight: 800;
+  letter-spacing: 0.32em;
 
   color: var(--accent);
 }
@@ -270,20 +342,20 @@ button {
     1px solid
     color-mix(
       in srgb,
-      var(--accent) 36%,
+      var(--accent) 34%,
       transparent
     );
 
   border-radius: 999px;
 
-  color: var(--accent);
+  color: var(--accent-light);
 
   background:
     var(--accent-soft);
 
   font-size: 10px;
-  font-weight: 950;
-  letter-spacing: 0.11em;
+  font-weight: 900;
+  letter-spacing: 0.10em;
 }
 
 .theme-toggle {
@@ -310,13 +382,13 @@ button {
   cursor: pointer;
 
   font-size: 10px;
-  font-weight: 950;
-  letter-spacing: 0.08em;
+  font-weight: 900;
+  letter-spacing: 0.07em;
 
   transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .theme-toggle:hover {
@@ -325,7 +397,7 @@ button {
   border-color:
     color-mix(
       in srgb,
-      var(--accent) 40%,
+      var(--accent) 38%,
       transparent
     );
 
@@ -360,10 +432,10 @@ button {
   margin: 0 0 8px;
 
   font-size: 10px;
-  font-weight: 950;
-  letter-spacing: 0.19em;
+  font-weight: 900;
+  letter-spacing: 0.18em;
 
-  color: var(--accent);
+  color: var(--accent-light);
 }
 
 .section-heading {
@@ -382,11 +454,11 @@ button {
   color: var(--text-main);
 
   font-size:
-    clamp(25px, 2.4vw, 34px);
+    clamp(24px, 2.3vw, 32px);
 
-  line-height: 1.05;
+  line-height: 1.08;
 
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
 }
 
 .section-note {
@@ -395,7 +467,7 @@ button {
   color: var(--text-muted);
 
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* ============================================================
@@ -462,11 +534,11 @@ button {
   color: var(--text-main);
 
   font-size:
-    clamp(42px, 6vw, 76px);
+    clamp(40px, 5.6vw, 72px);
 
-  line-height: 0.96;
+  line-height: 0.98;
 
-  letter-spacing: -0.05em;
+  letter-spacing: -0.045em;
 
   text-align: center;
 }
@@ -479,8 +551,8 @@ button {
 
   color: var(--text-soft);
 
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 14.5px;
+  line-height: 1.7;
 
   text-align: center;
 }
@@ -522,6 +594,17 @@ button {
     var(--surface-soft);
 
   text-align: center;
+
+  transition:
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-box:hover {
+  background: var(--surface-hover);
+  border-color: color-mix(in srgb, var(--accent) 22%, var(--border));
+  transform: translateY(-2px);
 }
 
 .stat-box span {
@@ -530,8 +613,8 @@ button {
   color: var(--text-muted);
 
   font-size: 9px;
-  font-weight: 950;
-  letter-spacing: 0.14em;
+  font-weight: 900;
+  letter-spacing: 0.13em;
 }
 
 .stat-box strong {
@@ -575,21 +658,21 @@ button {
 
   border:
     2px solid
-    rgba(210, 178, 255, 0.48);
+    rgba(210, 185, 255, 0.44);
 
   border-radius: 30px;
 
   background:
     linear-gradient(
       150deg,
-      #321760 0%,
-      #7240b5 48%,
-      #171023 100%
+      #2f1958 0%,
+      #6d3fad 48%,
+      #17101f 100%
     );
 
   box-shadow:
     0 30px 75px
-    rgba(83, 39, 150, 0.28);
+    rgba(83, 39, 150, 0.26);
 }
 
 .mini-card::before {
@@ -603,7 +686,7 @@ button {
     repeating-linear-gradient(
       125deg,
       transparent 0 30px,
-      rgba(255, 255, 255, 0.10) 31px 33px
+      rgba(255, 255, 255, 0.09) 31px 33px
     );
 
   transform:
@@ -622,9 +705,9 @@ button {
   color: #ffffff;
 
   font-size:
-    clamp(78px, 8vw, 108px);
+    clamp(76px, 7.6vw, 104px);
 
-  font-weight: 950;
+  font-weight: 900;
   line-height: 0.9;
 
   text-align: center;
@@ -633,11 +716,11 @@ button {
 .mini-label {
   margin-top: 10px;
 
-  color: #eee5ff;
+  color: #ece2ff;
 
   font-size: 10px;
-  font-weight: 950;
-  letter-spacing: 0.18em;
+  font-weight: 900;
+  letter-spacing: 0.17em;
 
   text-align: center;
 }
@@ -648,10 +731,10 @@ button {
   color: #ffffff;
 
   font-size:
-    clamp(18px, 2vw, 24px);
+    clamp(18px, 2vw, 23px);
 
-  font-weight: 950;
-  letter-spacing: 0.04em;
+  font-weight: 900;
+  letter-spacing: 0.03em;
 
   text-align: center;
 }
@@ -670,7 +753,7 @@ button {
   color: #ffffff;
 
   font-size: 11px;
-  font-weight: 900;
+  font-weight: 800;
 
   text-align: center;
 }
@@ -705,6 +788,15 @@ button {
   box-shadow:
     0 14px 35px
     rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 20%, var(--border));
 }
 
 .skill-top {
@@ -717,18 +809,18 @@ button {
 }
 
 .skill-code {
-  color: var(--accent);
+  color: var(--accent-light);
 
   font-size: 12px;
-  font-weight: 950;
-  letter-spacing: 0.11em;
+  font-weight: 900;
+  letter-spacing: 0.10em;
 }
 
 .skill-value {
   color: var(--text-main);
 
-  font-size: 26px;
-  font-weight: 950;
+  font-size: 25px;
+  font-weight: 900;
 }
 
 .skill-name {
@@ -770,6 +862,8 @@ button {
       var(--accent-strong),
       var(--accent)
     );
+
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============================================================
@@ -815,7 +909,7 @@ button {
   color: var(--text-main);
 
   font-size:
-    clamp(23px, 2vw, 29px);
+    clamp(21px, 1.8vw, 26px);
 }
 
 .weakness-panel {
@@ -854,6 +948,12 @@ button {
   border-bottom:
     1px solid
     var(--border);
+
+  transition: background 0.2s ease;
+}
+
+.rank-list > div:hover {
+  background: var(--surface-soft);
 }
 
 .rank-list > div:last-child {
@@ -864,7 +964,7 @@ button {
   color: var(--text-muted);
 
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .rank-list strong {
@@ -933,7 +1033,7 @@ button {
   stroke:
     color-mix(
       in srgb,
-      var(--text-main) 9%,
+      var(--text-main) 8%,
       transparent
     );
 }
@@ -948,7 +1048,7 @@ button {
   fill: var(--text-main);
 
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .chart-line {
@@ -1008,9 +1108,10 @@ button {
     rgba(0, 0, 0, 0.07);
 
   transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    border-color 0.2s ease;
+    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .problem-card:hover {
@@ -1025,6 +1126,10 @@ button {
       var(--accent) 22%,
       var(--border)
     );
+
+  box-shadow:
+    0 22px 48px
+    rgba(0, 0, 0, 0.12);
 }
 
 .problem-top {
@@ -1038,8 +1143,8 @@ button {
   color: var(--text-muted);
 
   font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  letter-spacing: 0.07em;
 }
 
 .problem-title {
@@ -1049,11 +1154,11 @@ button {
   color: var(--text-main);
 
   font-size:
-    clamp(20px, 2vw, 24px);
+    clamp(19px, 1.9vw, 23px);
 
-  line-height: 1.2;
+  line-height: 1.25;
 
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .problem-type {
@@ -1063,8 +1168,8 @@ button {
 
   color: var(--text-soft);
 
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 12.5px;
+  line-height: 1.55;
 }
 
 .problem-meta {
@@ -1104,15 +1209,15 @@ button {
   color: var(--text-muted);
 
   font-size: 9px;
-  font-weight: 950;
-  letter-spacing: 0.14em;
+  font-weight: 900;
+  letter-spacing: 0.13em;
 }
 
 .problem-metric strong {
   color: var(--text-main);
 
   font-size: 16px;
-  font-weight: 950;
+  font-weight: 900;
 }
 
 .problem-button {
@@ -1145,17 +1250,17 @@ button {
   cursor: pointer;
 
   font-size: 12px;
-  font-weight: 950;
+  font-weight: 900;
 
   transition:
-    transform 0.2s ease,
-    filter 0.2s ease;
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .problem-button:hover {
   transform: translateY(-1px);
 
-  filter: brightness(1.07);
+  filter: brightness(1.08);
 }
 
 .theme-light .problem-metric {
@@ -1216,16 +1321,16 @@ button {
 
   cursor: pointer;
 
-  font-size: 9px;
-  font-weight: 850;
+  font-size: 9.5px;
+  font-weight: 800;
 
   pointer-events: auto;
 
   transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease,
-    transform 0.2s ease;
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .oi-report-button:hover {
@@ -1269,10 +1374,10 @@ button {
 
   background:
     rgba(
-      4,
-      4,
-      10,
-      0.74
+      6,
+      6,
+      12,
+      0.72
     );
 
   backdrop-filter:
@@ -1310,7 +1415,7 @@ button {
       255,
       255,
       255,
-      0.12
+      0.11
     );
 
   border-radius: 24px;
@@ -1318,8 +1423,8 @@ button {
   background:
     linear-gradient(
       145deg,
-      #191823 0%,
-      #111119 100%
+      #1a1924 0%,
+      #131219 100%
     );
 
   box-shadow:
@@ -1328,7 +1433,7 @@ button {
       0,
       0,
       0,
-      0.56
+      0.52
     );
 
   color:
@@ -1352,7 +1457,7 @@ button {
     linear-gradient(
       145deg,
       #ffffff 0%,
-      #f6f4fb 100%
+      #f7f5fb 100%
     );
 
   border-color:
@@ -1369,7 +1474,7 @@ button {
       30,
       25,
       50,
-      0.18
+      0.16
     );
 }
 
@@ -1436,10 +1541,10 @@ button {
     var(--accent-light);
 
   font-size: 8px;
-  font-weight: 950;
+  font-weight: 900;
 
   letter-spacing:
-    0.16em;
+    0.15em;
 }
 
 .oi-report-title {
@@ -1448,11 +1553,11 @@ button {
   color:
     var(--text-main);
 
-  font-size: 22px;
-  font-weight: 950;
+  font-size: 21px;
+  font-weight: 900;
 
   letter-spacing:
-    -0.03em;
+    -0.025em;
 }
 
 .oi-report-subtitle {
@@ -1462,8 +1567,8 @@ button {
   color:
     var(--text-muted);
 
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 11.5px;
+  line-height: 1.55;
 }
 
 .oi-report-close {
@@ -1496,9 +1601,10 @@ button {
   pointer-events: auto;
 
   transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .oi-report-close:hover {
@@ -1510,6 +1616,8 @@ button {
 
   border-color:
     var(--border-strong);
+
+  transform: rotate(90deg);
 }
 
 /* ============================================================
@@ -1536,10 +1644,10 @@ button {
     var(--text-muted);
 
   font-size: 8px;
-  font-weight: 950;
+  font-weight: 900;
 
   letter-spacing:
-    0.14em;
+    0.13em;
 }
 
 .oi-current-card {
@@ -1579,7 +1687,7 @@ button {
     var(--text-main);
 
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .oi-current-id {
@@ -1633,13 +1741,13 @@ button {
   text-align: left;
 
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
 
   transition:
-    color 0.2s ease,
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .oi-issue-option:hover {
@@ -1691,6 +1799,8 @@ button {
     var(--border-strong);
 
   border-radius: 50%;
+
+  transition: border-color 0.2s ease;
 }
 
 .oi-issue-option.is-selected
@@ -1737,9 +1847,9 @@ button {
     inherit;
 
   transition:
-    border-color 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .oi-report-input {
@@ -1748,7 +1858,7 @@ button {
   padding:
     0 13px;
 
-  font-size: 11px;
+  font-size: 11.5px;
 }
 
 .oi-report-textarea {
@@ -1759,9 +1869,9 @@ button {
 
   resize: vertical;
 
-  font-size: 11px;
+  font-size: 11.5px;
 
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .oi-report-input::placeholder,
@@ -1789,10 +1899,10 @@ button {
   box-shadow:
     0 0 0 3px
     rgba(
-      169,
-      130,
-      255,
-      0.08
+      163,
+      126,
+      242,
+      0.10
     );
 }
 
@@ -1858,17 +1968,17 @@ button {
   font-family:
     inherit;
 
-  font-size: 10px;
-  font-weight: 900;
+  font-size: 10.5px;
+  font-weight: 800;
 
   cursor: pointer;
 
   pointer-events: auto;
 
   transition:
-    transform 0.2s ease,
-    filter 0.2s ease,
-    background 0.2s ease;
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .oi-cancel-button {
@@ -1915,9 +2025,9 @@ button {
   box-shadow:
     0 9px 24px
     rgba(
-      116,
+      110,
       64,
-      231,
+      220,
       0.20
     );
 }
@@ -1927,7 +2037,7 @@ button {
     translateY(-1px);
 
   filter:
-    brightness(1.06);
+    brightness(1.07);
 }
 
 .oi-submit-button:disabled {
@@ -1994,9 +2104,9 @@ button {
   box-shadow:
     0 18px 45px
     rgba(
-      116,
+      110,
       64,
-      231,
+      220,
       0.22
     );
 }
@@ -2007,8 +2117,8 @@ button {
   color:
     var(--text-main);
 
-  font-size: 24px;
-  font-weight: 950;
+  font-size: 23px;
+  font-weight: 900;
 }
 
 .oi-success-text {
@@ -2020,9 +2130,9 @@ button {
   color:
     var(--text-muted);
 
-  font-size: 11px;
+  font-size: 11.5px;
 
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ============================================================
@@ -2079,10 +2189,10 @@ button {
       135deg,
       var(--accent-soft),
       rgba(
-        100,
-        67,
-        200,
-        0.025
+        106,
+        73,
+        207,
+        0.02
       )
     );
 }
@@ -2187,6 +2297,24 @@ button {
 }
 
 /* ============================================================
+   APPLE-VARİ QLOBAL KEÇİDLƏR
+   ============================================================ */
+
+button {
+  transition:
+    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.965);
+}
+
+/* ============================================================
    REPORT ANIMATION
    ============================================================ */
 
@@ -2216,36 +2344,4 @@ button {
       translateY(0)
       scale(1);
   }
-}
-
-/* ============================================================
-   APPLE-VARİ QLOBAL KEÇİDLƏR
-   ============================================================ */
-
-button {
-  transition:
-    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
-    filter 0.16s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-button:active:not(:disabled) {
-  transform: scale(0.965);
-}
-
-.oi-issue-option,
-.oi-report-button,
-.theme-toggle,
-.problem-button,
-.oi-submit-button,
-.oi-cancel-button {
-  transition:
-    transform 0.16s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
