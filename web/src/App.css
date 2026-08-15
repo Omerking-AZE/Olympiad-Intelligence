@@ -2345,3 +2345,90 @@ button:active:not(:disabled) {
       scale(1);
   }
 }
+
+/* ============================================================
+   TYPOGRAPHY SCALE FIX
+   ============================================================ */
+
+.hero h1 {
+  font-size: clamp(48px, 6vw, 78px);
+}
+
+.description {
+  font-size: 15px;
+}
+
+.section-heading h2 {
+  font-size: clamp(28px, 2.6vw, 36px);
+}
+
+.section-note {
+  font-size: 12px;
+}
+
+.skill-code {
+  font-size: 13px;
+}
+
+.skill-value {
+  font-size: 28px;
+}
+
+.skill-name {
+  font-size: 12px;
+}
+
+.problem-top {
+  font-size: 11px;
+}
+
+.problem-title {
+  font-size: clamp(22px, 2.2vw, 27px);
+  line-height: 1.2;
+}
+
+.problem-type {
+  font-size: 13px;
+}
+
+.metric-label {
+  font-size: 10px;
+}
+
+.problem-metric strong {
+  font-size: 17px;
+}
+
+.problem-button {
+  min-height: 48px;
+  font-size: 12px;
+}
+
+.oi-report-button {
+  min-height: 38px;
+  font-size: 10px;
+}
+
+/* Problem modal typography */
+
+.oi-problem-title-large {
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.oi-problem-section-label {
+  font-size: 10px;
+}
+
+.oi-problem-text {
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.oi-problem-meta-card span {
+  font-size: 9px;
+}
+
+.oi-problem-meta-card strong {
+  font-size: 13px;
+}
