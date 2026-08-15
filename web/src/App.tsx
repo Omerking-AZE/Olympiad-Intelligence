@@ -87,26 +87,20 @@ export default function App() {
   const [error, setError] =
     useState<string | null>(null);
 
-  const [darkMode, setDarkMode] =
-    useState(true);
-
 
   /* ========================================================
-     LOAD SAVED THEME
+     INITIAL THEME
      ======================================================== */
 
-  useEffect(() => {
+  const [darkMode, setDarkMode] =
+    useState(() => {
+      const savedTheme =
+        localStorage.getItem(
+          "oi-theme"
+        );
 
-    const savedTheme =
-      localStorage.getItem(
-        "oi-theme"
-      );
-
-    if (savedTheme === "light") {
-      setDarkMode(false);
-    }
-
-  }, []);
+      return savedTheme !== "light";
+    });
 
 
   /* ========================================================
@@ -362,6 +356,7 @@ export default function App() {
             className="theme-toggle"
             onClick={toggleTheme}
             aria-label="Toggle theme"
+            type="button"
           >
 
             <span className="theme-icon">
@@ -471,8 +466,7 @@ export default function App() {
 
 
           {/* =================================================
-              TEMPORARY CARD
-              Design will be replaced later.
+              MINI PROFILE CARD
               ================================================= */}
 
           <div className="mini-card">

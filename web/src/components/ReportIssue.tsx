@@ -48,7 +48,8 @@ export default function ReportIssue({
   problemId,
   currentTitle,
 }: Props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] =
+    useState(false);
 
   const [issueType, setIssueType] =
     useState<IssueType>(
@@ -104,11 +105,18 @@ export default function ReportIssue({
       event: KeyboardEvent
     ) => {
       if (
-        event.key === "Escape" &&
-        !submitting
+        event.key !== "Escape" ||
+        submitting
       ) {
-        close();
+        return;
       }
+
+      setOpen(false);
+      setSubmitted(false);
+      setSuggestedValue("");
+      setDescription("");
+      setIssueType("problem_number");
+      setError("");
     };
 
     window.addEventListener(
@@ -175,40 +183,38 @@ export default function ReportIssue({
             .slice(2)}`;
 
     try {
-      const response =
-        await fetch(
-          "http://127.0.0.1:8000/api/reports",
-          {
-            method: "POST",
+      const response = await fetch(
+        "http://127.0.0.1:8000/api/reports",
+        {
+          method: "POST",
 
-            headers: {
-              "Content-Type":
-                "application/json",
-            },
+          headers: {
+            "Content-Type":
+              "application/json",
+          },
 
-            body: JSON.stringify({
-              id: requestId,
+          body: JSON.stringify({
+            id: requestId,
 
-              problem_id:
-                problemId,
+            problem_id:
+              problemId,
 
-              current_title:
-                currentTitle,
+            current_title:
+              currentTitle,
 
-              issue_type:
-                issueType,
+            issue_type:
+              issueType,
 
-              suggested_value:
-                suggested,
+            suggested_value:
+              suggested,
 
-              description:
-                description.trim(),
-            }),
-          }
-        );
+            description:
+              description.trim(),
+          }),
+        }
+      );
 
-      let data: ServerResponse =
-        {};
+      let data: ServerResponse = {};
 
       try {
         data =
@@ -367,7 +373,8 @@ export default function ReportIssue({
                  ================================================== */}
 
               <div className="oi-report-body">
-                {/* CURRENT */}
+
+                {/* CURRENT INFORMATION */}
 
                 <div>
                   <span className="oi-report-label">
@@ -611,9 +618,10 @@ export default function ReportIssue({
       <button
         type="button"
         className="oi-report-button"
-        onClick={() =>
-          setOpen(true)
-        }
+        onClick={() => {
+          setOpen(true);
+          setError("");
+        }}
       >
         <svg
           width="14"
