@@ -1,158 +1,235 @@
-import type { ProgressPoint } from "../types/student";
+import type {
+  ProgressPoint,
+} from "../types/student";
 
-type Props = {
+type ProgressChartProps = {
   data: ProgressPoint[];
 };
 
+function valueFor(
+  point: ProgressPoint
+) {
+  const raw =
+    point.rating ??
+    point.overall_rating ??
+    0;
+
+  const value = Number(raw);
+
+  return Number.isFinite(value)
+    ? value
+    : 0;
+}
+
 export default function ProgressChart({
   data,
-}: Props) {
-  if (data.length === 0) {
+}: ProgressChartProps) {
+  if (!data.length) {
     return (
-      <div className="chart-empty">
-        Not enough progression data yet.
-      </div>
+      <section className="oi-section">
+        <div className="oi-section-heading">
+          <div>
+            <span className="oi-eyebrow">
+              PLAYER DEVELOPMENT
+            </span>
+
+            <h2>
+              OVR Progression
+            </h2>
+          </div>
+        </div>
+
+        <div className="oi-chart-card oi-chart-empty">
+          No progression data
+          available.
+        </div>
+      </section>
     );
   }
 
-  const width = 1200;
+  const points =
+    data.map(valueFor);
+
+  const min =
+    Math.min(...points);
+
+  const max =
+    Math.max(...points);
+
+  const range =
+    Math.max(
+      1,
+      max - min
+    );
+
+  const width = 920;
   const height = 340;
 
-  const paddingLeft = 58;
-  const paddingRight = 28;
-  const paddingTop = 28;
-  const paddingBottom = 52;
+  const padX = 48;
+  const padY = 34;
 
-  const chartWidth =
-    width - paddingLeft - paddingRight;
+  const coords =
+    points.map(
+      (
+        value,
+        index
+      ) => {
+        const x =
+          padX +
+          ((width -
+            padX * 2) *
+            index) /
+            Math.max(
+              1,
+              points.length -
+                1
+            );
 
-  const chartHeight =
-    height - paddingTop - paddingBottom;
+        const y =
+          height -
+          padY -
+          ((value - min) /
+            range) *
+            (height -
+              padY * 2);
 
-  const minOvr = 50;
-  const maxOvr = 100;
-
-  const getX = (index: number) => {
-    if (data.length === 1) {
-      return (
-        paddingLeft +
-        chartWidth / 2
-      );
-    }
-
-    return (
-      paddingLeft +
-      (index / (data.length - 1)) *
-        chartWidth
+        return {
+          x,
+          y,
+          value,
+        };
+      }
     );
-  };
 
-  const getY = (ovr: number) => {
-    return (
-      paddingTop +
-      ((maxOvr - ovr) /
-        (maxOvr - minOvr)) *
-        chartHeight
-    );
-  };
+  const line =
+    coords
+      .map(
+        (
+          point,
+          index
+        ) =>
+          `${
+            index
+              ? "L"
+              : "M"
+          } ${point.x} ${point.y}`
+      )
+      .join(" ");
 
-  const points = data
-    .map(
-      (point, index) =>
-        `${getX(index)},${getY(
-          point.overall_rating
-        )}`
-    )
-    .join(" ");
-
-  const levels = [
-    50,
-    60,
-    70,
-    80,
-    90,
-    100,
-  ];
+  const area =
+    `${line} L ${
+      coords[
+        coords.length - 1
+      ].x
+    } ${
+      height - padY
+    } L ${
+      coords[0].x
+    } ${
+      height - padY
+    } Z`;
 
   return (
-    <div className="progress-chart">
-      <svg
-        viewBox={`0 0 ${width} ${height}`}
-        className="progress-svg"
-        role="img"
-        aria-label="Student OVR progression"
-      >
-        {levels.map((level) => {
-          const y = getY(level);
+    <section className="oi-section">
+      <div className="oi-section-heading">
+        <div>
+          <span className="oi-eyebrow">
+            PLAYER DEVELOPMENT
+          </span>
 
-          return (
-            <g key={level}>
-              <line
-                x1={paddingLeft}
-                y1={y}
-                x2={width - paddingRight}
-                y2={y}
-                className="chart-grid-line"
-              />
+          <h2>
+            OVR Progression
+          </h2>
+        </div>
 
-              <text
-                x={18}
-                y={y + 4}
-                className="chart-axis-label"
+        <span className="oi-section-note">
+          Historical performance
+        </span>
+      </div>
+
+      <div className="oi-chart-card">
+        <svg
+          className="oi-chart"
+          viewBox={`0 0 ${width} ${height}`}
+          role="img"
+          aria-label="Overall rating progression chart"
+        >
+          {[0, 1, 2, 3].map(
+            (row) => {
+              const y =
+                padY +
+                ((height -
+                  padY * 2) *
+                  row) /
+                  3;
+
+              return (
+                <line
+                  key={row}
+                  x1={padX}
+                  x2={
+                    width -
+                    padX
+                  }
+                  y1={y}
+                  y2={y}
+                  className="oi-chart-grid"
+                />
+              );
+            }
+          )}
+
+          <path
+            d={area}
+            className="oi-chart-area"
+          />
+
+          <path
+            d={line}
+            className="oi-chart-line"
+          />
+
+          {coords.map(
+            (
+              point,
+              index
+            ) => (
+              <g
+                key={`${point.x}-${index}`}
               >
-                {level}
-              </text>
-            </g>
-          );
-        })}
+                <circle
+                  cx={point.x}
+                  cy={point.y}
+                  r="6"
+                  className="oi-chart-point"
+                />
 
-        <polyline
-          points={points}
-          fill="none"
-          className="chart-line"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+                <text
+                  x={point.x}
+                  y={point.y - 14}
+                  textAnchor="middle"
+                  className="oi-chart-value"
+                >
+                  {point.value}
+                </text>
 
-        {data.map((point, index) => {
-          const x = getX(index);
-          const y = getY(
-            point.overall_rating
-          );
-
-          return (
-            <g
-              key={`${point.attempts}-${index}`}
-            >
-              <circle
-                cx={x}
-                cy={y}
-                r="7"
-                className="chart-point"
-              />
-
-              <text
-                x={x}
-                y={y - 15}
-                textAnchor="middle"
-                className="chart-value-label"
-              >
-                {point.overall_rating}
-              </text>
-
-              <text
-                x={x}
-                y={height - 16}
-                textAnchor="middle"
-                className="chart-axis-label"
-              >
-                {point.attempts}P
-              </text>
-            </g>
-          );
-        })}
-      </svg>
-    </div>
+                <text
+                  x={point.x}
+                  y={height - 10}
+                  textAnchor="middle"
+                  className="oi-chart-label"
+                >
+                  {data[index]
+                    ?.date ??
+                    data[index]
+                      ?.contest ??
+                    `#${index + 1}`}
+                </text>
+              </g>
+            )
+          )}
+        </svg>
+      </div>
+    </section>
   );
 }
