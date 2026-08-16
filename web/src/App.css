@@ -2432,3 +2432,261 @@ button { user-select: none; }
     flex: 1;
   }
 }
+
+/* ============================================================
+   RENDERED MATHEMATICS
+   ============================================================ */
+
+.oi-rendered-problem {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  color: var(--text-soft);
+
+  font-size: 17px;
+  line-height: 1.9;
+
+  text-align: left;
+}
+
+.oi-problem-text-content {
+  white-space: pre-wrap;
+}
+
+.oi-math-inline {
+  display: inline-flex;
+  align-items: center;
+
+  margin: 0 0.12em;
+
+  color: var(--text-strong);
+}
+
+.oi-math-display {
+  display: block;
+
+  width: 100%;
+
+  margin: 24px 0;
+
+  overflow-x: auto;
+
+  color: var(--text-strong);
+
+  text-align: center;
+}
+
+.oi-rendered-problem .katex {
+  font-size: 1.08em;
+}
+
+.oi-rendered-problem .katex-display {
+  margin: 1.1em 0;
+}
+
+.oi-math-fallback {
+  display: inline-block;
+
+  padding: 2px 5px;
+
+  border-radius: 6px;
+
+  color: var(--text-main);
+
+  background: var(--surface-subtle);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+}
+
+@media (max-width: 760px) {
+  .oi-rendered-problem {
+    font-size: 16px;
+    line-height: 1.78;
+  }
+
+  .oi-rendered-problem .katex {
+    font-size: 1em;
+  }
+}
+
+/* ============================================================
+   PROBLEM TEXT / KATEX
+   ============================================================ */
+
+.oi-rendered-problem {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  color: var(--text-soft);
+
+  font-size: 17px;
+  line-height: 1.85;
+
+  text-align: left;
+}
+
+.oi-problem-text-content {
+  color: var(--text-soft);
+}
+
+.oi-math-inline {
+  display: inline-flex;
+
+  margin: 0 0.12em;
+
+  color: var(--text-strong);
+
+  vertical-align: baseline;
+}
+
+.oi-math-display {
+  display: block;
+
+  width: 100%;
+
+  margin: 26px 0;
+
+  overflow-x: auto;
+
+  color: var(--text-strong);
+
+  text-align: center;
+
+  scrollbar-width: thin;
+}
+
+.oi-math-inline .katex {
+  color: var(--text-strong);
+
+  font-size: 1.08em;
+}
+
+.oi-math-display .katex {
+  color: var(--text-strong);
+
+  font-size: 1.15em;
+}
+
+.oi-rendered-problem .katex-display {
+  margin: 0;
+}
+
+.oi-rendered-problem .katex {
+  color: var(--text-strong);
+}
+
+.oi-app.theme-light
+.oi-rendered-problem,
+.oi-app.theme-light
+.oi-problem-text-content {
+  color: #303847;
+}
+
+.oi-app.theme-light
+.oi-math-inline
+.katex,
+.oi-app.theme-light
+.oi-math-display
+.katex {
+  color: #111827;
+}
+
+@media (max-width: 760px) {
+  .oi-rendered-problem {
+    font-size: 16px;
+    line-height: 1.78;
+  }
+
+  .oi-math-display .katex {
+    font-size: 1.04em;
+  }
+}
+
+.oi-app {
+  /* mövcud dəyişənlərin yanına əlavə et */
+  --text-strong: #ffffff;
+  --surface-subtle: rgba(255,255,255,.06);
+}
+
+.oi-app.theme-light {
+  --text-strong: #0f172a;
+  --surface-subtle: rgba(15,23,42,.05);
+}
+
+/* ============================================================
+   PROBLEM MATH RENDERING
+   ============================================================ */
+
+.oi-rendered-problem {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  color: var(--text-soft);
+
+  font-size: 17px;
+  line-height: 1.88;
+
+  text-align: left;
+
+  overflow-wrap: anywhere;
+}
+
+.oi-rendered-problem .katex {
+  color: var(--text-strong);
+
+  font-size: 1.06em;
+}
+
+.oi-rendered-problem .katex-display {
+  margin: 1.4em 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 4px 0 8px;
+
+  text-align: center;
+}
+
+.oi-rendered-problem .katex-html {
+  color: inherit;
+}
+
+.oi-problem-body {
+  text-align: center;
+}
+
+.oi-problem-body .oi-rendered-problem {
+  text-align: left;
+}
+
+.oi-problem-text-content {
+  color: var(--text-soft);
+}
+
+.theme-light .oi-rendered-problem {
+  color: #303846;
+}
+
+.theme-light .oi-rendered-problem .katex {
+  color: #111827;
+}
+
+@media (max-width: 760px) {
+  .oi-rendered-problem {
+    font-size: 16px;
+    line-height: 1.78;
+  }
+
+  .oi-rendered-problem .katex {
+    font-size: 1em;
+  }
+}
