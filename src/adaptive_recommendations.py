@@ -11,9 +11,9 @@ Pipeline:
     Difficulty data
         +
     Problem metadata
-        ↓
+        в†“
     Adaptive recommendations
-        ↓
+        в†“
     CSV + valid JSON
 
 Important:
@@ -134,6 +134,73 @@ def safe_int(value):
         ValueError,
     ):
         return None
+
+
+# ============================================================
+# PROBLEM TEXT
+# ============================================================
+
+PROBLEM_TEXT_CANDIDATES = [
+    "problem_text",
+    "problem_statement",
+    "statement",
+    "text",
+    "problem",
+    "description",
+]
+
+
+def normalize_problem_text_column(problems):
+    """
+    Normalize whichever problem-statement field exists in the
+    source dataset to a single frontend-facing `problem_text`
+    column.
+
+    No text is invented. If the dataset has no statement field,
+    the output keeps `problem_text` as null.
+    """
+
+    if "problem_text" in problems.columns:
+        problems["problem_text"] = problems[
+            "problem_text"
+        ].where(
+            problems["problem_text"].notna(),
+            None,
+        )
+
+        print(
+            "Problem text source column: problem_text"
+        )
+
+        return problems
+
+    for candidate in PROBLEM_TEXT_CANDIDATES[1:]:
+        if candidate not in problems.columns:
+            continue
+
+        problems["problem_text"] = problems[
+            candidate
+        ].where(
+            problems[candidate].notna(),
+            None,
+        )
+
+        print(
+            f"Problem text source column: {candidate}"
+        )
+
+        return problems
+
+    problems["problem_text"] = None
+
+    print(
+        "Warning: no problem-text column found in "
+        "mathnet_difficulty.csv. "
+        "View Problem will show an unavailable-state "
+        "message until statement data is exported."
+    )
+
+    return problems
 
 
 # ============================================================
@@ -466,6 +533,7 @@ def load_metadata():
         "year",
         "problem_number",
         "section",
+        "problem_text",
         "metadata_status",
         "match_score",
         "source",
@@ -588,6 +656,15 @@ def enrich_recommendations(
     if recommendations.empty:
         return recommendations
 
+    # Preserve any problem text already attached to the
+    # difficulty dataset before metadata enrichment.
+    recommendation_problem_text = None
+
+    if "problem_text" in recommendations.columns:
+        recommendation_problem_text = (
+            recommendations["problem_text"]
+        )
+
     if metadata.empty:
         recommendations[
             "title"
@@ -614,6 +691,7 @@ def enrich_recommendations(
         "year",
         "problem_number",
         "section",
+        "problem_text",
         "metadata_status",
         "match_score",
         "source",
@@ -637,6 +715,24 @@ def enrich_recommendations(
         how="left",
     )
 
+    # If the metadata table has no problem text, restore the
+    # statement that came from mathnet_difficulty.csv.
+    if recommendation_problem_text is not None:
+        if "problem_text" not in enriched.columns:
+            enriched[
+                "problem_text"
+            ] = recommendation_problem_text
+        else:
+            enriched[
+                "problem_text"
+            ] = enriched[
+                "problem_text"
+            ].where(
+                enriched["problem_text"].notna()
+                & enriched["problem_text"].astype(str).str.strip().ne(""),
+                recommendation_problem_text,
+            )
+
     enriched[
         "title"
     ] = enriched.apply(
@@ -656,7 +752,7 @@ def make_json_safe(value):
     Convert anything that is not valid JSON
     into a valid JSON value.
 
-    NaN / +Infinity / -Infinity → null.
+    NaN / +Infinity / -Infinity в†’ null.
     """
 
     if value is None:
@@ -750,6 +846,7 @@ def save_json(
         "year",
         "problem_number",
         "section",
+        "problem_text",
 
         # Recommendation values
         "target_domain",
@@ -904,9 +1001,27 @@ def main():
         PROBLEMS_PATH
     )
 
+    problems = normalize_problem_text_column(
+        problems
+    )
+
     print(
         f"\nLoaded problems: "
         f"{len(problems)}"
+    )
+
+    problem_text_count = int(
+        problems["problem_text"]
+        .fillna("")
+        .astype(str)
+        .str.strip()
+        .ne("")
+        .sum()
+    )
+
+    print(
+        f"Problem statements available: "
+        f"{problem_text_count}/{len(problems)}"
     )
 
     # --------------------------------------------------------
