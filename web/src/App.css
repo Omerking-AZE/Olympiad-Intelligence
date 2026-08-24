@@ -1580,3 +1580,11 @@ textarea:focus-visible {
 .oi-problem-card .oi-report-button:hover {
   transform: translateY(-1px);
 }
+
+.problem-reason {
+  margin-top: 10px;
+  color: var(--accent-light);
+  font-size: 11px;
+  line-height: 1.55;
+  font-weight: 600;
+}
