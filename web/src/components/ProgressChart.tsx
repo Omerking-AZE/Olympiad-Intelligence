@@ -4,6 +4,7 @@ import type {
 
 type ProgressChartProps = {
   data: ProgressPoint[];
+  isDemo?: boolean;
 };
 
 function valueFor(
@@ -23,6 +24,7 @@ function valueFor(
 
 export default function ProgressChart({
   data,
+  isDemo = false,
 }: ProgressChartProps) {
   if (!data.length) {
     return (
@@ -143,7 +145,7 @@ export default function ProgressChart({
         </div>
 
         <span className="oi-section-note">
-          {data.length > 1 ? "Historical performance" : "One current snapshot · no history available"}
+          {isDemo ? "Illustrative simulated milestones" : data.length > 1 ? "Recorded performance history" : "One current snapshot · no history available"}
         </span>
       </div>
 
