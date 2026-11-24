@@ -11,6 +11,7 @@ type TopbarProps = {
     value: string
   ) => void;
   candidateRating: number;
+  isDemo: boolean;
 };
 
 function SearchIcon() {
@@ -44,6 +45,7 @@ export default function Topbar({
   searchQuery,
   onSearchChange,
   candidateRating,
+  isDemo,
 }: TopbarProps) {
   const [focused, setFocused] =
     useState(false);
@@ -81,14 +83,15 @@ export default function Topbar({
           </div>
 
           <div className="oi-brand-subtitle">
-            SYSTEM CORE · CANDIDATE #
-            {ratingLabel} ELO
+            PROFILE RATING · {ratingLabel} OVR
           </div>
         </div>
 
-        <span className="oi-brand-pill">
-          PRO
-        </span>
+        {isDemo && (
+          <span className="oi-brand-pill" title="This dashboard uses illustrative sample data">
+            DEMO
+          </span>
+        )}
       </div>
 
       <div
@@ -113,8 +116,8 @@ export default function Topbar({
           onBlur={() =>
             setFocused(false)
           }
-          placeholder="Search problems, topics, theorems..."
-          aria-label="Search recommendations"
+          placeholder="Search recommended problems, topics and statements..."
+          aria-label="Search recommended problems, topics and statements"
         />
 
         {searchQuery && (
@@ -134,7 +137,7 @@ export default function Topbar({
       <div className="oi-topbar-actions">
         <div className="oi-status-pill">
           <span className="oi-status-dot" />
-          SEASON 2026 LIVE
+          {isDemo ? "DEMO PROFILE" : "PROFILE PREVIEW"}
         </div>
 
         <button
