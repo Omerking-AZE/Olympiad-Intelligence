@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 import ProblemText from "./ProblemText";
@@ -173,7 +173,15 @@ export default function ProblemModal({
   /*
    * Lock page scrolling and support Escape.
    */
+  const dialogRef = useRef<HTMLElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
+
   useEffect(() => {
+    previousFocusRef.current = document.activeElement instanceof HTMLElement
+      ? document.activeElement
+      : null;
+    dialogRef.current?.focus();
+
     const previousOverflow =
       document.body.style.overflow;
 
@@ -183,11 +191,31 @@ export default function ProblemModal({
     const handleKeyDown = (
       event: KeyboardEvent
     ) => {
-      if (
-        event.key ===
-        "Escape"
-      ) {
+      if (event.key === "Escape") {
         onClose();
+        return;
+      }
+
+      if (event.key === "Tab" && dialogRef.current) {
+        const focusable = Array.from(
+          dialogRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+          )
+        ).filter((element) => element.offsetParent !== null);
+        if (!focusable.length) {
+          event.preventDefault();
+          dialogRef.current.focus();
+          return;
+        }
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
       }
     };
 
@@ -204,6 +232,7 @@ export default function ProblemModal({
         "keydown",
         handleKeyDown
       );
+      previousFocusRef.current?.focus();
     };
   }, [onClose]);
 
@@ -225,6 +254,8 @@ export default function ProblemModal({
         className="oi-problem-dialog"
         role="dialog"
         aria-modal="true"
+        tabIndex={-1}
+        ref={dialogRef}
         aria-labelledby="oi-problem-title"
         aria-describedby="oi-problem-description"
       >
