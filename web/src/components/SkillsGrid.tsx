@@ -14,6 +14,7 @@ type SkillsGridProps = {
     SkillKey,
     number
   >;
+  unknownSkills: string[];
 };
 
 const levels = [
@@ -27,12 +28,13 @@ type Filter =
   (typeof levels)[number];
 
 function getLevel(
-  score: number | undefined
+  score: number | undefined,
+  isUnknown: boolean
 ): Exclude<
   Filter,
   "All"
 > {
-  if (!Number.isFinite(score)) {
+  if (isUnknown || !Number.isFinite(score)) {
     return "Unknown";
   }
 
@@ -46,6 +48,7 @@ function getLevel(
 export default function SkillsGrid({
   skills,
   ratings,
+  unknownSkills,
 }: SkillsGridProps) {
   const [filter, setFilter] =
     useState<Filter>("All");
@@ -57,17 +60,15 @@ export default function SkillsGrid({
           return true;
         }
 
-        return (
-          getLevel(
-            ratings[skill.key]
-          ) === filter
-        );
+        const isUnknown = unknownSkills.includes(skill.key);
+        return getLevel(ratings[skill.key], isUnknown) === filter;
       }
     );
   }, [
     filter,
     ratings,
     skills,
+    unknownSkills,
   ]);
 
   return (
@@ -112,21 +113,16 @@ export default function SkillsGrid({
       <div className="oi-skills-grid">
         {visible.map(
           (skill) => {
-            const score = Number(
-              ratings[skill.key] ?? 0
-            );
+            const isUnknown = unknownSkills.includes(skill.key);
+            const rawScore = ratings[skill.key];
+            const score = isUnknown || !Number.isFinite(rawScore)
+              ? null
+              : rawScore;
 
-            const level =
-              getLevel(score);
-
-            const pct =
-              Math.max(
-                0,
-                Math.min(
-                  100,
-                  score
-                )
-              );
+            const level = getLevel(rawScore, isUnknown);
+            const pct = score === null
+              ? 0
+              : Math.max(0, Math.min(100, score));
 
             return (
               <article
@@ -139,11 +135,7 @@ export default function SkillsGrid({
                   </span>
 
                   <strong>
-                    {Number.isFinite(
-                      score
-                    )
-                      ? score
-                      : "—"}
+                    {score === null ? "—" : score}
                   </strong>
                 </div>
 
@@ -157,7 +149,7 @@ export default function SkillsGrid({
                   </span>
 
                   <span>
-                    {pct}% index
+                    {score === null ? "Not measured" : `${pct}% index`}
                   </span>
                 </div>
 

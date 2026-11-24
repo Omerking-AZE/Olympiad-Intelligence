@@ -4,6 +4,7 @@ import type {
 
 type ProgressChartProps = {
   data: ProgressPoint[];
+  isDemo?: boolean;
 };
 
 function valueFor(
@@ -23,6 +24,7 @@ function valueFor(
 
 export default function ProgressChart({
   data,
+  isDemo = false,
 }: ProgressChartProps) {
   if (!data.length) {
     return (
@@ -34,7 +36,7 @@ export default function ProgressChart({
             </span>
 
             <h2>
-              OVR Progression
+              {data.length > 1 ? "OVR Progression" : "OVR Snapshot"}
             </h2>
           </div>
         </div>
@@ -143,7 +145,7 @@ export default function ProgressChart({
         </div>
 
         <span className="oi-section-note">
-          Historical performance
+          {isDemo ? "Illustrative simulated milestones" : data.length > 1 ? "Recorded performance history" : "One current snapshot · no history available"}
         </span>
       </div>
 
@@ -152,7 +154,7 @@ export default function ProgressChart({
           className="oi-chart"
           viewBox={`0 0 ${width} ${height}`}
           role="img"
-          aria-label="Overall rating progression chart"
+          aria-label={data.length > 1 ? "Overall rating progression chart" : "Current overall rating snapshot"}
         >
           {[0, 1, 2, 3].map(
             (row) => {
@@ -179,15 +181,12 @@ export default function ProgressChart({
             }
           )}
 
-          <path
-            d={area}
-            className="oi-chart-area"
-          />
-
-          <path
-            d={line}
-            className="oi-chart-line"
-          />
+          {data.length > 1 && (
+            <>
+              <path d={area} className="oi-chart-area" />
+              <path d={line} className="oi-chart-line" />
+            </>
+          )}
 
           {coords.map(
             (
@@ -223,7 +222,9 @@ export default function ProgressChart({
                     ?.date ??
                     data[index]
                       ?.contest ??
-                    `#${index + 1}`}
+                    (data[index]?.attempts
+                      ? `${data[index].attempts} attempts`
+                      : `#${index + 1}`)}
                 </text>
               </g>
             )

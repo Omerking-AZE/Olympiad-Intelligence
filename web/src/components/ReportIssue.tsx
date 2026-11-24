@@ -181,9 +181,10 @@ export default function ReportIssue({
             .slice(2)}`;
 
     try {
+      const apiBase = (import.meta.env.VITE_REPORT_API_URL ?? "").replace(/\/$/, "");
       const response =
         await fetch(
-          "http://127.0.0.1:8000/api/reports",
+          `${apiBase}/api/reports`,
           {
             method: "POST",
 
@@ -245,7 +246,11 @@ export default function ReportIssue({
       );
 
       setError(
-        "Couldn't submit the report. Please make sure the report server is running."
+        submitError instanceof TypeError
+          ? "The report service could not be reached. Please try again later."
+          : submitError instanceof Error
+            ? submitError.message
+            : "The report could not be submitted. Please try again."
       );
     } finally {
       setSubmitting(
