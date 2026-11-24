@@ -25,7 +25,7 @@ export default function HeroSection({
     <section className="oi-hero-section">
       <div className="oi-hero-copy">
         <span className="oi-eyebrow">
-          MATH PLAYER PROFILE
+          {student.is_demo ? "ILLUSTRATIVE DEMO PROFILE" : "STUDENT PROFILE"}
         </span>
 
         <h1>
@@ -33,10 +33,9 @@ export default function HeroSection({
         </h1>
 
         <p>
-          Your personalized olympiad
-          intelligence profile, tuned to
-          your recent performance and
-          training needs.
+          {student.is_demo
+            ? "This example dashboard uses simulated student records to demonstrate skill analysis and adaptive problem recommendations. It is not a live student account."
+            : "Your olympiad intelligence profile, based on recorded problem attempts and the current skill-analysis methodology."}
         </p>
 
         <div className="oi-hero-stats">
