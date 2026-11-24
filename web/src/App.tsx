@@ -370,6 +370,7 @@ export default function App() {
         }}
         candidateRating={student.overall_rating}
         isDemo={isDemo}
+        studentName={student.student_name}
       />
       <div className="oi-workspace">
         <Sidebar activeView={activeView} onNavigate={setActiveView} isDemo={isDemo} />
