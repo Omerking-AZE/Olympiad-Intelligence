@@ -103,11 +103,9 @@ export default function HeroSection({
                   </span>
 
                   <strong>
-                    {
-                      student.skill_ratings[
-                        skill.key
-                      ]
-                    }
+                    {student.unknown_skills.includes(skill.key)
+                      ? "—"
+                      : student.skill_ratings[skill.key]}
                   </strong>
                 </div>
               ))}

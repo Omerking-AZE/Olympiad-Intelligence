@@ -12,6 +12,7 @@ type TopbarProps = {
   ) => void;
   candidateRating: number;
   isDemo: boolean;
+  studentName: string;
 };
 
 function SearchIcon() {
@@ -46,6 +47,7 @@ export default function Topbar({
   onSearchChange,
   candidateRating,
   isDemo,
+  studentName,
 }: TopbarProps) {
   const [focused, setFocused] =
     useState(false);
@@ -137,7 +139,12 @@ export default function Topbar({
       <div className="oi-topbar-actions">
         <div className="oi-status-pill">
           <span className="oi-status-dot" />
-          {isDemo ? "DEMO PROFILE" : "PROFILE PREVIEW"}
+          {isDemo ? "SAMPLE DATA" : "PROFILE READY"}
+        </div>
+
+        <div className="oi-profile-chip" title={studentName}>
+          <span className="oi-profile-avatar">{studentName.trim().charAt(0).toUpperCase() || "S"}</span>
+          <span className="oi-profile-copy"><strong>{studentName}</strong><small>{isDemo ? "Demo profile" : "Student profile"}</small></span>
         </div>
 
         <button
