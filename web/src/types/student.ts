@@ -23,8 +23,6 @@ export type ProgressPoint = {
   attempts?: number;
 };
 
-export type StudentIntelligenceDemo = never;
-
 export type StudentIntelligence = {
   student_id?: string;
   is_demo?: boolean;
@@ -38,8 +36,5 @@ export type StudentIntelligence = {
   high_priority_weaknesses: string[];
   medium_priority_weaknesses: string[];
   unknown_skills: string[];
-  skill_ratings: Record<
-    SkillKey,
-    number
-  >;
+  skill_ratings: Record<SkillKey, number>;
 };
