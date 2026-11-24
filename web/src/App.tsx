@@ -139,6 +139,8 @@ export default function App() {
             item.target_domain,
             item.problem_type,
             item.problem_id,
+            item.problem_text,
+            item.problem_markdown,
           ]
             .filter(Boolean)
             .join(" ")
@@ -224,6 +226,7 @@ export default function App() {
         candidateRating={
           student.overall_rating
         }
+        isDemo={Boolean(student.is_demo)}
       />
 
       <main className="oi-dashboard">
@@ -237,6 +240,7 @@ export default function App() {
           ratings={
             student.skill_ratings
           }
+          unknownSkills={student.unknown_skills}
         />
 
         <ProgressChart
@@ -262,14 +266,13 @@ export default function App() {
           </strong>
 
           <span>
-            Evidence-driven student
-            calibration
+            Transparent olympiad skill analysis
           </span>
         </div>
 
         <div className="oi-footer-status">
           <span className="oi-status-dot" />
-          PIPELINE ONLINE
+          {student.is_demo ? "STATIC DEMO DATA" : "PROFILE DATA LOADED"}
         </div>
       </footer>
     </div>
