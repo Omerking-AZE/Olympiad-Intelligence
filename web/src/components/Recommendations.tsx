@@ -278,11 +278,7 @@ export default function Recommendations({
           .trim()
           .toLowerCase();
 
-      const source =
-        recommendations.slice(
-          0,
-          15
-        );
+      const source = recommendations;
 
       if (!query) {
         return source;
@@ -304,6 +300,8 @@ export default function Recommendations({
               "",
 
             item.problem_id,
+            item.problem_text ?? "",
+            item.problem_markdown ?? "",
           ]
             .join(" ")
             .toLowerCase();
@@ -338,7 +336,7 @@ export default function Recommendations({
         <div>
 
           <span className="oi-eyebrow">
-            AI TRAINING PATH
+            ADAPTIVE TRAINING PATH
           </span>
 
           <h2>
@@ -348,7 +346,7 @@ export default function Recommendations({
         </div>
 
         <span className="oi-section-note">
-          Personalized for your profile
+          Ranked using skill-priority and difficulty-fit signals
         </span>
 
       </div>
