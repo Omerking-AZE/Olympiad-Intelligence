@@ -14,3 +14,15 @@ venv/
 
 data/raw/
 data/external/
+# JavaScript / frontend build artifacts
+node_modules/
+web/node_modules/
+web/dist/
+dist/
+*.tsbuildinfo
+
+# Local report data and secrets
+data/feedback/edit_requests.json
+data/feedback/*.tmp
+.env.*
+!.env.example
