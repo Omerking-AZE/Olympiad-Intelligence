@@ -245,6 +245,7 @@ export default function App() {
 
         <ProgressChart
           data={progression}
+          isDemo={Boolean(student.is_demo)}
         />
 
         <ProfilePanels
