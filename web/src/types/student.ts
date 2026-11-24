@@ -20,10 +20,14 @@ export type ProgressPoint = {
   contest?: string;
   rating?: number;
   overall_rating?: number;
+  attempts?: number;
 };
+
+export type StudentIntelligenceDemo = never;
 
 export type StudentIntelligence = {
   student_id?: string;
+  is_demo?: boolean;
   student_name: string;
   overall_rating: number;
   tier: string;
