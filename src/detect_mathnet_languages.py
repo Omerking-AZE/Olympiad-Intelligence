@@ -5,7 +5,7 @@ Run from the repository root:
 """
 from __future__ import annotations
 
-from language_detection import detect_language, is_compound_language
+from language_detection import detect_language
 from platform_store import connect, init_db
 
 
