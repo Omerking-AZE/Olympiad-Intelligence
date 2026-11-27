@@ -293,3 +293,83 @@ _Add your chosen license here (e.g. MIT, Apache 2.0) and include a `LICENSE` fil
 ## Author
 
 Maintained by [Omar Gadirli](https://github.com/Omerking-AZE).
+
+---
+
+## Local personalized web application
+
+The web app now supports individual student accounts, private practice history, per-account skill ratings, a searchable MathNet problem bank, and downloadable player cards.
+
+### 1. Install dependencies
+
+From the repository root:
+
+~~~bash
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS / Linux:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+cd web
+npm install
+~~~
+
+### 2. Import the complete MathNet v0 dataset
+
+Open a terminal in the repository root:
+
+~~~bash
+python src/import_mathnet_full.py
+~~~
+
+This downloads the complete ShadenA/MathNet train split and imports its 27,817 problems, source metadata, and available figures into a local SQLite database. The database and image cache are local runtime data and are not committed to Git.
+
+### 3. Translate non-English records
+
+The original text is retained. English source records are used directly; other source languages are marked for translation. Install the optional translation dependencies:
+
+~~~bash
+pip install -r requirements-translation.txt
+python src/translate_mathnet.py
+~~~
+
+The translation script uses the multilingual M2M100 model and stores English display text separately from the original. Translations are machine-generated and flagged for human review; check mathematical wording, notation, and figures before treating a translation as authoritative. Unsupported language codes are reported at the end of the run.
+
+### 4. Start the local app
+
+Open two terminals in the repository root.
+
+Terminal 1 — API and SQLite:
+
+~~~bash
+python src/app_server.py
+~~~
+
+Terminal 2 — web interface:
+
+~~~bash
+cd web
+npm run dev
+~~~
+
+Open the local Vite URL shown in the terminal (normally http://localhost:5173).
+
+### Local account behavior
+
+- Sign-up and sign-in use an HTTP-only, signed session cookie and salted PBKDF2 password hashes.
+- Each account has its own skill ratings and practice history in SQLite.
+- Each account receives a distinct deterministic problem order and an unseen-problem queue.
+- A problem can be rated once per account to prevent repeated submissions from inflating a rating.
+- Ratings are personal practice estimates, not official olympiad scores or a global ranking.
+- Student cards can be downloaded as standalone SVG files.
+
+### Important deployment note
+
+This server is intended for local development. Before exposing it publicly, use HTTPS, a managed database, server-side rate limiting, password reset and email verification, secure cookie settings, backups, and a production application server. Do not commit the SQLite database, image cache, generated security key, passwords, or .env files.
+
+### MathNet attribution and data rights
+
+Dataset: MathNet v0, by Shaden Alshammari et al., ICLR 2026. Cite the accompanying paper: alshammari2026mathnet (https://mathnet.mit.edu). The Hugging Face dataset card describes a CC BY 4.0 license for records without a separate rights claim; where a country or contest organization asserts copyright, that copyright takes precedence. Keep the problem's country, competition, and booklet_source metadata attached to its record and respect any explicit rights claimed by the originating national team.
+

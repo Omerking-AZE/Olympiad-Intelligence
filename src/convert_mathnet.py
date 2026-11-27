@@ -9,7 +9,7 @@ from pathlib import Path
 
 OUTPUT_PATH = "data/processed/mathnet_problems.csv"
 
-SAMPLE_SIZE = 1000
+SAMPLE_SIZE = 0  # 0 means all MathNet rows; positive values create a sample
 
 
 # ============================================================
@@ -46,10 +46,7 @@ except Exception:
 # SAMPLE
 # ============================================================
 
-sample_size = min(
-    SAMPLE_SIZE,
-    len(dataset)
-)
+sample_size = len(dataset) if SAMPLE_SIZE <= 0 else min(SAMPLE_SIZE, len(dataset))
 
 print(
     f"\nSelecting first "
