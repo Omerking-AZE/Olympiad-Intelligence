@@ -326,6 +326,14 @@ python src/import_mathnet_full.py
 
 This downloads the complete ShadenA/MathNet train split and imports its 27,817 problems, source metadata, and available figures into a local SQLite database. The database and image cache are local runtime data and are not committed to Git.
 
+If you already imported the dataset before the language-detection update, run this one-time repair from the repository root:
+
+~~~bash
+python src/detect_mathnet_languages.py
+~~~
+
+It detects missing or compound language labels from the problem text. Low-confidence records remain marked Unknown rather than being assigned a guessed language.
+
 ### 3. Translate non-English records
 
 The original text is retained. English source records are used directly; other source languages are marked for translation. Install the optional translation dependencies:

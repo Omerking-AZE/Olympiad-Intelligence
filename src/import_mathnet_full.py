@@ -10,6 +10,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from language_detection import detect_language, is_compound_language
 from platform_store import IMAGE_DIR, connect, init_db
 
 DATASET_ID = "ShadenA/MathNet"
@@ -68,7 +69,10 @@ def record_for(row, imported_at):
     problem_id = f"MATHNET-{dataset_id}" if dataset_id else ""
     statement = clean(row.get("problem_markdown"))
     language = clean(row.get("language")) or "Unknown"
-    language_is_english = language.lower() in {"en", "eng", "english"} or "english" in language.lower()
+    # Resolve missing or compound metadata from the actual statement text.
+    if language == "Unknown" or is_compound_language(language):
+        language = detect_language(statement) or language
+    language_is_english = str(language).strip().lower() in {"en", "eng", "english"}
     topics = row.get("topics_flat") or []
     topics = [str(topic).strip() for topic in topics if topic]
     domain = topics[0].split(">")[0].strip() if topics else None
