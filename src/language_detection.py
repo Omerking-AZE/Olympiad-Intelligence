@@ -33,7 +33,7 @@ def detect_language(text: str | None, minimum_probability: float = 0.70) -> str 
     try:
         from langdetect import detect_langs
         guesses = detect_langs(" ".join(words))
-    except (ImportError, Exception):
+    except Exception:
         return None
     if not guesses or guesses[0].prob < minimum_probability:
         return None
