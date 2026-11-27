@@ -26,3 +26,10 @@ data/feedback/edit_requests.json
 data/feedback/*.tmp
 .env.*
 !.env.example
+
+# Local account database, extracted MathNet figures, and signing key
+data/olympiad_intelligence.sqlite3
+data/olympiad_intelligence.sqlite3-shm
+data/olympiad_intelligence.sqlite3-wal
+data/mathnet_images/
+data/security/

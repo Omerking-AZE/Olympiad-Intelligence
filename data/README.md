@@ -113,3 +113,9 @@ Each step reads from `data/raw/` or the output of the previous step, and writes 
 ## Licensing & Attribution
 
 The underlying MathNet dataset may carry its own license and attribution requirements — refer to the original MathNet source/publication for terms of use before redistributing raw problem/solution text. Add the specific license and citation details here once confirmed.
+
+## Local full-dataset application store
+
+The web application imports the complete MathNet v0 train split with python src/import_mathnet_full.py into data/olympiad_intelligence.sqlite3. Problem images are extracted into data/mathnet_images/. These are generated local runtime files and are excluded from version control.
+
+Original problem and solution text is preserved. English is stored separately in problem_text_en and solution_text_en; the translation status identifies source-English text, translated text awaiting review, and records still awaiting translation.
