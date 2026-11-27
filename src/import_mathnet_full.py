@@ -10,7 +10,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from platform_store import IMAGE_DIR, connect, init_db
+from language_detection import detect_language, is_compound_language\nfrom platform_store import IMAGE_DIR, connect, init_db
 
 DATASET_ID = "ShadenA/MathNet"
 BATCH_SIZE = 200
